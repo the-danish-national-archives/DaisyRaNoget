@@ -911,7 +911,7 @@ template {
   border: 0; }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(26, 35, 42, 0.03); }
+  background-color: #f8f9fa; }
 
 .table-hover tbody tr:hover {
   color: #212529;
@@ -6111,7 +6111,7 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(26, 35, 42, 0.25); }
   .form-control::placeholder {
-    color: #bbb;
+    color: #848484;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -6472,14 +6472,34 @@ textarea.form-control {
   font-weight: 900;
   letter-spacing: -0.5px; }
 
+label {
+  margin-bottom: 0.2rem; }
+
 table.dataTable thead .sorting_asc {
-  background: url("../images/up.svg") no-repeat center left !important; }
+  background: url("../images/up.svg") no-repeat center left !important;
+  border-bottom: 0 !important; }
 
 table.dataTable thead .sorting_desc {
-  background: url("../images/down.svg") no-repeat center left !important; }
+  background: url("../images/down.svg") no-repeat center left !important;
+  border-bottom: 0 !important; }
 
 table.dataTable thead .sorting {
-  background: url("../images/both.svg") no-repeat center left !important; }
+  background: url("../images/both.svg") no-repeat center left !important;
+  border-bottom: 0 !important; }
+
+table.dataTable thead td,
+table.dataTable tbody td,
+table.dataTable tfoot td,
+table.dataTable.no-footer {
+  border: none !important; }
+
+table.dataTable thead tr th,
+table.dataTable tbody th,
+table.dataTable tbody td {
+  padding: 16px 18px !important; }
+
+table.dataTable thead tr th {
+  padding: 16px 20px !important; }
 
 .col-centered {
   float: none;

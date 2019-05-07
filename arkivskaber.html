@@ -1,110 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/custom.css" />
+    <title>Daisy RA</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,900" rel="stylesheet" />
-  <link rel="stylesheet" href="src/css/custom.css" />
-  <title>Arkivskaber</title>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+      <a class="navbar-brand" href="/index.html">
+        <img src="src/images/logo.png" alt="" class="ml-3 mr-3" />
+      </a>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="/">
-      <img src="src/images/logo.svg" alt="" class="ml-3 mr-3" />
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/arkivskaber.html">Arkivskaber og heuristiskeenheder</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Arkivserier og eksemplarer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Arbejdsopgaver</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Om Daisy</a>
-        </li>
-    </div>
-  </nav>
-  <div class="container-fluid">
-    <div class="row" style="height:100vh;">
-      <div class="col-9 p-lg-5 col-centered">
-        <div class="row">
-        <div class="col-6">
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="/">Søgeresultat</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Arkivskaber og heuristiskeenheder</li>
-                    </ol>
-                  </nav>
-        <h1 class="font-weight-extrabold">Frederiksberg Politi</h1>
-        <p class="lead text-secondary pb-lg-3">
-            Retten på Frederiksberg
-        </p>
-        </div>
-        <div class="col-6">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Opret ny
-            </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Arkivskaber</a>
-                <a class="dropdown-item" href="#">Heuristiskeenhed</a>
-              </div>
-            </div>
-        </div>
-        <div class="card bg-light">
-          <div class="card-body">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" id="arkivskaber-tab" data-toggle="tab" href="#arkivskaber" role="tab"
-                  aria-controls="arkivskaber" href="#">Arkivskaber</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="heuristiskeenhed-tab" data-toggle="tab" href="#heuristiskeenhed" role="tab"
-                  aria-controls="heuristiskeenhed" href="#">Heuristiske enheder</a>
-              </li>
-            </ul>
-            <div class="tab-content p-lg-3" id="myTabContent">
-              <div class="tab-pane show active" id="arkivskaber" role="tabpanel" aria-labelledby="arkivskaber-tab">
-                yes
-              </div>
-              <div class="tab-pane" id="heuristiskeenhed" role="tabpanel" aria-labelledby="heuristiskeenhed-tab">
-                heuristiskeenheder
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse mr-auto justify-content-end"
+        id="navbarNavDropdown"
+      >
+        <ul class="navbar-nav mr-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Om Daisy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row" style="height:100vh;">
+        <div class="col-10 mt-3 col-centered">
+          <div class="card bg-light">
+            <div class="card-body">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="arkivskaber-tab"
+                    data-toggle="tab"
+                    href="#arkivskaber"
+                    role="tab"
+                    aria-controls="arkivskaber"
+                    href="#"
+                    >Arkivskaber</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="heuristiskenhed-tab"
+                    data-toggle="tab"
+                    href="#heuristiskenhed"
+                    role="tab"
+                    aria-controls="heuristiskenhed"
+                    href="#"
+                    >Heuristisk enhed</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="arkiveringsversion-tab"
+                    data-toggle="tab"
+                    href="#arkiveringsversion"
+                    role="tab"
+                    aria-controls="arkiveringsversion"
+                    href="#"
+                    >Arkiveringsversion</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="eksemplar-tab"
+                    data-toggle="tab"
+                    href="#eksemplar"
+                    role="tab"
+                    aria-controls="eksemplar"
+                    href="#"
+                    >Eksemplar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="arbejdsopgaver-tab"
+                    data-toggle="tab"
+                    href="#arbejdsopgaver"
+                    role="tab"
+                    aria-controls="arbejdsopgaver"
+                    href="#"
+                    >Arbejdsopgaver</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content mt-4" id="myTabContent">
+                <div
+                  class="tab-pane show active"
+                  id="arkivskaber"
+                  role="tabpanel"
+                  aria-labelledby="arkivskaber-tab"
+                >
+                  <form action="/arkivskaber.html">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="navn">Navn</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="Frederiksberg Politi"
+                            id="navn"
+                          />
+                          <small>
+                            <a
+                              data-toggle="collapse"
+                              href="#collapseProviens"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseProviens"
+                            >
+                              Søg på Proviens-nr.</a
+                            >
+                          </small>
+                        </div>
+                        <div class="col-sm-3">
+                          <label for="praefiks">Præfiks</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="praefiks"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="til">Til</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="til"
+                            value="1972"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="fra">Fra</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="fra"
+                            value="1986"
+                          />
+                        </div>
+                        <div class="col-sm-1 mt-4">
+                          <button type="submit" class="btn btn-primary search">
+                            Søg
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row collapse" id="collapseProviens">
+                        <div class="col-sm-4 mb-3">
+                          <label for="proviensnr">Proviens-nr.</label>
+                          <input type="text" class="form-control" id="enr" />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div
+                  class="tab-pane p-lg-3"
+                  id="heuristiskenhed"
+                  role="tabpanel"
+                  aria-labelledby="heuristiskeenhed-tab"
+                >
+                  <form>
+                    <div class="container-fluid">
+                      <label for="navn">Navn</label>
+                      <input
+                        type="text"
+                        class="form-control form-control-lg mb-3"
+                        id="navn"
+                      />
+                      <div class="row">
+                        <div class="col-sm-6 mb-3">
+                          <label for="fra">Fra</label>
+                          <input type="text" class="form-control" id="fra" />
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <label for="til">Til</label>
+                          <input type="text" class="form-control" id="til" />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-6 mb-3">
+                          <label for="type">Type</label>
+                          <input type="text" class="form-control" id="type" />
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <label for="enr">E-nr.</label>
+                          <input type="text" class="form-control" id="enr" />
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-lg btn-primary">
+                        Søg
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane p-lg-3"
+                  id="arkiveringsversion"
+                  role="tabpanel"
+                  aria-labelledby="arkiveringsversion-tab"
+                >
+                  <form>
+                    <div class="container-fluid">
+                      <label for="avnr">AV nr.</label>
+                      <input
+                        type="text"
+                        class="form-control form-control-lg mb-3"
+                        id="avnr"
+                      />
+                      <div class="row mb-3">
+                        <div class="col-sm-6 mb-3">
+                          <label for="fra">Fra</label>
+                          <input type="text" class="form-control" id="fra" />
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <label for="til">Til</label>
+                          <input type="text" class="form-control" id="til" />
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Søg
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane p-lg-3"
+                  id="eksemplar"
+                  role="tabpanel"
+                  aria-labelledby="eksemplar-tab"
+                >
+                  <form>
+                    <div class="container-fluid">
+                      <div class="row mb-3">
+                        <div class="col-sm-6 mb-3">
+                          <label for="formaal">Formål</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="formaal"
+                          />
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <label for="medie">Medie</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="medie"
+                          />
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Søg
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane p-lg-3"
+                  id="arbejdsopgaver"
+                  role="tabpanel"
+                  aria-labelledby="arbejdsopgaver-tab"
+                >
+                  <form>
+                    <div class="container-fluid">
+                      <div class="row mb-3">
+                        <div class="col-sm-6 mb-3">
+                          <label for="arbejdsopgave">Arbejdsopgave</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="arbejdsopgave"
+                          />
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <label for="navn">Navn</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="navn"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-6 mb-3">
+                          <label for="praefiks">Præfiks</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="praefiks"
+                          />
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <label for="proviensnr">Proviens-nr</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="proviensnr"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-6 mb-3">
+                          <label for="fra">Fra</label>
+                          <input type="text" class="form-control" id="fra" />
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                          <label for="til">Til</label>
+                          <input type="text" class="form-control" id="til" />
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Søg
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
+          <table
+            id="search"
+            class="table table-striped table-hover mt-5 pl-lg-3 pr-lg-3"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Arkivskaber</th>
+                <th scope="col">Præfiks</th>
+                <th scope="col">Fra</th>
+                <th scope="col">Til</th>
+                <th scope="col">Proviensnr</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frederiksberg Politi</td>
+                <td>
+                  FRB Politi
+                </td>
+                <td>1972</td>
+                <td>1988</td>
+                <td>12415DJJ</td>
+              </tr>
+              <tr>
+                <td>Frederiksberg Politi</td>
+                <td>
+                  FRB Politi
+                </td>
+                <td>1972</td>
+                <td>1988</td>
+                <td>12415DJJ</td>
+              </tr>
+              <tr>
+                <td>Frederiksberg Politi</td>
+                <td>
+                  FRB Politi
+                </td>
+                <td>1972</td>
+                <td>1988</td>
+                <td>12415DJJ</td>
+              </tr>
+              <tr>
+                <td>Frederiksberg Politi</td>
+                <td>
+                  FRB Politi
+                </td>
+                <td>1972</td>
+                <td>1988</td>
+                <td>12415DJJ</td>
+              </tr>
+              <tr>
+                <td>Frederiksberg Politi</td>
+                <td>
+                  FRB Politi
+                </td>
+                <td>1972</td>
+                <td>1988</td>
+                <td>12415DJJ</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  </div>
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css" />
-  <script>
-    $(document).ready(function () {
-      $("#search").DataTable({
-        paging: false,
-        search: false,
-        info: false,
-        searching: false
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css"
+    />
+    <script>
+      $(document).ready(function() {
+        $("#search").DataTable({
+          paging: false,
+          search: false,
+          info: false,
+          searching: false
+        });
+        $(".clickable-row").click(function() {
+          window.location = $(this).data("href");
+        });
       });
-      $(".clickable-row").click(function () {
-        window.location = $(this).data("href");
-      });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

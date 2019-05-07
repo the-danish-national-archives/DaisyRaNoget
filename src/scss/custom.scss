@@ -20,9 +20,9 @@ $nav-tabs-link-active-border-color: #1a232a #1a232a $nav-tabs-link-active-bg
   #1a232a;
 
 $table-border-color: #ced4da;
-$table-accent-bg: rgba(#1a232a, 0.03);
+$table-accent-bg: #f8f9fa;
 
-$input-placeholder-color: #bbb;
+$input-placeholder-color: #848484;
 
 $spacer: 1rem !default;
 // prettier-ignore
@@ -72,16 +72,40 @@ $spacers: (
   letter-spacing: -0.5px;
 }
 
+label {
+  margin-bottom: 0.2rem;
+}
+
 table.dataTable thead .sorting_asc {
   background: url("../images/up.svg") no-repeat center left !important;
+  border-bottom: 0 !important;
 }
 
 table.dataTable thead .sorting_desc {
   background: url("../images/down.svg") no-repeat center left !important;
+  border-bottom: 0 !important;
 }
 
 table.dataTable thead .sorting {
   background: url("../images/both.svg") no-repeat center left !important;
+  border-bottom: 0 !important;
+}
+
+table.dataTable thead td,
+table.dataTable tbody td,
+table.dataTable tfoot td,
+table.dataTable.no-footer {
+  border: none !important;
+}
+
+table.dataTable thead tr th,
+table.dataTable tbody th,
+table.dataTable tbody td {
+  padding: 16px 18px !important;
+}
+
+table.dataTable thead tr th {
+  padding: 16px 20px !important;
 }
 
 .col-centered {
