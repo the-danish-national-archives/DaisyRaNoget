@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/custom.css" />
+  <title>Arkivskaber</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">
+      <img src="src/images/logo.svg" alt="" class="ml-3 mr-3" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/arkivskaber.html">Arkivskaber og heuristiskeenheder</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Arkivserier og eksemplarer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Arbejdsopgaver</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Om Daisy</a>
+        </li>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row" style="height:100vh;">
+      <div class="col-9 p-lg-5 col-centered">
+        <div class="row">
+        <div class="col-6">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/">Søgeresultat</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Arkivskaber og heuristiskeenheder</li>
+                    </ol>
+                  </nav>
+        <h1 class="font-weight-extrabold">Frederiksberg Politi</h1>
+        <p class="lead text-secondary pb-lg-3">
+            Retten på Frederiksberg
+        </p>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Opret ny
+            </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Arkivskaber</a>
+                <a class="dropdown-item" href="#">Heuristiskeenhed</a>
+              </div>
+            </div>
+        </div>
+        <div class="card bg-light">
+          <div class="card-body">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" id="arkivskaber-tab" data-toggle="tab" href="#arkivskaber" role="tab"
+                  aria-controls="arkivskaber" href="#">Arkivskaber</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="heuristiskeenhed-tab" data-toggle="tab" href="#heuristiskeenhed" role="tab"
+                  aria-controls="heuristiskeenhed" href="#">Heuristiske enheder</a>
+              </li>
+            </ul>
+            <div class="tab-content p-lg-3" id="myTabContent">
+              <div class="tab-pane show active" id="arkivskaber" role="tabpanel" aria-labelledby="arkivskaber-tab">
+                yes
+              </div>
+              <div class="tab-pane" id="heuristiskeenhed" role="tabpanel" aria-labelledby="heuristiskeenhed-tab">
+                heuristiskeenheder
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css" />
+  <script>
+    $(document).ready(function () {
+      $("#search").DataTable({
+        paging: false,
+        search: false,
+        info: false,
+        searching: false
+      });
+      $(".clickable-row").click(function () {
+        window.location = $(this).data("href");
+      });
+    });
+  </script>
+</body>
+
+</html>
