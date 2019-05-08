@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/custom.css" />
+    <title>Daisy RA</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="src/images/logo.png" alt="" class="ml-3 mr-3" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse mr-auto justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav mr-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Om Daisy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row" style="height:100vh;">
+        <div class="col-10 p-lg-3 mt-5 col-centered">
+          <h1 class="font-weight-extrabold">Velkommen</h1>
+          <p class="lead mb-5 text-secondary">
+            Vælg hvad du vil søge efter i Rigsarkivet.
+          </p>
+          <div class="card bg-light">
+            <div class="card-body">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="arkivskaber-tab"
+                    data-toggle="tab"
+                    href="#arkivskaber"
+                    role="tab"
+                    aria-controls="arkivskaber"
+                    href="#"
+                    >Arkivskaber</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="heuristiskenhed-tab"
+                    data-toggle="tab"
+                    href="#heuristiskenhed"
+                    role="tab"
+                    aria-controls="heuristiskenhed"
+                    href="#"
+                    >Heuristisk enhed</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="arkiveringsversion-tab"
+                    data-toggle="tab"
+                    href="#arkiveringsversion"
+                    role="tab"
+                    aria-controls="arkiveringsversion"
+                    href="#"
+                    >Arkiveringsversion</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="eksemplar-tab"
+                    data-toggle="tab"
+                    href="#eksemplar"
+                    role="tab"
+                    aria-controls="eksemplar"
+                    href="#"
+                    >Eksemplar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="arbejdsopgaver-tab"
+                    data-toggle="tab"
+                    href="#arbejdsopgaver"
+                    role="tab"
+                    aria-controls="arbejdsopgaver"
+                    href="#"
+                    >Arbejdsopgaver</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content p-lg-3 mt-4" id="myTabContent">
+                <div
+                  class="tab-pane show active"
+                  id="arkivskaber"
+                  role="tabpanel"
+                  aria-labelledby="arkivskaber-tab"
+                >
+                  <!-- arkivskaber start -->
+                  <form action="/arkivskaber.html">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="navn">Navn</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="navn"
+                          />
+                          <small>
+                            <a
+                              data-toggle="collapse"
+                              href="#collapseProviens"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseProviens"
+                            >
+                              Søg på Proviens-nr.</a
+                            >
+                          </small>
+                        </div>
+                        <div class="col-sm-3">
+                          <label for="praefiks">Præfiks</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="praefiks"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="til">Til</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="til"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="fra">Fra</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="fra"
+                          />
+                        </div>
+                        <div class="col-sm-1 mt-4">
+                          <button
+                            type="submit"
+                            class="btn btn-lg btn-primary search"
+                          >
+                            Søg
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row collapse" id="collapseProviens">
+                        <div class="col-sm-4 mb-3">
+                          <label for="proviensnr">Proviens-nr.</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="enr"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="m-3 mt-5">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary btn-sm"
+                    >
+                      + Opret ny arkivskaber
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane"
+                  id="heuristiskenhed"
+                  role="tabpanel"
+                  aria-labelledby="heuristiskeenhed-tab"
+                >
+                  <!-- heuristiskeenhed start -->
+                  <form>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="navn">Navn</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="navn"
+                          />
+                          <small>
+                            <a
+                              data-toggle="collapse"
+                              href="#collapseEnr"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseEnr"
+                            >
+                              Søg på E-nr.</a
+                            >
+                          </small>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <label for="type">Type</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="type"
+                          />
+                        </div>
+
+                        <div class="col-sm-2">
+                          <label for="fra">Fra</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="fra"
+                          />
+                        </div>
+
+                        <div class="col-sm-2">
+                          <label for="til">Til</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="til"
+                          />
+                        </div>
+
+                        <div class="col-sm-1 mt-4">
+                          <button type="submit" class="btn btn-lg btn-primary">
+                            Søg
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="row collapse" id="collapseEnr">
+                        <div class="col-sm-4">
+                          <label for="enr">E-nr.</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="enr"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane"
+                  id="arkiveringsversion"
+                  role="tabpanel"
+                  aria-labelledby="arkiveringsversion-tab"
+                >
+                  <!-- arkiveringsversion -->
+                  <form>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="avnr">AV nr.</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg mb-3"
+                            id="avnr"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="fra">Fra</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="fra"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="til">Til</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="til"
+                          />
+                        </div>
+                        <div class="col-sm-1 mt-4">
+                          <button type="submit" class="btn btn-primary btn-lg">
+                            Søg
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane"
+                  id="eksemplar"
+                  role="tabpanel"
+                  aria-labelledby="eksemplar-tab"
+                >
+                  <!-- eksemplar -->
+                  <form>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <label for="formaal">Formål</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="formaal"
+                          />
+                        </div>
+                        <div class="col-sm-4">
+                          <label for="medie">Medie</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="medie"
+                          />
+                        </div>
+                        <div class="col-sm-1 mt-4">
+                          <button type="submit" class="btn btn-primary btn-lg">
+                            Søg
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane"
+                  id="arbejdsopgaver"
+                  role="tabpanel"
+                  aria-labelledby="arbejdsopgaver-tab"
+                >
+                  <!-- arbejdsopgaver -->
+
+                  <form>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <label for="arbejdsopgave">Arbejdsopgave</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="arbejdsopgave"
+                          />
+                          <small>
+                            <a
+                              data-toggle="collapse"
+                              href="#collapseProviensNr"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseProviensNr"
+                            >
+                              Søg på Proviens-nr.</a
+                            >
+                          </small>
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="navn">Navn</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="navn"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="praefiks">Præfiks</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="praefiks"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="fra">Fra</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="fra"
+                          />
+                        </div>
+                        <div class="col-sm-2">
+                          <label for="til">Til</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="til"
+                          />
+                        </div>
+                        <div class="col-sm-1 mt-4">
+                          <button type="submit" class="btn btn-primary btn-lg">
+                            Søg
+                          </button>
+                        </div>
+                      </div>
+                      <div class="row collapse" id="collapseProviensNr">
+                        <div class="col-sm-4 mb-3">
+                          <label for="proviensnr-ao">Proviens-nr.</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            id="proviensnr-ao"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-3 mt-5">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary btn-sm"
+                      >
+                        + Opret ny arbejdsopgave
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css"
+    />
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
