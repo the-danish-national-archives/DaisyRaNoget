@@ -1,20 +1,15 @@
 $(document).ready(function() {
-  $("#search").DataTable({
-    paging: false,
-    search: false,
-    info: false,
-    searching: false
-  });
+  // clickable rows
   $(".clickable-row").click(function() {
     window.location = $(this).data("href");
   });
-  var spanSorting =
-      '<span class="arrow-hack sort">&nbsp;&nbsp;&nbsp;&nbsp;</span>',
-    spanAsc = '<span class="arrow-hack asc">&nbsp;&nbsp;&nbsp;&nbsp;</span>',
-    spanDesc = '<span class="arrow-hack desc">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
+  // Move datatables sorting arrows
+  var spanSorting = '<span class="arrow-hack sort">&nbsp;&nbsp;&nbsp;</span>',
+    spanAsc = '<span class="arrow-hack asc">&nbsp;&nbsp;&nbsp;</span>',
+    spanDesc = '<span class="arrow-hack desc">&nbsp;&nbsp;&nbsp;</span>';
 
-  $("#search").on("click", "th", function() {
-    $("#search thead th").each(function(i, th) {
+  $(".tabledisplay").on("click", "th", function() {
+    $(".tabledisplay thead th").each(function(i, th) {
       $(th)
         .find(".arrow-hack")
         .remove();
@@ -33,12 +28,30 @@ $(document).ready(function() {
       }
     });
   });
-  $("#search th")
+
+  $(".tabledisplay th")
     .first()
     .click()
     .click();
-  var hash = window.location.hash;
 
+  // Make tabs open direcrly on target page
+  var hash = window.location.hash;
   if (hash != "") $('#tabs a[href="' + hash + '"]').tab("show");
   else $("#tabs a:first").tab("show");
+
+  //Activate datatables
+  $(".tabledisplay").DataTable({
+    paging: false,
+    info: false,
+    searching: true,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true,
+    scrollY: 270,
+    language: {
+      search: ""
+    }
+  });
+
+  $(".dataTables_filter input").attr("placeholder", "Søg");
 });

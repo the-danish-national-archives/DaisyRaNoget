@@ -47,13 +47,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Arkiveringsversion</a>
+              <a class="nav-link" href="/index.html">Arkiveringsvers.</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/index.html">Eksemplar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Arbejdsopgaver</a>
+              <a class="nav-link" href="/index.html">Opgave</a>
             </li>
           </ul>
         </div>
@@ -67,7 +67,7 @@
               <!-- arkivskaber start -->
               <form action="/arkivskaber.html">
                 <div class="container-fluid">
-                  <div class="row">
+                  <div class="row mb-3">
                     <div class="col-sm-4">
                       <label for="navn">Navn</label>
                       <input
@@ -76,18 +76,6 @@
                         value="Frederiksberg Politi"
                         id="navn"
                       />
-                      <small>
-                        <a
-                          data-toggle="collapse"
-                          href="#collapseProviens"
-                          role="button"
-                          aria-expanded="false"
-                          aria-controls="collapseProviens"
-                          class="text-white"
-                        >
-                          Søg på Proviens-nr.</a
-                        >
-                      </small>
                     </div>
                     <div class="col-sm-3">
                       <label for="praefiks">Præfiks</label>
@@ -115,11 +103,6 @@
                         id="fra"
                       />
                     </div>
-                    <div class="col-sm-1 mt-4">
-                      <button type="submit" class="btn btn-primary search">
-                        Søg
-                      </button>
-                    </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-4 mb-3">
@@ -129,6 +112,11 @@
                         class="form-control bg-light"
                         id="enr"
                       />
+                    </div>
+                    <div class="col-sm-1 mt-4">
+                      <button type="submit" class="btn btn-primary search">
+                        Søg
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -140,9 +128,24 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-10 mt-3 col-centered">
+        <div class="col-10 col-centered">
           <div class="card bg-white mt-3">
-            <table id="search" class="table table-hover table-striped">
+            <div class="card-body p-lg-3">
+              <h4 class="m-0">
+                <span class="font-weight-bold">33</span> resultater
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 col-centered">
+          <div class="card bg-white mt-3">
+            <table
+              id=""
+              width="100%"
+              class="table tabledisplay table-hover table-striped"
+            >
               <thead>
                 <tr>
                   <th scope="col">Arkivskaber</th>
@@ -153,8 +156,8 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="clickable-row">
-                  <td>Frederiksberg Politi</td>
+                <tr class="clickable-row" data-href="/arkivskaber-open.html">
+                  <td>Frederiksberg Pol</td>
                   <td>
                     FRB Politi
                   </td>

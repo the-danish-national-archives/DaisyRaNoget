@@ -47,6 +47,7 @@ $spacers: (
 @import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/breadcrumb";
 @import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/badge";
 @import "../../node_modules/bootstrap/scss/card";
 @import "../../node_modules/bootstrap/scss/type";
 @import "../../node_modules/bootstrap/scss/navbar";
@@ -68,6 +69,24 @@ $spacers: (
   border-top: 4px solid transparent;
 }
 
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-item .nav-link:hover {
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+.nav-tabs .nav-link.active:hover,
+.nav-tabs .nav-item.show .nav-link:hover {
+  border-top: 4px solid #1a232a;
+  border-right: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+}
+
+.nav-tabs > li > a {
+  margin-right: 2px;
+}
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   font-weight: 600;
@@ -75,16 +94,22 @@ $spacers: (
   border-top: 4px solid #1a232a;
 }
 
-.nav-tabs {
-  border-bottom: 1px solid #dfdfdf !important;
-}
-
 .card.special {
   border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .b-top {
-  border-top: 8px solid #1a232a;
+  border-top: 4px solid #1a232a;
+}
+
+.top-sign {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #848484;
 }
 
 .font-weight-extrabold {
@@ -114,20 +139,30 @@ table.dataTable thead .sorting {
   border-top: 0 !important;
 }
 
-// table.dataTable thead td,
-// table.dataTable tbody td,
-// table.dataTable tfoot td,
-// table.dataTable.no-footer {
-// }
-
-table.dataTable.no-footer {
+table.dataTable.no-footer,
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
   border-bottom: 1px solid #ccc !important;
 }
 
 table.dataTable thead tr th,
 table.dataTable tbody th,
 table.dataTable tbody td {
-  padding: 16px 18px !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+
+.dataTables_paginate .paginate_button {
+  padding: 6px 9px !important;
+  background: none !important;
+  color: #1a232a !important;
+  border: 1px solid #1a232a !important;
+  border-radius: 4px !important;
+  margin: 12px 6px 12px 0px !important;
+}
+
+.dataTables_paginate .paginate_button.current {
+  background: #1a232a !important;
+  color: #fff !important;
 }
 
 .col-centered {
@@ -150,4 +185,29 @@ span.desc {
 }
 span.sort {
   background: url("../images/both.svg") no-repeat center right !important;
+}
+
+.tabledisplay {
+  overscroll-behavior: contain;
+}
+
+.dataTables_filter {
+  float: left !important;
+  padding-left: 12px !important;
+  padding-top: 6px !important;
+  margin-top: 6px;
+  display: block;
+}
+
+.dataTables_filter input {
+  height: 40px;
+  width: 240px !important;
+  padding-right: 12px;
+  text-indent: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #495057;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
 }
