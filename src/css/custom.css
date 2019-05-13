@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -865,7 +866,7 @@ template {
     display: inline-block;
     padding-right: 0.5rem;
     color: #6c757d;
-    content: "/"; }
+    content: "»"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline; }
@@ -6700,7 +6701,9 @@ textarea.form-control {
   fill: #fff; }
 
 .badge {
-  font-size: 16px; }
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400; }
 
 .font-weight-extrabold {
   font-weight: 900;
@@ -6784,6 +6787,6 @@ span.sort {
   font-size: 16px;
   font-weight: 400;
   color: #495057;
-  background-color: #f8f9fa;
+  background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem; }

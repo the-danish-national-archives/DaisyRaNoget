@@ -10,13 +10,11 @@ $font-family-base: "Source Sans Pro", sans-serif;
 
 $breadcrumb-bg: transparent;
 $breadcrumb-padding-x: 0.4rem;
+$breadcrumb-divider: "»";
 
 $navbar-padding-x: 0rem;
 
 $nav-tabs-border-color: #ccc;
-// $nav-tabs-link-active-color: #fff;
-// $nav-tabs-link-active-border-color: #1a232a #1a232a $nav-tabs-link-active-bg
-//   #1a232a;
 
 $table-border-color: #ced4da;
 $table-accent-bg: #f8f9fa;
@@ -114,6 +112,8 @@ $spacers: (
 
 .badge {
   font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .font-weight-extrabold {
@@ -212,7 +212,7 @@ span.sort {
   font-size: 16px;
   font-weight: 400;
   color: #495057;
-  background-color: #f8f9fa;
+  background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
 }
