@@ -39,10 +39,10 @@
         <div class="col-10 mt-5 col-centered">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Arkivskaber</a>
+              <a class="nav-link" href="/">Arkivskaber</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/index.html#heuristiskenhed"
+              <a class="nav-link active" href="/index.html#heuristiskenhed"
                 >Heuristisk enhed</a
               >
             </li>
@@ -71,18 +71,21 @@
                   >&laquo; Tilbage til søgning</a
                 >
               </p>
-              <span class="badge badge-pill badge-secondary mt-5 mb-4"
-                >Arkivskaber</span
+
+              <span class="badge badge-pill badge-success mt-5 mb-4"
+                >Heuristisk Enhed</span
               >
-              <h1 class="font-weight-extrabold">Frederiksberg Politi</h1>
+
+              <h1 class="font-weight-extrabold">Ordensmagt Røverier</h1>
               <h3 class="text-secondary">Ordenspolitiet, 1919 - 2006</h3>
               <p class="mt-4 mb-1 text-secondary">
-                Arkivlovstype: Statslig
+                Type: Komponent
               </p>
-              <p class="mb-1 text-secondary">Beskrivelsesniveau: Ja</p>
-              <p class="text-secondary">Kladde: Ja</p>
+              <p class="mb-1 text-secondary">Undertype: Ja</p>
+              <p class="mb-1 text-secondary">E-nummer: PH124014</p>
+              <p class="text-secondary">Beskrivelsesniveau: 2. niveau</p>
               <button
-                class="btn btn-outline-primary d-flex align-items-center"
+                class="btn btn-outline-primary mt-3 d-flex align-items-center"
                 data-toggle="modal"
                 data-target="#redigerArkivskaber"
               >
@@ -98,7 +101,6 @@
                   <g transform="translate(-384.000000, -192.000000)">
                     <path
                       d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
-                      id="Triangle 313"
                     />
                   </g>
                 </svg>
@@ -120,13 +122,13 @@
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    id="heuristiskeenheder-tab"
+                    id="tider-tab"
                     data-toggle="tab"
-                    href="#heuristiskeenheder"
+                    href="#tider"
                     role="tab"
-                    aria-controls="heuristiskeenheder"
+                    aria-controls="tider"
                     href="#"
-                    >Heuristiske enheder</a
+                    >Tider</a
                   >
                 </li>
                 <li class="nav-item">
@@ -315,74 +317,21 @@
                   </div>
                 </div>
 
-                <!-- Heuristiske enheder -->
+                <!-- Tider -->
                 <div
                   class="tab-pane"
-                  id="heuristiskeenheder"
+                  id="tider"
                   role="tabpanel"
-                  aria-labelledby="heuristiskeenheder-tab"
+                  aria-labelledby="tider-tab"
                 >
                   <div class="container-fluid">
                     <div class="row mb-3">
                       <div class="col-sm-12 p-0">
                         <div class="card bg-white mt-3">
-                          <div class="card-body p-0">
+                          <div class="card-body">
                             <h4 class="font-weight-bold ml-3 mt-3">
-                              Heuristiske enheder
+                              Tider
                             </h4>
-                            <div class="dataTables_scroll">
-                              <table
-                                id=""
-                                width="100%"
-                                class="table tabledisplay table-hover mb-0 table-striped"
-                              >
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Navn</th>
-                                    <th scope="col">Sorteringsfelt</th>
-                                    <th scope="col">Yderår</th>
-                                    <th scope="col">Type</th>
-                                    <th scope="col">Undertype</th>
-                                    <th scope="col">E-nummer</th>
-                                    <th scope="col">Beskrivelsesniveau</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/heuristikenhed-open.html"
-                                  >
-                                    <td>Ordensmagt Røverier</td>
-                                    <td>
-                                      sh001
-                                    </td>
-                                    <td>1987-1988</td>
-                                    <td>Komponent</td>
-                                    <td>ut</td>
-                                    <td>0</td>
-                                    <td>2. niveau</td>
-                                  </tr>
-                                  <tr class="clickable-row">
-                                    <td>Ordensmagt Røverier</td>
-                                    <td>
-                                      sh001
-                                    </td>
-                                    <td>1987-1988</td>
-                                    <td>Komponent</td>
-                                    <td>ut</td>
-                                    <td>0</td>
-                                    <td>2. niveau</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <button
-                              class="btn btn-outline-primary ml-3 mt-3 mb-3"
-                              data-toggle="modal"
-                              data-target="#notarget"
-                            >
-                              + Ny HE
-                            </button>
                           </div>
                         </div>
                       </div>
@@ -413,30 +362,8 @@
                                   din præsentation og vil nu udskrive
                                   uddelingskopier til dit publikum.
                                 </p>
-                                <button
-                                  class="btn btn-outline-primary d-flex align-items-center"
-                                  data-toggle="modal"
-                                  data-target="#redigerArkivskaber"
-                                >
-                                  <svg
-                                    height="16px"
-                                    version="1.1"
-                                    viewBox="0 0 16 16"
-                                    class="mr-2"
-                                    width="16px"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                  >
-                                    <g
-                                      transform="translate(-384.000000, -192.000000)"
-                                    >
-                                      <path
-                                        d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
-                                        id="Triangle 313"
-                                      />
-                                    </g>
-                                  </svg>
-                                  <span>Rediger</span>
+                                <button class="btn btn-outline-primary">
+                                  Rediger
                                 </button>
                               </div>
                               <div class="col-sm-6">
@@ -449,17 +376,9 @@
                                   din præsentation og vil nu udskrive
                                   uddelingskopier til dit publikum.
                                 </p>
-              <button class="btn btn-outline-primary d-flex align-items-center" data-toggle="modal" data-target="#redigerArkivskaber">
-                <svg height="16px" version="1.1" viewBox="0 0 16 16" class="mr-2" width="16px" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g transform="translate(-384.000000, -192.000000)">
-                    <path
-                      d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
-                      id="Triangle 313" />
-                  </g>
-                </svg>
-                <span>Rediger</span>
-              </button>
+                                <button class="btn btn-outline-primary">
+                                  Rediger
+                                </button>
                               </div>
                             </div>
                           </div>

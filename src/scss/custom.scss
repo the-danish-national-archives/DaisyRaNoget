@@ -1,6 +1,6 @@
 $theme-colors: (
   "primary": #1a232a,
-  "secondary": #848484,
+  "secondary": #686868,
   "success": #309188,
   "danger": #c84343
 );
@@ -104,12 +104,16 @@ $spacers: (
   border-top: 4px solid #1a232a;
 }
 
-.top-sign {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.btn-outline-primary svg {
+  fill: #1a232a;
+}
+
+.btn-outline-primary:hover svg {
+  fill: #fff;
+}
+
+.badge {
   font-size: 16px;
-  font-weight: 700;
-  color: #848484;
 }
 
 .font-weight-extrabold {
@@ -187,7 +191,8 @@ span.sort {
   background: url("../images/both.svg") no-repeat center right !important;
 }
 
-.tabledisplay {
+.tabledisplay,
+#search {
   overscroll-behavior: contain;
 }
 

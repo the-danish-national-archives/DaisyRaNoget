@@ -36,7 +36,7 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-10 mt-3 col-centered">
+        <div class="col-10 mt-5 col-centered">
           <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link active" href="#">Arkivskaber</a>
@@ -106,11 +106,11 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-4 mb-3">
-                      <label for="proviensnr">Proviens-nr.</label>
+                      <label for="proveniensnr">Proveniens-nr.</label>
                       <input
                         type="text"
                         class="form-control bg-light"
-                        id="enr"
+                        id="proveniensnr"
                       />
                     </div>
                     <div class="col-sm-1 mt-4">
@@ -129,71 +129,70 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-10 col-centered">
-          <div class="card bg-white mt-3">
-            <div class="card-body p-lg-3">
-              <h4 class="m-0">
+          <div class="card bg-white mt-3 p-lg-3">
+            <div class="card-body">
+              <h4 class="mb-4 ml-1">
                 <span class="font-weight-bold">33</span> resultater
               </h4>
+              <div class="card">
+                <table
+                  id="search"
+                  width="100%"
+                  class="table table-hover table-striped"
+                >
+                  <thead>
+                    <tr>
+                      <th scope="col">Arkivskaber</th>
+                      <th scope="col">Præfiks</th>
+                      <th scope="col">Fra</th>
+                      <th scope="col">Til</th>
+                      <th scope="col">Proviensnr</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                      class="clickable-row"
+                      data-href="/arkivskaber-open.html"
+                    >
+                      <td>Frederiksberg Pol</td>
+                      <td>
+                        FRB Politi
+                      </td>
+                      <td>1972</td>
+                      <td>1988</td>
+                      <td>12415DJJ</td>
+                    </tr>
+                    <tr class="clickable-row">
+                      <td>Frederiksberg Politi</td>
+                      <td>
+                        FRB Politi
+                      </td>
+                      <td>1972</td>
+                      <td>1988</td>
+                      <td>12415DJJ</td>
+                    </tr>
+                    <tr class="clickable-row">
+                      <td>Frederiksberg Politi</td>
+                      <td>
+                        FRB Politi
+                      </td>
+                      <td>1972</td>
+                      <td>1988</td>
+                      <td>12415DJJ</td>
+                    </tr>
+                    <tr class="clickable-row">
+                      <td>Frederiksberg Politi</td>
+                      <td>
+                        FRB Politi
+                      </td>
+                      <td>1972</td>
+                      <td>1988</td>
+                      <td>12415DJJ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-10 col-centered">
-          <div class="card bg-white mt-3">
-            <table
-              id=""
-              width="100%"
-              class="table tabledisplay table-hover table-striped"
-            >
-              <thead>
-                <tr>
-                  <th scope="col">Arkivskaber</th>
-                  <th scope="col">Præfiks</th>
-                  <th scope="col">Fra</th>
-                  <th scope="col">Til</th>
-                  <th scope="col">Proviensnr</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="clickable-row" data-href="/arkivskaber-open.html">
-                  <td>Frederiksberg Pol</td>
-                  <td>
-                    FRB Politi
-                  </td>
-                  <td>1972</td>
-                  <td>1988</td>
-                  <td>12415DJJ</td>
-                </tr>
-                <tr class="clickable-row">
-                  <td>Frederiksberg Politi</td>
-                  <td>
-                    FRB Politi
-                  </td>
-                  <td>1972</td>
-                  <td>1988</td>
-                  <td>12415DJJ</td>
-                </tr>
-                <tr class="clickable-row">
-                  <td>Frederiksberg Politi</td>
-                  <td>
-                    FRB Politi
-                  </td>
-                  <td>1972</td>
-                  <td>1988</td>
-                  <td>12415DJJ</td>
-                </tr>
-                <tr class="clickable-row">
-                  <td>Frederiksberg Politi</td>
-                  <td>
-                    FRB Politi
-                  </td>
-                  <td>1972</td>
-                  <td>1988</td>
-                  <td>12415DJJ</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>

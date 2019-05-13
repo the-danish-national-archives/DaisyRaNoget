@@ -8,8 +8,8 @@ $(document).ready(function() {
     spanAsc = '<span class="arrow-hack asc">&nbsp;&nbsp;&nbsp;</span>',
     spanDesc = '<span class="arrow-hack desc">&nbsp;&nbsp;&nbsp;</span>';
 
-  $(".tabledisplay").on("click", "th", function() {
-    $(".tabledisplay thead th").each(function(i, th) {
+  $(".tabledisplay, #search").on("click", "th", function() {
+    $(".tabledisplay thead th, #search thead th").each(function(i, th) {
       $(th)
         .find(".arrow-hack")
         .remove();
@@ -29,7 +29,7 @@ $(document).ready(function() {
     });
   });
 
-  $(".tabledisplay th")
+  $(".tabledisplay th, #search th")
     .first()
     .click()
     .click();
@@ -53,5 +53,18 @@ $(document).ready(function() {
     }
   });
 
+  $("#search").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
   $(".dataTables_filter input").attr("placeholder", "Søg");
+
+  $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
+    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+  });
 });
