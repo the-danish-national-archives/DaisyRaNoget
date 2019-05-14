@@ -40,9 +40,10 @@
     </div>
     <div class="container-fluid">
       <div class="row" style="height:100vh;">
-        <div class="col-5 col-centered">
-          <img src="src/images/logo.png" alt="" class="ml-3 mr-3 mb-5" />
-
+        <div class="col-6 col-centered">
+          <a href="/">
+            <img src="src/images/logo.png" alt="" class="ml-3 mr-3 mb-5" />
+          </a>
           <ul id="tabs" class="nav nav-tabs">
             <li class="nav-item">
               <a
@@ -90,6 +91,18 @@
                 aria-controls="eksemplar"
                 href="#"
                 >Eksemplar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="magasinenhed-tab"
+                data-toggle="tab"
+                href="#magasinenhed"
+                role="tab"
+                aria-controls="magasinenhed"
+                href="#"
+                >Magasinenhed</a
               >
             </li>
             <li class="nav-item">
@@ -402,6 +415,61 @@
                 </div>
                 <div
                   class="tab-pane"
+                  id="magasinenhed"
+                  role="tabpanel"
+                  aria-labelledby="magasinenhed-tab"
+                >
+                  <!-- Magasin enhed -->
+                  <form>
+                    <div class="container-fluid">
+                      <div class="row mb-3">
+                        <div class="col-sm-6">
+                          <label for="formaal">Formål</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bg-light"
+                            id="formaal"
+                          />
+                        </div>
+
+                        <div class="col-sm-6">
+                          <label for="medie">Medie</label>
+                          <input
+                            type="text"
+                            class="form-control form-control-lg bg-light"
+                            id="medie"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-12 mt-4 d-flex align-items-center">
+                          <button
+                            type="submit"
+                            class="btn btn-lg btn-primary search"
+                          >
+                            <svg
+                              height="22"
+                              viewBox="0 0 24 24"
+                              width="22"
+                              class="mr-1"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill="#fff"
+                                class="heroicon-ui"
+                                d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                              />
+                            </svg>
+                            <span>Søg</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane"
                   id="arbejdsopgaver"
                   role="tabpanel"
                   aria-labelledby="arbejdsopgaver-tab"
@@ -485,6 +553,8 @@
                       <button
                         type="button"
                         class="btn btn-outline-primary btn-sm"
+                        data-toggle="modal"
+                        data-target="#opretArkivskaber"
                       >
                         + Ny arbejdsopgave
                       </button>

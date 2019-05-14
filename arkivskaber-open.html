@@ -55,6 +55,9 @@
               <a class="nav-link text-muted" href="/index.html">Eksemplar</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-muted" href="/index.html">Magasinenhed</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-muted" href="/index.html"
                 >Arbejdsopgaver</a
               >
@@ -73,45 +76,17 @@
               >
               <h1 class="font-weight-extrabold">Frederiksberg Politi</h1>
               <h3 class="text-secondary">Ordenspolitiet, 1919 - 2006</h3>
-              <p class="mt-4 mb-1 text-secondary">
-                Arkivlovstype: Statslig
-              </p>
-              <p class="mb-1 text-secondary">Beskrivelsesniveau: Ja</p>
-              <p class="text-secondary">Kladde: Ja</p>
-              <button
-                class="btn btn-outline-primary d-flex align-items-center"
-                data-toggle="modal"
-                data-target="#redigerArkivskaber"
-              >
-                <svg
-                  height="16px"
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  class="mr-2"
-                  width="16px"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <g transform="translate(-384.000000, -192.000000)">
-                    <path
-                      d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
-                      id="Triangle 313"
-                    />
-                  </g>
-                </svg>
-                <span>Rediger</span>
-              </button>
               <ul class="nav nav-tabs mt-6">
                 <li class="nav-item">
                   <a
                     class="nav-link active"
-                    id="navne-tab"
+                    id="oversigt-tab"
                     data-toggle="tab"
-                    href="#navne"
+                    href="#oversigt"
                     role="tab"
-                    aria-controls="navne"
+                    aria-controls="oversigt"
                     href="#"
-                    >Navne</a
+                    >Oversigt</a
                   >
                 </li>
                 <li class="nav-item">
@@ -129,25 +104,13 @@
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    id="noter-tab"
-                    data-toggle="tab"
-                    href="#noter"
-                    role="tab"
-                    aria-controls="noter"
-                    href="#"
-                    >Noter</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
                     id="aktorer-tab"
                     data-toggle="tab"
                     href="#aktorer"
                     role="tab"
                     aria-controls="aktorer"
                     href="#"
-                    >Aktører</a
+                    >Relaterede Aktører</a
                   >
                 </li>
                 <li class="nav-item">
@@ -162,148 +125,144 @@
                     >Henvisninger</a
                   >
                 </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link disabled"
+                    id="henvisninger-tab"
+                    data-toggle="tab"
+                    href="#henvisninger"
+                    role="tab"
+                    aria-controls="henvisninger"
+                    href="#"
+                    >Geografi</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link disabled"
+                    id="henvisninger-tab"
+                    data-toggle="tab"
+                    href="#henvisninger"
+                    role="tab"
+                    aria-controls="henvisninger"
+                    href="#"
+                    >Emne</a
+                  >
+                </li>
               </ul>
 
               <div class="tab-content" id="myTabContent">
-                <!-- navne start -->
+                <!-- oversigt start -->
                 <div
                   class="tab-pane show active"
-                  id="navne"
+                  id="oversigt"
                   role="tabpanel"
-                  aria-labelledby="navne-tab"
+                  aria-labelledby="oversigt-tab"
                 >
                   <div class="container-fluid">
                     <div class="row mb-3">
                       <div class="col-sm-12 p-0">
-                        <div class="card bg-light mt-3">
+                        <div class="card bg-white mt-3">
                           <div class="card-body p-0">
+                            <h4 class="font-weight-bold mt-3 ml-3">Stamdata</h4>
+                            <div class="row p-lg-3">
+                              <div class="col-sm-10">
+                                <p class="mt-4 mb-1 text-secondary">
+                                  Arkivlovstype: Statslig
+                                </p>
+                                <p class="mb-1 text-secondary">
+                                  Beskrivelsesniveau: Ja
+                                </p>
+                                <p class="text-secondary">Kladde: Ja</p>
+                              </div>
+                              <div class="col-sm-2">
+                                <button
+                                  class="btn btn-outline-primary d-flex align-items-center"
+                                  data-toggle="modal"
+                                  data-target="#redigerArkivskaber"
+                                >
+                                  <svg
+                                    height="16px"
+                                    version="1.1"
+                                    viewBox="0 0 16 16"
+                                    class="mr-2"
+                                    width="16px"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  >
+                                    <g
+                                      transform="translate(-384.000000, -192.000000)"
+                                    >
+                                      <path
+                                        d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
+                                        id="Triangle 313"
+                                      />
+                                    </g>
+                                  </svg>
+                                  <span>Rediger</span>
+                                </button>
+                              </div>
+                            </div>
                             <h4 class="font-weight-bold mt-3 ml-3">Navne</h4>
-                            <div class="dataTables_scroll">
-                              <table
-                                id=""
-                                class="table tabledisplay table-hover table-striped"
-                                width="100%"
-                              >
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Navn</th>
-                                    <th scope="col">Fra</th>
-                                    <th scope="col">Til</th>
-                                    <th scope="col">Arkivlovstype</th>
-                                  </tr>
-                                </thead>
+                            <table
+                              id="navne"
+                              class="table table-hover table-striped"
+                              width="100%"
+                            >
+                              <thead>
+                                <tr>
+                                  <th scope="col">Navn</th>
+                                  <th scope="col">Fra</th>
+                                  <th scope="col">Til</th>
+                                  <th scope="col">Arkivlovstype</th>
+                                </tr>
+                              </thead>
 
-                                <tbody>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>frb Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1955</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1921</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="/arkivskaber-open.html"
-                                  >
-                                    <td>Frederiksberg Politi</td>
-                                    <td>1972</td>
-                                    <td>1988</td>
-                                    <td>Officielt</td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              <tbody>
+                                <tr>
+                                  <td>Frederiksberg Politi</td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                </tr>
+                                <tr>
+                                  <td>Frederiksberg Politi</td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                </tr>
+                                <tr>
+                                  <td>Frederiksberg Politi</td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h4 class="font-weight-bold mt-3 ml-3">Noter</h4>
+                            <div class="row p-lg-3">
+                              <div class="col-sm-6">
+                                <h5 class="mb-4">
+                                  Interne noter
+                                </h5>
+                                <p>
+                                  Oversigt. Udskrive slides, noter eller
+                                  uddelingskopier Du er færdig med at oprette
+                                  din præsentation og vil nu udskrive
+                                  uddelingskopier til dit publikum.
+                                </p>
+                              </div>
+                              <div class="col-sm-6">
+                                <h5 class="mb-4">
+                                  Publikums noter
+                                </h5>
+                                <p>
+                                  Oversigt. Udskrive slides, noter eller
+                                  uddelingskopier Du er færdig med at oprette
+                                  din præsentation og vil nu udskrive
+                                  uddelingskopier til dit publikum.
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -339,24 +298,17 @@
                                     <th scope="col">Sorteringsfelt</th>
                                     <th scope="col">Yderår</th>
                                     <th scope="col">Type</th>
-                                    <th scope="col">Undertype</th>
-                                    <th scope="col">E-nummer</th>
                                     <th scope="col">Beskrivelsesniveau</th>
                                   </tr>
                                 </thead>
                                 <tbody>
-                                  <tr
-                                    class="clickable-row"
-                                    data-href="#target"
-                                  >
+                                  <tr class="clickable-row" data-href="#target">
                                     <td>Ordensmagt Røverier</td>
                                     <td>
                                       sh001
                                     </td>
                                     <td>1987-1988</td>
                                     <td>Komponent</td>
-                                    <td>ut</td>
-                                    <td>0</td>
                                     <td>2. niveau</td>
                                   </tr>
                                   <tr class="clickable-row">
@@ -366,8 +318,6 @@
                                     </td>
                                     <td>1987-1988</td>
                                     <td>Komponent</td>
-                                    <td>ut</td>
-                                    <td>0</td>
                                     <td>2. niveau</td>
                                   </tr>
                                 </tbody>

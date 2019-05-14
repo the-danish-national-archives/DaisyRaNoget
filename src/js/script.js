@@ -62,6 +62,15 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  $("#navne").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
   $(".dataTables_filter input").attr("placeholder", "Søg");
 
   $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
