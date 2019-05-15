@@ -71,6 +71,12 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  82;
+
+  $("#heuristiskeenhed-modal").draggable({
+    handle: ".modal-header"
+  });
+
   $(".dataTables_filter input").attr("placeholder", "Søg");
 
   $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
