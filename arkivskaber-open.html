@@ -80,25 +80,13 @@
                 <li class="nav-item">
                   <a
                     class="nav-link active"
-                    id="oversigt-tab"
+                    id="beskrivelse-tab"
                     data-toggle="tab"
-                    href="#oversigt"
+                    href="#beskrivelse"
                     role="tab"
-                    aria-controls="oversigt"
+                    aria-controls="beskrivelse"
                     href="#"
-                    >Oversigt</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="heuristiskeenheder-tab"
-                    data-toggle="tab"
-                    href="#heuristiskeenheder"
-                    role="tab"
-                    aria-controls="heuristiskeenheder"
-                    href="#"
-                    >Heuristiske enheder</a
+                    >Beskrivelse</a
                   >
                 </li>
                 <li class="nav-item">
@@ -111,6 +99,18 @@
                     aria-controls="aktorer"
                     href="#"
                     >Relaterede Aktører</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="heuristiskeenheder-tab"
+                    data-toggle="tab"
+                    href="#heuristiskeenheder"
+                    role="tab"
+                    aria-controls="heuristiskeenheder"
+                    href="#"
+                    >Heuristiske enheder</a
                   >
                 </li>
                 <li class="nav-item">
@@ -152,19 +152,56 @@
               </ul>
 
               <div class="tab-content" id="myTabContent">
-                <!-- oversigt start -->
+                <!-- beskrivelse start -->
                 <div
                   class="tab-pane show active"
-                  id="oversigt"
+                  id="beskrivelse"
                   role="tabpanel"
-                  aria-labelledby="oversigt-tab"
+                  aria-labelledby="beskrivelse-tab"
                 >
                   <div class="container-fluid">
                     <div class="row mb-3">
                       <div class="col-sm-12 p-0">
-                        <div class="card bg-white mt-3">
+                        <div class="card bg-white">
                           <div class="card-body p-0">
-                            <h4 class="font-weight-bold mt-3 ml-3">Stamdata</h4>
+                            <div class="card bg-light">
+                              <div class="card-body p-0">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <h4 class="font-weight-bold mt-3 ml-3">
+                                      Beskrivelse
+                                    </h4>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <button
+                                      class="btn btn-primary d-flex align-items-center"
+                                      data-toggle="modal"
+                                      data-target="#redigerArkivskaber"
+                                    >
+                                      <svg
+                                        height="16px"
+                                        version="1.1"
+                                        viewBox="0 0 16 16"
+                                        class="mr-2"
+                                        width="16px"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      >
+                                        <g
+                                          transform="translate(-384.000000, -192.000000)"
+                                          fill="#fff"
+                                        >
+                                          <path
+                                            d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
+                                          />
+                                        </g>
+                                      </svg>
+                                      <span>Rediger</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                             <div class="row p-lg-3">
                               <div class="col-sm-10">
                                 <p class="mt-4 mb-1 text-secondary">
@@ -174,33 +211,6 @@
                                   Beskrivelsesniveau: Ja
                                 </p>
                                 <p class="text-secondary">Kladde: Ja</p>
-                              </div>
-                              <div class="col-sm-2">
-                                <button
-                                  class="btn btn-outline-primary d-flex align-items-center"
-                                  data-toggle="modal"
-                                  data-target="#redigerArkivskaber"
-                                >
-                                  <svg
-                                    height="16px"
-                                    version="1.1"
-                                    viewBox="0 0 16 16"
-                                    class="mr-2"
-                                    width="16px"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                  >
-                                    <g
-                                      transform="translate(-384.000000, -192.000000)"
-                                    >
-                                      <path
-                                        d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
-                                        id="Triangle 313"
-                                      />
-                                    </g>
-                                  </svg>
-                                  <span>Rediger</span>
-                                </button>
                               </div>
                             </div>
                             <h4 class="font-weight-bold mt-3 ml-3">Navne</h4>
