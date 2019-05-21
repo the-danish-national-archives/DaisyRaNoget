@@ -20,7 +20,6 @@ $table-border-color: #ced4da;
 $table-accent-bg: #f8f9fa;
 
 $input-placeholder-color: #848484;
-$font-size-base: 0.9rem;
 
 $spacer: 1rem !default;
 // prettier-ignore
@@ -48,6 +47,7 @@ $spacers: (
 @import "../../node_modules/bootstrap/scss/tables";
 @import "../../node_modules/bootstrap/scss/badge";
 @import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/type";
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/nav";
@@ -154,6 +154,19 @@ table.dataTable tbody th,
 table.dataTable tbody td {
   padding-left: 18px !important;
   padding-right: 18px !important;
+}
+
+table.dataTable thead tr th {
+  font-weight: 600;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 1165px;
+  display: block;
+  z-index: 9999;
+  background: #f7f7f7;
 }
 
 .dataTables_paginate .paginate_button {

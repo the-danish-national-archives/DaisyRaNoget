@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+      $(".card-header").addClass("sticky");
+    } else {
+      $(".card-header").removeClass("sticky");
+    }
+  });
+
   // clickable rows
   $(".clickable-row").click(function() {
     window.location = $(this).data("href");
@@ -71,13 +79,11 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  82;
-
   $("#heuristiskeenhed-modal").draggable({
     handle: ".modal-header"
   });
 
-  $(".dataTables_filter input").attr("placeholder", "Søg");
+  $(".dataTables_filter input").attr("placeholder", "Filtrér");
 
   $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();

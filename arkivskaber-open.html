@@ -34,49 +34,21 @@
         </nav>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-10 mt-5 col-centered">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Arkivskaber</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-muted" href="/index.html#heuristiskenhed"
-                >Heuristisk enhed</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-muted" href="/index.html"
-                >Arkiveringsversion</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-muted" href="/index.html">Eksemplar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-muted" href="/index.html">Magasinenhed</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-muted" href="/index.html"
-                >Arbejdsopgaver</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+
     <div class="container-fluid">
       <div class="row">
         <div class="col-10 col-centered">
-          <div class="card special bg-white pt-3 pr-5 pl-5 pb-5">
+          <div class="card bg-white pt-3 pr-4 pl-4 pb-5">
             <div class="card-body">
-              <span class="badge badge-primary badge-pill mt-3 mb-4"
+              <a href="/search/search-arkivskaber.html" class="d-flex mb-4"
+                >« Tilbage til søgning</a
+              >
+              <span class="badge badge-primary badge-pill mt-2 mb-2"
                 >Arkivskaber</span
               >
               <h1 class="font-weight-extrabold">Frederiksberg Politi</h1>
-              <h3 class="text-secondary">Ordenspolitiet, 1919 - 2006</h3>
-              <ul class="nav nav-tabs mt-6">
+              <h3 class="text-secondary mb-5">Ordenspolitiet, 1919 - 2006</h3>
+              <ul class="nav nav-tabs">
                 <li class="nav-item">
                   <a
                     class="nav-link active"
@@ -160,119 +132,129 @@
                   aria-labelledby="beskrivelse-tab"
                 >
                   <div class="container-fluid">
-                    <div class="row mb-3">
-                      <div class="col-sm-12 p-0">
-                        <div class="card bg-white">
-                          <div class="card-body p-0">
-                            <div class="card bg-light">
-                              <div class="card-body p-0">
-                                <div class="row">
-                                  <div class="col-sm-6">
-                                    <h4 class="font-weight-bold mt-3 ml-3">
-                                      Beskrivelse
-                                    </h4>
-                                  </div>
-                                  <div class="col-sm-6">
-                                    <button
-                                      class="btn btn-primary d-flex align-items-center"
-                                      data-toggle="modal"
-                                      data-target="#redigerArkivskaber"
-                                    >
-                                      <svg
-                                        height="16px"
-                                        version="1.1"
-                                        viewBox="0 0 16 16"
-                                        class="mr-2"
-                                        width="16px"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                      >
-                                        <g
-                                          transform="translate(-384.000000, -192.000000)"
-                                          fill="#fff"
-                                        >
-                                          <path
-                                            d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
-                                          />
-                                        </g>
-                                      </svg>
-                                      <span>Rediger</span>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row p-lg-3">
-                              <div class="col-sm-10">
-                                <p class="mt-4 mb-1 text-secondary">
-                                  Arkivlovstype: Statslig
-                                </p>
-                                <p class="mb-1 text-secondary">
-                                  Beskrivelsesniveau: Ja
-                                </p>
-                                <p class="text-secondary">Kladde: Ja</p>
-                              </div>
-                            </div>
-                            <h4 class="font-weight-bold mt-3 ml-3">Navne</h4>
-                            <table
-                              id="navne"
-                              class="table table-hover table-striped"
-                              width="100%"
-                            >
-                              <thead>
-                                <tr>
-                                  <th scope="col">Navn</th>
-                                  <th scope="col">Fra</th>
-                                  <th scope="col">Til</th>
-                                  <th scope="col">Arkivlovstype</th>
-                                </tr>
-                              </thead>
+                    <div class="row mb-3 mt-3">
+                      <div class="card fixed w-100">
+                        <div
+                          class="card-header d-flex align-items-center justify-content-between"
+                        >
+                          <h5 class="mb-0 font-weight-bold">
+                            Beskrivelse
+                          </h5>
+                          <button class="btn btn-success btn-lg float-right">
+                            Rediger
+                          </button>
+                        </div>
 
-                              <tbody>
-                                <tr>
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                                <tr>
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                                <tr>
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <h4 class="font-weight-bold mt-3 ml-3">Noter</h4>
-                            <div class="row p-lg-3">
-                              <div class="col-sm-6">
-                                <h5 class="mb-4">
-                                  Interne noter
-                                </h5>
-                                <p>
-                                  Oversigt. Udskrive slides, noter eller
-                                  uddelingskopier Du er færdig med at oprette
-                                  din præsentation og vil nu udskrive
-                                  uddelingskopier til dit publikum.
-                                </p>
+                        <div class="card-body">
+                          <h5 class="font-weight-bold mt-3 ml-3 mb-3">
+                            Detaljer
+                          </h5>
+                          <ul
+                            class="list-group list-group-flush mb-5 w-50 mr-3 ml-3"
+                          >
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-sm-6">Navnetype</div>
+                                <div class="col-sm-6">Officielt</div>
                               </div>
-                              <div class="col-sm-6">
-                                <h5 class="mb-4">
-                                  Publikums noter
-                                </h5>
-                                <p>
-                                  Oversigt. Udskrive slides, noter eller
-                                  uddelingskopier Du er færdig med at oprette
-                                  din præsentation og vil nu udskrive
-                                  uddelingskopier til dit publikum.
-                                </p>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-sm-6">Beskrivelsesniveau</div>
+                                <div class="col-sm-6">2. niveau</div>
                               </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-sm-6">Kladde</div>
+                                <div class="col-sm-6">Ja</div>
+                              </div>
+                            </li>
+                          </ul>
+                          <h5 class="font-weight-bold mt-3 ml-3 mb-3">Navne</h5>
+                          <div class="card bg-white ml-3 mr-3">
+                            <div class="card-body p-0 m-0">
+                              <table
+                                id="navne"
+                                width="100%"
+                                class="table table-hover mb-0 table-striped"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Præfiks</th>
+                                    <th scope="col">Navn</th>
+                                    <th scope="col">Fra</th>
+                                    <th scope="col">Til</th>
+                                    <th scope="col">Navnetype</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr
+                                    class="clickable-row"
+                                    data-href="#heuristiskeenhed-modal"
+                                  >
+                                    <td>
+                                      sh001
+                                    </td>
+                                    <td>Ordensmagt Røverier</td>
+                                    <td>1987</td>
+                                    <td>1988</td>
+                                    <td>Officielt</td>
+                                  </tr>
+                                  <tr class="clickable-row">
+                                    <td>
+                                      sh001
+                                    </td>
+                                    <td>Ordensmagt Røverier</td>
+                                    <td>1987</td>
+                                    <td>1988</td>
+                                    <td>Officielt</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="row mt-5">
+                            <div class="col-sm-6">
+                              <h5 class="font-weight-bold mt-3 ml-3 mb-3">
+                                Interne noter
+                              </h5>
+                              <p class="ml-3 mr-3">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries,
+                                but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages,
+                                and more recently with desktop publishing
+                                software like Aldus PageMaker including versions
+                                of Lorem Ipsum.
+                              </p>
+                            </div>
+                            <div class="col-sm-6">
+                              <h5 class="font-weight-bold mt-3 ml-3 mb-3">
+                                Publikums noter
+                              </h5>
+                              <p class="ml-3 mr-3">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500s, when an unknown printer took a galley
+                                of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries,
+                                but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was
+                                popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages,
+                                and more recently with desktop publishing
+                                software like Aldus PageMaker including versions
+                                of Lorem Ipsum.
+                              </p>
+                              <br /><br /><br /><br /><br />
                             </div>
                           </div>
                         </div>
