@@ -114,7 +114,7 @@
                 role="tab"
                 aria-controls="arbejdsopgaver"
                 href="#"
-                >Opgave</a
+                >Arbejdsopgave</a
               >
             </li>
           </ul>
@@ -216,7 +216,7 @@
                     <div class="container-fluid">
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <label for="navn">Navn</label>
+                          <label for="navn">HE-Navn</label>
                           <input
                             type="text"
                             class="form-control form-control-lg bg-light"
@@ -316,24 +316,6 @@
                           />
                         </div>
                       </div>
-                      <div class="row mb-3">
-                        <div class="col-sm-6">
-                          <label for="fra">Fra</label>
-                          <input
-                            type="text"
-                            class="form-control bg-light"
-                            id="fra"
-                          />
-                        </div>
-                        <div class="col-sm-6">
-                          <label for="til">Til</label>
-                          <input
-                            type="text"
-                            class="form-control bg-light"
-                            id="til"
-                          />
-                        </div>
-                      </div>
                       <div class="row">
                         <div class="col-sm-12 mt-4 d-flex align-items-center">
                           <button
@@ -371,7 +353,7 @@
                     <div class="container-fluid">
                       <div class="row mb-3">
                         <div class="col-sm-6">
-                          <label for="formaal">Formål</label>
+                          <label for="formaal">Arkivskaber</label>
                           <input
                             type="text"
                             class="form-control form-control-lg bg-light"
@@ -380,10 +362,48 @@
                         </div>
 
                         <div class="col-sm-6">
-                          <label for="medie">Medie</label>
+                          <label for="formaal">HE-Navn</label>
                           <input
                             type="text"
                             class="form-control form-control-lg bg-light"
+                            id="formaal"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <div class="col-sm-6">
+                          <label for="fra">Fra</label>
+                          <input
+                            type="text"
+                            class="form-control bg-light"
+                            id="fra"
+                          />
+                        </div>
+                        <div class="col-sm-6">
+                          <label for="til">Til</label>
+                          <input
+                            type="text"
+                            class="form-control bg-light"
+                            id="til"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <div class="col-sm-6">
+                          <label for="formaal">Formål</label>
+                          <input
+                            type="text"
+                            class="form-control bg-light"
+                            id="formaal"
+                          />
+                        </div>
+                        <div class="col-sm-6">
+                          <label for="medie">Medie</label>
+                          <input
+                            type="text"
+                            class="form-control bg-light"
                             id="medie"
                           />
                         </div>
@@ -425,21 +445,12 @@
                   <form>
                     <div class="container-fluid">
                       <div class="row mb-3">
-                        <div class="col-sm-6">
-                          <label for="formaal">Formål</label>
+                        <div class="col-sm-12">
+                          <label for="stregkode">Stregkode</label>
                           <input
                             type="text"
                             class="form-control form-control-lg bg-light"
-                            id="formaal"
-                          />
-                        </div>
-
-                        <div class="col-sm-6">
-                          <label for="medie">Medie</label>
-                          <input
-                            type="text"
-                            class="form-control form-control-lg bg-light"
-                            id="medie"
+                            id="stregkode"
                           />
                         </div>
                       </div>
@@ -482,21 +493,21 @@
                     <div class="container-fluid">
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <label for="arbejdsopgave">Arbejdsopgave</label>
+                          <label for="opgavenavn">Opgavenavn</label>
                           <input
                             type="text"
                             class="form-control form-control-lg bg-light"
-                            id="arbejdsopgave"
+                            id="opgavenavn"
                           />
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col-sm-6">
-                          <label for="navn">Navn</label>
+                          <label for="arkivskaber">Arkivskaber</label>
                           <input
                             type="text"
                             class="form-control bg-light"
-                            id="navn"
+                            id="arkivskaber"
                           />
                         </div>
                         <div class="col-sm-6">
@@ -511,22 +522,64 @@
 
                       <div class="row mb-3">
                         <div class="col-sm-6">
-                          <label for="fra">Fra</label>
+                          <label for="ansvarlig">Ansvarlig</label>
                           <input
                             type="text"
                             class="form-control bg-light"
-                            id="fra"
+                            id="ansvarlig"
                           />
                         </div>
                         <div class="col-sm-6">
-                          <label for="til">Til</label>
-                          <input
-                            type="text"
-                            class="form-control bg-light"
-                            id="til"
-                          />
+                          <label for="status">Status</label>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios"
+                              id="exampleRadios1"
+                              value="option1"
+                              checked
+                            />
+                            <label
+                              class="form-check-label"
+                              for="exampleRadios1"
+                            >
+                              Alle
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios"
+                              id="exampleRadios2"
+                              value="option2"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="exampleRadios2"
+                            >
+                              Åben
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios"
+                              id="exampleRadios3"
+                              value="option3"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="exampleRadios3"
+                            >
+                              Lukket
+                            </label>
+                          </div>
                         </div>
                       </div>
+
                       <div class="row">
                         <div class="col-sm-12 mt-4 d-flex align-items-center">
                           <button
