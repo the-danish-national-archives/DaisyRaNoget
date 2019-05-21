@@ -89,10 +89,12 @@ $(document).ready(function() {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
   });
 
+  // Enable / Disable edit mode
   $(".edit").on("click", function() {
     $(".readonly").hide();
     $(".write").show();
   });
+
   $(".save").on("click", function() {
     $(".readonly").show();
     $(".write").hide();

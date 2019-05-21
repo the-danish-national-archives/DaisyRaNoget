@@ -6964,6 +6964,12 @@ table.dataTable tbody td {
 table.dataTable thead tr th {
   font-weight: 600; }
 
+table.dataTable tbody tr .icon {
+  visibility: hidden; }
+
+table.dataTable tbody tr:hover .icon {
+  visibility: visible; }
+
 .sticky {
   position: fixed;
   top: 0;

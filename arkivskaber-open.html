@@ -137,7 +137,7 @@
                         <div
                           class="card-header d-flex align-items-center justify-content-between"
                         >
-                          <h5 class="mb-0 font-weight-bold">
+                          <h5 class="mb-0">
                             Beskrivelse
                           </h5>
                           <button
@@ -149,7 +149,7 @@
                           <button class="btn btn-lg write save">
                             Annuller
                           </button>
-                          <button class="btn btn-success btn-lg write save">
+                          <button class="btn btn-primary btn-lg write save">
                             Gem
                           </button>
                           </div>
@@ -434,6 +434,210 @@ of Lorem Ipsum.
                   </div>
                 </div>
 
+                <!-- Aktører -->
+                <div class="tab-pane" id="aktorer" role="tabpanel" aria-labelledby="aktorer-tab">
+                  <div class="container-fluid">
+                    <div class="row mb-3">
+                      <div class="col-sm-12 p-0">
+                        <div class="card mt-3 mb-5">
+                          <div class="card-header d-flex align-items-center justify-content-between">
+                            <h5 class="mb-0">
+                              Overordnede aktører
+                            </h5>
+                            <button class="btn btn-primary btn-lg">+ Tilføj aktør</button>
+                          </div>
+                          <div class="card-body p-0">
+                            <table id="search" class="table table-hover table-striped" width="100%">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Navn</th>
+                                  <th scope="col">Fra</th>
+                                  <th scope="col">Til</th>
+                                  <th scope="col">Forbindelsestype</th>
+                                  <th scope="col" style="visibility: hidden;"></th>
+                                  <th scope="col" style="visibility: hidden;"></th>
+                                </tr>
+                              </thead>
+                
+                              <tbody>
+                                <tr>
+                                  <td><a href="#">Frederiksberg Politi</a></td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path fill="#000" fill-rule="nonzero"
+                                          d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                      </svg></a></td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path fill="#000" fill-rule="nonzero" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                      </svg>
+                                    </a></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Frederiksberg Politi</a></td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path fill="#000" fill-rule="nonzero"
+                                          d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                      </svg></a></td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path fill="#000" fill-rule="nonzero" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                      </svg>
+                                    </a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="card mt-3">
+                          <div class="card-header d-flex align-items-center justify-content-between">
+                            <h5 class="mb-0">
+                              Underordnede aktører
+                            </h5>
+                            <button class="btn btn-primary btn-lg">+ Tilføj aktør</button>
+                          </div>
+                          <div class="card-body p-0">
+                            <table class="table tabledisplay table-hover table-striped mb-0" width="100%">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Navn</th>
+                                  <th scope="col">Fra</th>
+                                  <th scope="col">Til</th>
+                                  <th scope="col">Forbindelsestype</th>
+                                  <th scope="col" style="visibility: hidden;"></th>
+                                  <th scope="col" style="visibility: hidden;"></th>
+                                </tr>
+                              </thead>
+                        
+                              <tbody>
+                                <tr>
+                                  <td><a href="#">Frederiksberg Politi</a></td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#000" fill-rule="nonzero"
+                                      d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                  </svg></a></td>  
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#000" fill-rule="nonzero" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                  </svg>
+                                </a></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Frederiksberg Politi</a></td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#000" fill-rule="nonzero"
+                                      d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                  </svg></a></td>  
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#000" fill-rule="nonzero" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                  </svg>
+                                </a></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Frederiksberg Politi</a></td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#000" fill-rule="nonzero"
+                                      d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                  </svg></a></td>  
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#000" fill-rule="nonzero" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                  </svg>
+                                </a></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Frederiksberg Politi</a></td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#000" fill-rule="nonzero"
+                                      d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                  </svg></a></td>  
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#000" fill-rule="nonzero" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                  </svg>
+                                </a></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Frederiksberg Politi</a></td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#000" fill-rule="nonzero"
+                                      d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                  </svg></a></td>  
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#000" fill-rule="nonzero" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                  </svg>
+                                </a></td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Frederiksberg Politi</a></td>
+                                  <td>1972</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path fill="#000" fill-rule="nonzero"
+                                      d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                  </svg></a></td>  
+                                  <td width="25">
+                                    <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path fill="#000" fill-rule="nonzero" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                  </svg>
+                                </a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Heuristiske enheder -->
                 <div
                   class="tab-pane"
@@ -589,141 +793,6 @@ of Lorem Ipsum.
                                 </button>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Aktører -->
-                <div
-                  class="tab-pane"
-                  id="aktorer"
-                  role="tabpanel"
-                  aria-labelledby="aktorer-tab"
-                >
-                  <div class="container-fluid">
-                    <div class="row mb-3">
-                      <div class="col-sm-12 p-0">
-                        <div class="card bg-light mt-3">
-                          <div class="card-body p-0">
-                            <h4 class="font-weight-bold ml-3 mt-3">
-                              Overordnede aktører
-                            </h4>
-                            <table
-                              id=""
-                              class="table tabledisplay table-hover table-striped mb-3"
-                              width="100%"
-                            >
-                              <thead>
-                                <tr>
-                                  <th scope="col">Navn</th>
-                                  <th scope="col">Fra</th>
-                                  <th scope="col">Til</th>
-                                  <th scope="col">Forbindelsestype</th>
-                                </tr>
-                              </thead>
-
-                              <tbody>
-                                <tr
-                                  class="clickable-row"
-                                  data-href="/arkivskaber-open.html"
-                                >
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                                <tr
-                                  class="clickable-row"
-                                  data-href="/arkivskaber-open.html"
-                                >
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                                <tr
-                                  class="clickable-row"
-                                  data-href="/arkivskaber-open.html"
-                                >
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                                <tr
-                                  class="clickable-row"
-                                  data-href="/arkivskaber-open.html"
-                                >
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="card bg-light mt-5">
-                          <div class="card-body p-0">
-                            <h4 class="font-weight-bold ml-3 mt-3">
-                              Underordnede aktører
-                            </h4>
-                            <table
-                              id=""
-                              class="table tabledisplay table-hover table-striped mb-3"
-                              width="100%"
-                            >
-                              <thead>
-                                <tr>
-                                  <th scope="col">Navn</th>
-                                  <th scope="col">Fra</th>
-                                  <th scope="col">Til</th>
-                                  <th scope="col">Forbindelsestype</th>
-                                </tr>
-                              </thead>
-
-                              <tbody>
-                                <tr
-                                  class="clickable-row"
-                                  data-href="/arkivskaber-open.html"
-                                >
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                                <tr
-                                  class="clickable-row"
-                                  data-href="/arkivskaber-open.html"
-                                >
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                                <tr
-                                  class="clickable-row"
-                                  data-href="/arkivskaber-open.html"
-                                >
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                                <tr
-                                  class="clickable-row"
-                                  data-href="/arkivskaber-open.html"
-                                >
-                                  <td>Frederiksberg Politi</td>
-                                  <td>1972</td>
-                                  <td>1988</td>
-                                  <td>Officielt</td>
-                                </tr>
-                              </tbody>
-                            </table>
                           </div>
                         </div>
                       </div>
