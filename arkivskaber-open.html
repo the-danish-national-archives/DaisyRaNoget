@@ -133,16 +133,26 @@
                 >
                   <div class="container-fluid">
                     <div class="row mb-3 mt-3">
-                      <div class="card fixed w-100">
+                      <div class="card fixed w-100 mb-10">
                         <div
                           class="card-header d-flex align-items-center justify-content-between"
                         >
                           <h5 class="mb-0 font-weight-bold">
                             Beskrivelse
                           </h5>
-                          <button class="btn btn-success btn-lg float-right">
+                          <button
+                            class="btn btn-primary btn-lg float-right readonly edit"
+                          >
                             Rediger
                           </button>
+                          <div class="float-right write">
+                          <button class="btn btn-lg write save">
+                            Annuller
+                          </button>
+                          <button class="btn btn-success btn-lg write save">
+                            Gem
+                          </button>
+                          </div>
                         </div>
 
                         <div class="card-body">
@@ -153,21 +163,84 @@
                             class="list-group list-group-flush mb-5 w-50 mr-3 ml-3"
                           >
                             <li class="list-group-item">
-                              <div class="row">
+                              <div class="row d-flex align-items-center">
                                 <div class="col-sm-6">Navnetype</div>
-                                <div class="col-sm-6">Officielt</div>
+                                <div class="col-sm-6 readonly">Officielt</div>
+                                <div class="col-sm-6 write">
+                                  <div class="form-group mb-0">
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>Officielt</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
                               </div>
                             </li>
                             <li class="list-group-item">
-                              <div class="row">
+                              <div class="row d-flex align-items-center">
                                 <div class="col-sm-6">Beskrivelsesniveau</div>
-                                <div class="col-sm-6">2. niveau</div>
+                                <div class="col-sm-6 readonly">2. niveau</div>
+                                <div class="col-sm-6 write">
+                                  <div class="form-group mb-0">
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>2. niveau</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
                               </div>
                             </li>
                             <li class="list-group-item">
-                              <div class="row">
+                              <div class="row d-flex align-items-center">
                                 <div class="col-sm-6">Kladde</div>
-                                <div class="col-sm-6">Ja</div>
+                                <div class="col-sm-6 readonly">Ja</div>
+                                <div class="col-sm-6 write">
+                                  <div
+                                    class="form-check form-check-inline mr-3"
+                                  >
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="exampleRadios"
+                                      id="exampleRadios1"
+                                      value="option1"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="exampleRadios1"
+                                    >
+                                      Ja
+                                    </label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="exampleRadios"
+                                      id="exampleRadios2"
+                                      value="option2"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="exampleRadios2"
+                                    >
+                                      Nej
+                                    </label>
+                                  </div>
+                                </div>
                               </div>
                             </li>
                           </ul>
@@ -190,7 +263,7 @@
                                 </thead>
                                 <tbody>
                                   <tr
-                                    class="clickable-row"
+                                    class="clickable-row readonly"
                                     data-href="#heuristiskeenhed-modal"
                                   >
                                     <td>
@@ -201,7 +274,10 @@
                                     <td>1988</td>
                                     <td>Officielt</td>
                                   </tr>
-                                  <tr class="clickable-row">
+                                  <tr
+                                    class="clickable-row readonly"
+                                    data-href="#heuristiskeenhed-modal"
+                                  >
                                     <td>
                                       sh001
                                     </td>
@@ -210,6 +286,68 @@
                                     <td>1988</td>
                                     <td>Officielt</td>
                                   </tr>
+                                    <tr class="write">
+                                      <td>
+                                        <div class="form-group mb-0">
+                                          <input type="text" class="form-control" value="sh001">
+                                        </div>
+                                      </td>
+                                      <td>
+                                      <div class="form-group mb-0">
+                                        <input type="text" class="form-control" value="Ordensmagt Røverier">
+                                      </div>
+                                    </td>
+                                      <td><div class="form-group mb-0">
+                                        <input type="text" class="form-control" value="1987">
+                                      </div></td>
+                                      <td>
+                                        <div class="form-group mb-0">
+                                          <input type="text" class="form-control" value="1997">
+                                        </div>
+                                      </td>
+                                      <td>
+                                      <div class="form-group mb-0">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>Officielt</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                                      </div>
+                                      </td>
+                                    </tr>
+                                    <tr class="write">
+                                      <td>
+                                        <div class="form-group mb-0">
+                                          <input type="text" class="form-control" value="sh001">
+                                        </div>
+                                      </td>
+                                      <td>
+                                      <div class="form-group mb-0">
+                                        <input type="text" class="form-control" value="Ordensmagt Røverier">
+                                      </div>
+                                    </td>
+                                      <td><div class="form-group mb-0">
+                                        <input type="text" class="form-control" value="1987">
+                                      </div></td>
+                                      <td>
+                                        <div class="form-group mb-0">
+                                          <input type="text" class="form-control" value="1997">
+                                        </div>
+                                      </td>
+                                      <td>
+                                      <div class="form-group mb-0">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>Officielt</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                                      </div>
+                                      </td>
+                                    </tr>
                                 </tbody>
                               </table>
                             </div>
@@ -219,7 +357,7 @@
                               <h5 class="font-weight-bold mt-3 ml-3 mb-3">
                                 Interne noter
                               </h5>
-                              <p class="ml-3 mr-3">
+                              <p class="ml-3 mr-3 readonly">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since
@@ -234,12 +372,29 @@
                                 software like Aldus PageMaker including versions
                                 of Lorem Ipsum.
                               </p>
+                              <div class="form-group write mb-0 ml-0 mr-0">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+Lorem Ipsum is simply dummy text of the printing
+and typesetting industry. Lorem Ipsum has been
+the industry's standard dummy text ever since
+the 1500s, when an unknown printer took a galley
+of type and scrambled it to make a type specimen
+book. It has survived not only five centuries,
+but also the leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the release of
+Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing
+software like Aldus PageMaker including versions
+of Lorem Ipsum.
+                                </textarea>
+                              </div>
                             </div>
                             <div class="col-sm-6">
                               <h5 class="font-weight-bold mt-3 ml-3 mb-3">
                                 Publikums noter
                               </h5>
-                              <p class="ml-3 mr-3">
+                              <p class="ml-3 mr-3 readonly">
                                 Lorem Ipsum is simply dummy text of the printing
                                 and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since
@@ -254,7 +409,23 @@
                                 software like Aldus PageMaker including versions
                                 of Lorem Ipsum.
                               </p>
-                              <br /><br /><br /><br /><br />
+                              <div class="form-group write mb-0 ml-0 mr-0">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+Lorem Ipsum is simply dummy text of the printing
+and typesetting industry. Lorem Ipsum has been
+the industry's standard dummy text ever since
+the 1500s, when an unknown printer took a galley
+of type and scrambled it to make a type specimen
+book. It has survived not only five centuries,
+but also the leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the release of
+Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing
+software like Aldus PageMaker including versions
+of Lorem Ipsum.
+                                </textarea>
+                              </div>
                             </div>
                           </div>
                         </div>
