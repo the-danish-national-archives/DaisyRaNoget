@@ -6926,16 +6926,13 @@ textarea.form-control {
 
 .badge {
   font-size: 16px;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 400; }
+  padding-bottom: 4px; }
 
 .font-weight-semibold {
   font-weight: 600;
   letter-spacing: -0.3px; }
-
-.font-weight-extrabold {
-  font-weight: 900;
-  letter-spacing: -0.5px; }
 
 label {
   margin-bottom: 0.2rem; }
@@ -6979,7 +6976,7 @@ table.dataTable tbody tr:hover .icon {
   top: 0;
   width: 1165px;
   display: block;
-  z-index: 9999;
+  z-index: 888;
   background: #f7f7f7; }
 
 .write {

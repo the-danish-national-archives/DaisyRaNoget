@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 400) {
+    if ($(this).scrollTop() > 360) {
       $(".card-header").addClass("sticky");
     } else {
       $(".card-header").removeClass("sticky");
@@ -62,6 +62,15 @@ $(document).ready(function() {
   });
 
   $("#search").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#eksemplar-tabel").DataTable({
     paging: false,
     info: false,
     searching: false,
