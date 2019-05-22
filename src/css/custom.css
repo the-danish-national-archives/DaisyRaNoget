@@ -6929,6 +6929,10 @@ textarea.form-control {
   letter-spacing: 1px;
   font-weight: 400; }
 
+.font-weight-semibold {
+  font-weight: 600;
+  letter-spacing: -0.3px; }
+
 .font-weight-extrabold {
   font-weight: 900;
   letter-spacing: -0.5px; }

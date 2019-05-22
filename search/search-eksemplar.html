@@ -54,7 +54,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#eksemplar">Eksemplar</a>
+              <a class="nav-link active" href="../index.html#eksemplar"
+                >Eksemplar</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/index.html#magasinenhed"
@@ -62,7 +64,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../index.html#arbejdsopgave"
+              <a class="nav-link" href="../index.html#arbejdsopgave"
                 >Arbejdsopgave</a
               >
             </li>
@@ -75,85 +77,61 @@
         <div class="col-10 col-centered">
           <div class="card special pt-3 pl-3 pr-3 pb-3">
             <div class="card-body">
-              <!-- arbejdsopgave start -->
-              <form action="search-arbejdsopgave.html">
+              <!-- eksemplar start -->
+              <form action="search-eksemplar.html">
                 <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <label for="opgavenavn">Opgavenavn</label>
-                      <input
-                        type="text"
-                        class="form-control bg-light"
-                        value=""
-                        id="opgavenavn"
-                      />
-                    </div>
+                  <div class="row mb-3">
                     <div class="col-sm-3">
                       <label for="arkivskaber">Arkivskaber</label>
                       <input
                         type="text"
                         class="form-control bg-light"
+                        value="Frederiksberg Politi"
                         id="arkivskaber"
-                        value="Indenrigsministeriet"
                       />
                     </div>
                     <div class="col-sm-3">
-                      <label for="praefiks">Præfiks</label>
+                      <label for="henavn">HE-Navn</label>
                       <input
                         type="text"
                         class="form-control bg-light"
-                        id="praefiks"
+                        id="henavn"
+                        value=""
                       />
                     </div>
-                    <div class="col-sm-3 mb-3">
-                      <label for="ansvarlig">Ansvarlig</label>
+                    <div class="col-sm-3">
+                      <label for="fra">Fra</label>
                       <input
                         type="text"
                         class="form-control bg-light"
-                        id="ansvarlig"
+                        id="fra"
+                      />
+                    </div>
+                    <div class="col-sm-3">
+                      <label for="til">Til</label>
+                      <input
+                        type="text"
+                        class="form-control bg-light"
+                        id="til"
                       />
                     </div>
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm-3">
-                      <label for="status" class="mb-2">Status</label><br />
-                      <div class="form-check form-check-inline mr-4">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios1"
-                          value="option1"
-                          checked
-                        />
-                        <label class="form-check-label" for="exampleRadios1">
-                          Alle
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline mr-4">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios2"
-                          value="option2"
-                        />
-                        <label class="form-check-label" for="exampleRadios2">
-                          Åben
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios3"
-                          value="option3"
-                        />
-                        <label class="form-check-label" for="exampleRadios3">
-                          Lukket
-                        </label>
-                      </div>
+                      <label for="formaal">Formål</label>
+                      <input
+                        type="text"
+                        class="form-control bg-light"
+                        id="formaal"
+                      />
+                    </div>
+                    <div class="col-sm-3">
+                      <label for="medie">Medie</label>
+                      <input
+                        type="text"
+                        class="form-control bg-light"
+                        id="medie"
+                      />
                     </div>
                     <div class="col-sm-3">
                       <button type="submit" class="btn btn-primary search mt-4">
@@ -184,60 +162,86 @@
                 >
                   <thead>
                     <tr>
-                      <th scope="col">Opgavenavn</th>
-                      <th scope="col">Ansvarlig</th>
-                      <th scope="col">Dato åbnet</th>
-                      <th scope="col">Dato lukket</th>
+                      <th scope="col">Præfiks</th>
+                      <th scope="col">Arkivskaber</th>
+                      <th scope="col">HE-Navn</th>
+                      <th scope="col">Yderår</th>
+                      <th scope="col">Eksemplartype</th>
+                      <th scope="col">Sorteringsfelt</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="clickable-row" data-href="../arbejdsopgave.html">
+                    <tr class="clickable-row" data-href="../arkivskaber.html">
                       <td>
-                        Ny opgave
+                        FRB Politi
                       </td>
-                      <td>Henriette Larsen</td>
-                      <td>15.12.1972</td>
-                      <td>08.12.1971</td>
+                      <td>
+                        Frederiksberg Politi
+                      </td>
+                      <td>Kredsaflytningssystem</td>
+                      <td>1972-1988</td>
+                      <td>Papir</td>
+                      <td>sh1284</td>
                     </tr>
-                    <tr class="clickable-row" data-href="../arbejdsopgave.html">
+                    <tr class="clickable-row" data-href="../arkivskaber.html">
                       <td>
-                        Ny opgave
+                        FRB Politi
                       </td>
-                      <td>Henriette Larsen</td>
-                      <td>15.12.1972</td>
-                      <td>08.12.1971</td>
+                      <td>
+                        Frederiksberg Politi
+                      </td>
+                      <td>Kredsaflytningssystem</td>
+                      <td>1972-1988</td>
+                      <td>Papir</td>
+                      <td>sh1284</td>
                     </tr>
-                    <tr class="clickable-row" data-href="../arbejdsopgave.html">
+                    <tr class="clickable-row" data-href="../arkivskaber.html">
                       <td>
-                        Ny opgave
+                        FRB Politi
                       </td>
-                      <td>Henriette Larsen</td>
-                      <td>15.12.1972</td>
-                      <td>08.12.1971</td>
+                      <td>
+                        Frederiksberg Politi
+                      </td>
+                      <td>Kredsaflytningssystem</td>
+                      <td>1972-1988</td>
+                      <td>Papir</td>
+                      <td>sh1284</td>
                     </tr>
-                    <tr class="clickable-row" data-href="../arbejdsopgave.html">
+                    <tr class="clickable-row" data-href="../arkivskaber.html">
                       <td>
-                        Ny opgave
+                        FRB Politi
                       </td>
-                      <td>Henriette Larsen</td>
-                      <td>15.12.1972</td>
-                      <td>08.12.1971</td>
+                      <td>
+                        Frederiksberg Politi
+                      </td>
+                      <td>Kredsaflytningssystem</td>
+                      <td>1972-1988</td>
+                      <td>Papir</td>
+                      <td>sh1284</td>
                     </tr>
-                    <tr class="clickable-row" data-href="../arbejdsopgave.html">
+                    <tr class="clickable-row" data-href="../arkivskaber.html">
                       <td>
-                        Ny opgave
+                        FRB Politi
                       </td>
-                      <td>Henriette Larsen</td>
-                      <td>15.12.1972</td>
-                      <td>08.12.1971</td>
+                      <td>
+                        Frederiksberg Politi
+                      </td>
+                      <td>Kredsaflytningssystem</td>
+                      <td>1972-1988</td>
+                      <td>Papir</td>
+                      <td>sh1284</td>
                     </tr>
-                    <tr class="clickable-row" data-href="../arbejdsopgave.html">
+                    <tr class="clickable-row" data-href="../arkivskaber.html">
                       <td>
-                        Ny opgave
+                        FRB Politi
                       </td>
-                      <td>Henriette Larsen</td>
-                      <td>15.12.1972</td>
-                      <td>08.12.1971</td>
+                      <td>
+                        Frederiksberg Politi
+                      </td>
+                      <td>Kredsaflytningssystem</td>
+                      <td>1972-1988</td>
+                      <td>Papir</td>
+                      <td>sh1284</td>
                     </tr>
                   </tbody>
                 </table>
