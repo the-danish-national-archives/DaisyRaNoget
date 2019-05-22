@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/custom.css" />
+  <title>Daisy RA</title>
+</head>
+
+<body class="bg-light b-top">
+  <div class="container-fluid">
+    <div class="col-sm-10 col-centered">
+      <nav class="navbar navbar-expand-lg navbar-white">
+        <a class="navbar-brand" href="/index.html">
+          <img src="src/images/logo.png" alt="" class="" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-10 col-centered">
+        <div class="card bg-white pt-3 pr-4 pl-4 pb-5">
+          <div class="card-body">
+            <a href="/search/search-heuristiskenhed.html" class="d-flex mb-4">« Tilbage til søgning</a>
+            <span class="badge badge-success badge-pill mt-2 mb-2">Heuristisk Enhed</span>
+            <h1 class="font-weight-extrabold">Kredsaflytningssystem</h1>
+            <h3 class="text-secondary mb-5">Indenrigsministeriet, 1950 - 1975</h3>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" id="beskrivelse-tab" data-toggle="tab" href="#beskrivelse" role="tab"
+                  aria-controls="beskrivelse" href="#">Beskrivelse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="aktorer-tab" data-toggle="tab" href="#aktorer" role="tab"
+                  aria-controls="aktorer" href="#">Relaterede Aktører</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="heuristiskeenheder-tab" data-toggle="tab" href="#heuristiskeenheder" role="tab"
+                  aria-controls="heuristiskeenheder" href="#">Heuristiske enheder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="henvisninger-tab" data-toggle="tab" href="#henvisninger" role="tab"
+                  aria-controls="henvisninger" href="#">Henvisninger</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" id="henvisninger-tab" data-toggle="tab" href="#henvisninger" role="tab"
+                  aria-controls="henvisninger" href="#">Geografi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" id="henvisninger-tab" data-toggle="tab" href="#henvisninger" role="tab"
+                  aria-controls="henvisninger" href="#">Emne</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <!-- beskrivelse start -->
+              <div class="tab-pane show active" id="beskrivelse" role="tabpanel" aria-labelledby="beskrivelse-tab">
+                <div class="container-fluid">
+                  <div class="row mb-3 mt-3">
+                    <div class="card fixed w-100 mb-10">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">
+                          Beskrivelse
+                        </h5>
+                        <button class="btn btn-primary btn-lg float-right readonly edit">
+                          Rediger
+                        </button>
+                        <div class="float-right write">
+                          <button class="btn btn-lg write save">
+                            Annuller
+                          </button>
+                          <button class="btn btn-primary btn-lg write save">
+                            Gem
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <h5 class="font-weight-bold mt-3 ml-3 mb-3">
+                          Detaljer
+                        </h5>
+                        <ul class="list-group list-group-flush mb-5 w-50 mr-3 ml-3">
+                          <li class="list-group-item">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-sm-6">Navnetype</div>
+                              <div class="col-sm-6 readonly">Officielt</div>
+                              <div class="col-sm-6 write">
+                                <div class="form-group mb-0">
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Officielt</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-sm-6">Beskrivelsesniveau</div>
+                              <div class="col-sm-6 readonly">2. niveau</div>
+                              <div class="col-sm-6 write">
+                                <div class="form-group mb-0">
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>2. niveau</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-sm-6">Kladde</div>
+                              <div class="col-sm-6 readonly">Ja</div>
+                              <div class="col-sm-6 write">
+                                <div class="form-check form-check-inline mr-3">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked />
+                                  <label class="form-check-label" for="exampleRadios1">
+                                    Ja
+                                  </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2" />
+                                  <label class="form-check-label" for="exampleRadios2">
+                                    Nej
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <h5 class="font-weight-bold mt-3 ml-3 mb-3">Navne</h5>
+                        <div class="card bg-white ml-3 mr-3">
+                          <div class="card-body p-0 m-0">
+                            <table id="navne" width="100%" class="table table-hover mb-0">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Præfiks</th>
+                                  <th scope="col">Navn</th>
+                                  <th scope="col">Fra</th>
+                                  <th scope="col">Til</th>
+                                  <th scope="col">Navnetype</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="clickable-row readonly" data-href="#heuristiskeenhed-modal">
+                                  <td>
+                                    sh001
+                                  </td>
+                                  <td>Ordensmagt Røverier</td>
+                                  <td>1987</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                </tr>
+                                <tr class="clickable-row readonly" data-href="#heuristiskeenhed-modal">
+                                  <td>
+                                    sh001
+                                  </td>
+                                  <td>Ordensmagt Røverier</td>
+                                  <td>1987</td>
+                                  <td>1988</td>
+                                  <td>Officielt</td>
+                                </tr>
+                                <tr class="write">
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <input type="text" class="form-control" value="sh001">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <input type="text" class="form-control" value="Ordensmagt Røverier">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <input type="text" class="form-control" value="1987">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <input type="text" class="form-control" value="1997">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Officielt</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      </select>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr class="write">
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <input type="text" class="form-control" value="sh001">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <input type="text" class="form-control" value="Ordensmagt Røverier">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <input type="text" class="form-control" value="1987">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <input type="text" class="form-control" value="1997">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="form-group mb-0">
+                                      <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Officielt</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                      </select>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="row mt-5">
+                          <div class="col-sm-6">
+                            <h5 class="font-weight-bold mt-3 ml-3 mb-3">
+                              Interne noter
+                            </h5>
+                            <p class="ml-3 mr-3 readonly">
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been
+                              the industry's standard dummy text ever since
+                              the 1500s, when an unknown printer took a galley
+                              of type and scrambled it to make a type specimen
+                              book. It has survived not only five centuries,
+                              but also the leap into electronic typesetting,
+                              remaining essentially unchanged. It was
+                              popularised in the 1960s with the release of
+                              Letraset sheets containing Lorem Ipsum passages,
+                              and more recently with desktop publishing
+                              software like Aldus PageMaker including versions
+                              of Lorem Ipsum.
+                            </p>
+                            <div class="form-group write mb-0 ml-0 mr-0">
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+Lorem Ipsum is simply dummy text of the printing
+and typesetting industry. Lorem Ipsum has been
+the industry's standard dummy text ever since
+the 1500s, when an unknown printer took a galley
+of type and scrambled it to make a type specimen
+book. It has survived not only five centuries,
+but also the leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the release of
+Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing
+software like Aldus PageMaker including versions
+of Lorem Ipsum.
+                                </textarea>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <h5 class="font-weight-bold mt-3 ml-3 mb-3">
+                              Publikums noter
+                            </h5>
+                            <p class="ml-3 mr-3 readonly">
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been
+                              the industry's standard dummy text ever since
+                              the 1500s, when an unknown printer took a galley
+                              of type and scrambled it to make a type specimen
+                              book. It has survived not only five centuries,
+                              but also the leap into electronic typesetting,
+                              remaining essentially unchanged. It was
+                              popularised in the 1960s with the release of
+                              Letraset sheets containing Lorem Ipsum passages,
+                              and more recently with desktop publishing
+                              software like Aldus PageMaker including versions
+                              of Lorem Ipsum.
+                            </p>
+                            <div class="form-group write mb-0 ml-0 mr-0">
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+Lorem Ipsum is simply dummy text of the printing
+and typesetting industry. Lorem Ipsum has been
+the industry's standard dummy text ever since
+the 1500s, when an unknown printer took a galley
+of type and scrambled it to make a type specimen
+book. It has survived not only five centuries,
+but also the leap into electronic typesetting,
+remaining essentially unchanged. It was
+popularised in the 1960s with the release of
+Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing
+software like Aldus PageMaker including versions
+of Lorem Ipsum.
+                                </textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aktører -->
+              <div class="tab-pane" id="aktorer" role="tabpanel" aria-labelledby="aktorer-tab">
+                <div class="container-fluid">
+                  <div class="row mb-3">
+                    <div class="col-sm-12 p-0">
+                      <div class="card mt-3 mb-5">
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                          <h5 class="mb-0">
+                            Overordnede aktører
+                          </h5>
+                          <button class="btn btn-primary btn-lg">+ Tilføj aktør</button>
+                        </div>
+                        <div class="card-body p-0">
+                          <table id="search" class="table table-hover table-striped" width="100%">
+                            <thead>
+                              <tr>
+                                <th scope="col">Navn</th>
+                                <th scope="col">Fra</th>
+                                <th scope="col">Til</th>
+                                <th scope="col">Forbindelsestype</th>
+                                <th scope="col" style="visibility: hidden;"></th>
+                                <th scope="col" style="visibility: hidden;"></th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td><a href="#">Frederiksberg Politi</a></td>
+                                <td>1972</td>
+                                <td>1988</td>
+                                <td>Officielt</td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                    </svg></a></td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                    </svg>
+                                  </a></td>
+                              </tr>
+                              <tr>
+                                <td><a href="#">Frederiksberg Politi</a></td>
+                                <td>1972</td>
+                                <td>1988</td>
+                                <td>Officielt</td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                    </svg></a></td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                    </svg>
+                                  </a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="card mt-3">
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                          <h5 class="mb-0">
+                            Underordnede aktører
+                          </h5>
+                          <button class="btn btn-primary btn-lg">+ Tilføj aktør</button>
+                        </div>
+                        <div class="card-body p-0">
+                          <table class="table tabledisplay table-hover table-striped mb-0" width="100%">
+                            <thead>
+                              <tr>
+                                <th scope="col">Navn</th>
+                                <th scope="col">Fra</th>
+                                <th scope="col">Til</th>
+                                <th scope="col">Forbindelsestype</th>
+                                <th scope="col" style="visibility: hidden;"></th>
+                                <th scope="col" style="visibility: hidden;"></th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td><a href="#">Frederiksberg Politi</a></td>
+                                <td>1972</td>
+                                <td>1988</td>
+                                <td>Officielt</td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                    </svg></a></td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                    </svg>
+                                  </a></td>
+                              </tr>
+                              <tr>
+                                <td><a href="#">Frederiksberg Politi</a></td>
+                                <td>1972</td>
+                                <td>1988</td>
+                                <td>Officielt</td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                    </svg></a></td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                    </svg>
+                                  </a></td>
+                              </tr>
+                              <tr>
+                                <td><a href="#">Frederiksberg Politi</a></td>
+                                <td>1972</td>
+                                <td>1988</td>
+                                <td>Officielt</td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                    </svg></a></td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                    </svg>
+                                  </a></td>
+                              </tr>
+                              <tr>
+                                <td><a href="#">Frederiksberg Politi</a></td>
+                                <td>1972</td>
+                                <td>1988</td>
+                                <td>Officielt</td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                    </svg></a></td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                    </svg>
+                                  </a></td>
+                              </tr>
+                              <tr>
+                                <td><a href="#">Frederiksberg Politi</a></td>
+                                <td>1972</td>
+                                <td>1988</td>
+                                <td>Officielt</td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                    </svg></a></td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                    </svg>
+                                  </a></td>
+                              </tr>
+                              <tr>
+                                <td><a href="#">Frederiksberg Politi</a></td>
+                                <td>1972</td>
+                                <td>1988</td>
+                                <td>Officielt</td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z" />
+                                    </svg></a></td>
+                                <td width="25">
+                                  <a href="#" class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                      <path fill="#000" fill-rule="nonzero"
+                                        d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z" />
+                                    </svg>
+                                  </a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Heuristiske enheder -->
+              <div class="tab-pane" id="heuristiskeenheder" role="tabpanel" aria-labelledby="heuristiskeenheder-tab">
+                <div class="container-fluid">
+                  <div class="row mb-3">
+                    <div class="col-sm-12 p-0">
+                      <div class="card bg-light mt-3">
+                        <div class="card-body p-0">
+                          <h4 class="font-weight-bold ml-3 mt-3">
+                            Heuristiske enheder
+                          </h4>
+                          <div class="dataTables_scroll">
+                            <table id="" width="100%" class="table tabledisplay table-hover mb-0 table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Navn</th>
+                                  <th scope="col">Sorteringsfelt</th>
+                                  <th scope="col">Yderår</th>
+                                  <th scope="col">Type</th>
+                                  <th scope="col">Beskrivelsesniveau</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="clickable-row" data-href="#heuristiskeenhed-modal">
+                                  <td>Ordensmagt Røverier</td>
+                                  <td>
+                                    sh001
+                                  </td>
+                                  <td>1987-1988</td>
+                                  <td>Komponent</td>
+                                  <td>2. niveau</td>
+                                </tr>
+                                <tr class="clickable-row">
+                                  <td>Ordensmagt Røverier</td>
+                                  <td>
+                                    sh001
+                                  </td>
+                                  <td>1987-1988</td>
+                                  <td>Komponent</td>
+                                  <td>2. niveau</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <button class="btn btn-outline-primary ml-3 mt-3 mb-3" data-toggle="modal"
+                            data-target="#notarget">
+                            + Ny HE
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Noter -->
+              <div class="tab-pane" id="noter" role="tabpanel" aria-labelledby="noter-tab">
+                <div class="container-fluid">
+                  <div class="row mb-3">
+                    <div class="col-sm-12 p-0">
+                      <div class="card bg-light mt-3 p-lg-3">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <h4 class="font-weight-bold mb-4">
+                                Interne noter
+                              </h4>
+                              <p>
+                                Oversigt. Udskrive slides, noter eller
+                                uddelingskopier Du er færdig med at oprette
+                                din præsentation og vil nu udskrive
+                                uddelingskopier til dit publikum.
+                              </p>
+                              <button class="btn btn-outline-primary d-flex align-items-center" data-toggle="modal"
+                                data-target="#redigerArkivskaber">
+                                <svg height="16px" version="1.1" viewBox="0 0 16 16" class="mr-2" width="16px"
+                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g transform="translate(-384.000000, -192.000000)">
+                                    <path
+                                      d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
+                                      id="Triangle 313" />
+                                  </g>
+                                </svg>
+                                <span>Rediger</span>
+                              </button>
+                            </div>
+                            <div class="col-sm-6">
+                              <h4 class="font-weight-bold mb-4">
+                                Publikums noter
+                              </h4>
+                              <p>
+                                Oversigt. Udskrive slides, noter eller
+                                uddelingskopier Du er færdig med at oprette
+                                din præsentation og vil nu udskrive
+                                uddelingskopier til dit publikum.
+                              </p>
+                              <button class="btn btn-outline-primary d-flex align-items-center" data-toggle="modal"
+                                data-target="#redigerArkivskaber">
+                                <svg height="16px" version="1.1" viewBox="0 0 16 16" class="mr-2" width="16px"
+                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g transform="translate(-384.000000, -192.000000)">
+                                    <path
+                                      d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
+                                      id="Triangle 313" />
+                                  </g>
+                                </svg>
+                                <span>Rediger</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Henvisninger -->
+              <div class="tab-pane" id="henvisninger" role="tabpanel" aria-labelledby="henvisninger-tab">
+                <div class="container-fluid">
+                  <div class="row mb-3">
+                    <div class="col-sm-12 p-0">
+                      <div class="card bg-light mt-3">
+                        <div class="card-body p-0">
+                          <h4 class="font-weight-bold ml-3 mt-3">
+                            Henvisninger
+                          </h4>
+                          <table id="" class="table tabledisplay table-hover table-striped mb-3" width="100%">
+                            <thead>
+                              <tr>
+                                <th scope="col">Proveniens</th>
+                                <th scope="col">Henvisning</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>2+0005</td>
+                                <td>2+0005</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Heuristik Enhed Modal -->
+  <div class="modal fade" id="heuristiskeenhed-modal" tabindex="-1" role="dialog"
+    aria-labelledby="heuristiskeenhed-modal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="badge badge-success badge-pill mt-3 mb-4">Heuristisk enhed</span>
+          <h1 class="font-weight-extrabold">Ordensmagt Røverier</h1>
+          <h3 class="text-secondary">Ordenspolitiet, 1919 - 2006</h3>
+          <h5 class="mt-4 mb-1 text-secondary">
+            Type:
+            Komponent&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Undertype:
+            Ja&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Kladde:
+            Ja&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Kasseret: Nej
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          tekst
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">
+            Luk
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css" />
+  <script src="src/js/script.js"></script>
+</body>
+
+</html>

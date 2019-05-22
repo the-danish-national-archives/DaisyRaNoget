@@ -39,7 +39,9 @@
         <div class="col-10 mt-5 col-centered">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Arkivskaber</a>
+              <a class="nav-link" href="../index.html#arkivskaber"
+                >Arkivskaber</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../index.html#heuristiskenhed"
@@ -60,7 +62,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#arbejdsopgave"
+              <a class="nav-link active" href="../index.html#arbejdsopgave"
                 >Arbejdsopgave</a
               >
             </li>
@@ -73,52 +75,89 @@
         <div class="col-10 col-centered">
           <div class="card special pt-3 pl-3 pr-3 pb-3">
             <div class="card-body">
-              <!-- arkivskaber start -->
-              <form action="search/search-arkivskaber.html">
+              <!-- arbejdsopgave start -->
+              <form action="search-arbejdsopgave.html">
                 <div class="container-fluid">
-                  <div class="row mb-3">
+                  <div class="row">
                     <div class="col-sm-3">
-                      <label for="navn">Navn</label>
+                      <label for="opgavenavn">Opgavenavn</label>
                       <input
                         type="text"
                         class="form-control bg-light"
-                        value="Frederiksberg Politi"
-                        id="navn"
+                        value=""
+                        id="opgavenavn"
                       />
                     </div>
                     <div class="col-sm-3">
-                      <label for="emne">Emne</label>
+                      <label for="arkivskaber">Arkivskaber</label>
                       <input
                         type="text"
                         class="form-control bg-light"
-                        id="emne"
+                        id="arkivskaber"
+                        value="Indenrigsministeriet"
                       />
                     </div>
                     <div class="col-sm-3">
-                      <label for="geografi">Geografi</label>
+                      <label for="praefiks">Præfiks</label>
                       <input
                         type="text"
                         class="form-control bg-light"
-                        id="geografi"
+                        id="praefiks"
                       />
                     </div>
                     <div class="col-sm-3 mb-3">
-                      <label for="proveniensnr">Proveniens-nr.</label>
+                      <label for="ansvarlig">Ansvarlig</label>
                       <input
                         type="text"
                         class="form-control bg-light"
-                        id="proveniensnr"
+                        id="ansvarlig"
                       />
                     </div>
-                    <div class="col-sm-12">
-                      <button type="submit" class="btn btn-primary search">
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-sm-3">
+                      <label for="status" class="mb-2">Status</label><br />
+                      <div class="form-check form-check-inline mr-4">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios1"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="exampleRadios1">
+                          Alle
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline mr-4">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="exampleRadios2">
+                          Åben
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios3"
+                          value="option3"
+                        />
+                        <label class="form-check-label" for="exampleRadios3">
+                          Lukket
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <button type="submit" class="btn btn-primary search mt-4">
                         Søg
-                      </button>
-                      <button
-                        type="submit"
-                        class="ml-2 btn btn-outline-primary"
-                      >
-                        + Ny arkivskaber
                       </button>
                     </div>
                   </div>
@@ -145,44 +184,79 @@
                 >
                   <thead>
                     <tr>
-                      <th scope="col">Præfiks</th>
                       <th scope="col">Arkivskaber</th>
+                      <th scope="col">HE-Navn</th>
                       <th scope="col">Fra</th>
                       <th scope="col">Til</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Sorteringsfelt</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="clickable-row" data-href="../arkivskaber.html">
+                    <tr
+                      class="clickable-row"
+                      data-href="../heuristiskenhed.html"
+                    >
                       <td>
-                        FRB Politi
+                        Indenrigsministeriet
                       </td>
-                      <td>Frederiksberg Pol</td>
+                      <td>Kredsaflytningssystem</td>
                       <td>1972</td>
                       <td>1988</td>
+                      <td>Komponent</td>
+                      <td>sh2001</td>
                     </tr>
-                    <tr class="clickable-row" data-href="../arkivskaber.html">
+                    <tr
+                      class="clickable-row"
+                      data-href="../heuristiskenhed.html"
+                    >
                       <td>
-                        FRB Politi
+                        Indenrigsministeriet
                       </td>
-                      <td>Frederiksberg Pol</td>
+                      <td>Kredsaflytningssystem</td>
                       <td>1972</td>
                       <td>1988</td>
+                      <td>Komponent</td>
+                      <td>sh2001</td>
                     </tr>
-                    <tr class="clickable-row" data-href="../arkivskaber.html">
+                    <tr
+                      class="clickable-row"
+                      data-href="../heuristiskenhed.html"
+                    >
                       <td>
-                        FRB Politi
+                        Indenrigsministeriet
                       </td>
-                      <td>Frederiksberg Pol</td>
+                      <td>Kredsaflytningssystem</td>
                       <td>1972</td>
                       <td>1988</td>
+                      <td>Komponent</td>
+                      <td>sh2001</td>
                     </tr>
-                    <tr class="clickable-row" data-href="../arkivskaber.html">
+                    <tr
+                      class="clickable-row"
+                      data-href="../heuristiskenhed.html"
+                    >
                       <td>
-                        FRB Politi
+                        Indenrigsministeriet
                       </td>
-                      <td>Frederiksberg Pol</td>
+                      <td>Kredsaflytningssystem</td>
                       <td>1972</td>
                       <td>1988</td>
+                      <td>Komponent</td>
+                      <td>sh2001</td>
+                    </tr>
+                    <tr
+                      class="clickable-row"
+                      data-href="../heuristiskenhed.html"
+                    >
+                      <td>
+                        Indenrigsministeriet
+                      </td>
+                      <td>Kredsaflytningssystem</td>
+                      <td>1972</td>
+                      <td>1988</td>
+                      <td>Komponent</td>
+                      <td>sh2001</td>
                     </tr>
                   </tbody>
                 </table>

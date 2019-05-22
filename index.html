@@ -108,11 +108,11 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                id="arbejdsopgaver-tab"
+                id="arbejdsopgave-tab"
                 data-toggle="tab"
-                href="#arbejdsopgaver"
+                href="#arbejdsopgave"
                 role="tab"
-                aria-controls="arbejdsopgaver"
+                aria-controls="arbejdsopgave"
                 href="#"
                 >Arbejdsopgave</a
               >
@@ -212,7 +212,7 @@
                   aria-labelledby="heuristiskeenhed-tab"
                 >
                   <!-- heuristiskeenhed start -->
-                  <form>
+                  <form action="search/search-heuristiskenhed.html">
                     <div class="container-fluid">
                       <div class="row mb-3">
                         <div class="col-sm-12">
@@ -304,7 +304,7 @@
                   aria-labelledby="arkiveringsversion-tab"
                 >
                   <!-- arkiveringsversion -->
-                  <form>
+                  <form action="heuristiskenhed.html">
                     <div class="container-fluid">
                       <div class="row mb-3">
                         <div class="col-sm-12">
@@ -349,7 +349,7 @@
                   aria-labelledby="eksemplar-tab"
                 >
                   <!-- eksemplar -->
-                  <form>
+                  <form action="heuristiskenhed.html">
                     <div class="container-fluid">
                       <div class="row mb-3">
                         <div class="col-sm-6">
@@ -483,13 +483,13 @@
                 </div>
                 <div
                   class="tab-pane"
-                  id="arbejdsopgaver"
+                  id="arbejdsopgave"
                   role="tabpanel"
-                  aria-labelledby="arbejdsopgaver-tab"
+                  aria-labelledby="arbejdsopgave-tab"
                 >
                   <!-- arbejdsopgaver -->
 
-                  <form>
+                  <form action="search/search-arbejdsopgave.html">
                     <div class="container-fluid">
                       <div class="row mb-3">
                         <div class="col-sm-12">
@@ -530,8 +530,8 @@
                           />
                         </div>
                         <div class="col-sm-6">
-                          <label for="status">Status</label>
-                          <div class="form-check">
+                          <label for="status" class="mb-2">Status</label><br />
+                          <div class="form-check form-check-inline mr-4">
                             <input
                               class="form-check-input"
                               type="radio"
@@ -547,7 +547,7 @@
                               Alle
                             </label>
                           </div>
-                          <div class="form-check">
+                          <div class="form-check form-check-inline mr-4">
                             <input
                               class="form-check-input"
                               type="radio"
@@ -562,7 +562,7 @@
                               Åben
                             </label>
                           </div>
-                          <div class="form-check">
+                          <div class="form-check form-check-inline">
                             <input
                               class="form-check-input"
                               type="radio"
