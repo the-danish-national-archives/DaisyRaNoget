@@ -7075,6 +7075,9 @@ table.dataTable tbody tr:hover .icon {
 .write {
   display: none; }
 
+.opentask {
+  display: none; }
+
 .dataTables_paginate .paginate_button {
   padding: 6px 9px !important;
   background: none !important;

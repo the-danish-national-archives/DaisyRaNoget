@@ -8,11 +8,11 @@ $(document).ready(function() {
   });
 
   // clickable rows
-  $(".clickable-row").click(function() {
+  $(".clickable-row").on("click", function() {
     window.location = $(this).data("href");
   });
 
-  $(".clickable-checkbox").click(function() {
+  $(".clickable-checkbox").on("click", function() {
     $(this)
       .find("input[type=checkbox]")
       .prop(
@@ -21,6 +21,11 @@ $(document).ready(function() {
           .find("input[type=checkbox]")
           .prop("checked")
       );
+  });
+
+  $("#closetask").on("click", function() {
+    $(".btn.readonly").hide();
+    $(".btn.opentask").show();
   });
 
   // Move datatables sorting arrows

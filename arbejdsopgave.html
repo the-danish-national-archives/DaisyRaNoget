@@ -68,7 +68,7 @@
               >
               <span class="badge badge-primary">Arbejdsopgave</span>
 
-              <h1 class="font-weight-bold mt-3">
+              <h1 class="font-weight-bold mt-4">
                 Min arbejdsopgave
               </h1>
               <h4 class="text-secondary mb-5">
@@ -236,7 +236,7 @@ Nørregade 56
                                 <div class="col-sm-6 readonly">
                                   Arb240599
                                   <button
-                                    class="ml-3 btn btn-sm btn-outline-primary"
+                                    class="ml-3 btn btn-sm btn-outline-primary readonly"
                                   >
                                     Kopiér
                                   </button>
@@ -260,7 +260,7 @@ Nørregade 56
                                 <div class="col-sm-6 readonly">
                                   12345678x
                                   <button
-                                    class="ml-3 btn btn-sm btn-outline-primary"
+                                    class="ml-3 btn btn-sm btn-outline-primary readonly"
                                   >
                                     Kopiér
                                   </button>
@@ -280,11 +280,18 @@ Nørregade 56
                               <div class="row d-flex align-items-center">
                                 <div class="col-sm-12 readonly">
                                   <button
-                                    class="btn btn-outline-danger"
+                                    class="btn btn-outline-danger readonly"
                                     data-toggle="modal"
                                     data-target="#lukopgave"
                                   >
                                     Luk opgave
+                                  </button>
+                                  <button
+                                    class="btn btn-success opentask"
+                                    data-toggle="modal"
+                                    data-target="#opentask"
+                                  >
+                                    Gen-åben opgave
                                   </button>
                                 </div>
                               </div>
@@ -314,7 +321,7 @@ Nørregade 56
                           </div>
                         </h4>
                         <button
-                          class="btn btn-primary mb-3 mr-3 d-flex align-items-center"
+                          class="btn btn-primary mb-3 mr-3 d-flex align-items-center readonly"
                           data-toggle="modal"
                           data-target="#tilfoejeks"
                         >
@@ -670,6 +677,7 @@ Nørregade 56
               type="button"
               class="btn btn-danger d-flex align-items-center"
               data-dismiss="modal"
+              id="closetask"
             >
               Luk opgave
             </button>
