@@ -11,6 +11,17 @@ $(document).ready(function() {
   $(".clickable-row").click(function() {
     window.location = $(this).data("href");
   });
+
+  $(".clickable-checkbox").click(function() {
+    $(this)
+      .find("input[type=checkbox]")
+      .prop(
+        "checked",
+        !$(this)
+          .find("input[type=checkbox]")
+          .prop("checked")
+      );
+  });
   // Move datatables sorting arrows
   var spanSorting = '<span class="arrow-hack sort">&nbsp;&nbsp;&nbsp;</span>',
     spanAsc = '<span class="arrow-hack asc">&nbsp;&nbsp;&nbsp;</span>',

@@ -6974,10 +6974,12 @@ table.dataTable tbody tr:hover .icon {
 .sticky {
   position: fixed;
   top: 0;
-  width: 1165px;
+  left: 0;
+  width: 100%;
   display: block;
   z-index: 888;
-  background: #f7f7f7; }
+  background: #f7f7f7;
+  transition: 0.4s all; }
 
 .write {
   display: none; }
