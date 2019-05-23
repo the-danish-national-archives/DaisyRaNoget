@@ -12,7 +12,7 @@
     <title>Daisy RA</title>
   </head>
 
-  <body class="bg-light b-top">
+  <body class="bg-light">
     <div class="container-fluid">
       <div class="col-sm-10 col-centered">
         <nav class="navbar navbar-expand-lg navbar-white">
@@ -279,7 +279,11 @@ Nørregade 56
                             <li class="list-group-item">
                               <div class="row d-flex align-items-center">
                                 <div class="col-sm-12 readonly">
-                                  <button class="btn btn-outline-danger">
+                                  <button
+                                    class="btn btn-outline-danger"
+                                    data-toggle="modal"
+                                    data-target="#lukopgave"
+                                  >
                                     Luk opgave
                                   </button>
                                 </div>
@@ -419,7 +423,7 @@ Nørregade 56
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal opret ny arbejdsopgave -->
     <div
       class="modal fade"
       id="tilfoejeks"
@@ -431,12 +435,12 @@ Nørregade 56
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="tilfoejeksModalLabel">
+            <h5 class="modal-title font-weight-bold" id="tilfoejeksModalLabel">
               Tilføj Eksemplar
             </h5>
             <button
               type="button"
-              class="close"
+              class="btn close"
               data-dismiss="modal"
               aria-label="Close"
             >
@@ -456,7 +460,15 @@ Nørregade 56
             </button>
           </div>
           <div class="modal-body">
-            <input type="text" class="form-control" placeholder="Søg..." />
+            <div class="card bg-light">
+              <div class="card-body">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Søg..."
+                />
+              </div>
+            </div>
             <div class="table-responsive">
               <table
                 id=""
@@ -473,6 +485,7 @@ Nørregade 56
                           class="form-check-input"
                           type="checkbox"
                           value=""
+                          class="clickable-checkbox-all"
                           id="defaultCheck1"
                         />
                       </div>
@@ -581,8 +594,84 @@ Nørregade 56
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Tilføj
+            <button
+              type="button"
+              class="btn btn-primary d-flex align-items-center"
+              data-dismiss="modal"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="16"
+                viewBox="0 0 12 16"
+                class="mr-2"
+              >
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                />
+              </svg>
+              <span>Tilføj</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Luk arbejdsopgave -->
+    <div
+      class="modal fade"
+      id="lukopgave"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="lukopgaveModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="lukopgaveModalLabel">
+              Luk opgave
+            </h5>
+            <button
+              type="button"
+              class="btn close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 12 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Er du sikker på at du vil lukke opgaven?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn d-flex align-items-center"
+              data-dismiss="modal"
+            >
+              Annuller
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger d-flex align-items-center"
+              data-dismiss="modal"
+            >
+              Luk opgave
             </button>
           </div>
         </div>

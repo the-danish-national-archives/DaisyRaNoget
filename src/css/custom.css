@@ -7009,9 +7009,6 @@ textarea.form-control {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.b-top {
-  border-top: 4px solid #1a232a; }
-
 .btn-outline-primary svg {
   fill: #1a232a; }
 
@@ -7094,7 +7091,8 @@ table.dataTable tbody tr:hover .icon {
   float: none;
   margin: 0 auto; }
 
-.clickable-row {
+.clickable-row,
+.clickable-checkbox {
   cursor: pointer; }
 
 span.arrow-hack {
