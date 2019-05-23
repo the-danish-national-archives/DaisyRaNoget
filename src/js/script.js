@@ -99,10 +99,6 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  $("#heuristiskeenhed-modal").draggable({
-    handle: ".modal-header"
-  });
-
   $(".dataTables_filter input").attr("placeholder", "Filtrér");
 
   $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
