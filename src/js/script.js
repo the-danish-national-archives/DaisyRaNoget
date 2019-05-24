@@ -38,8 +38,8 @@ $(document).ready(function() {
     spanAsc = '<span class="arrow-hack asc">&nbsp;&nbsp;&nbsp;</span>',
     spanDesc = '<span class="arrow-hack desc">&nbsp;&nbsp;&nbsp;</span>';
 
-  $(".tabledisplay, #search").on("click", "th", function() {
-    $(".tabledisplay thead th, #search thead th").each(function(i, th) {
+  $(".sorting").on("click", "th", function() {
+    $(".sorting thead th").each(function(i, th) {
       $(th)
         .find(".arrow-hack")
         .remove();
@@ -59,7 +59,7 @@ $(document).ready(function() {
     });
   });
 
-  $(".tabledisplay th, #search th")
+  $(".sorting th")
     .first()
     .click()
     .click();
@@ -79,7 +79,8 @@ $(document).ready(function() {
     scrollX: true,
     scrollY: 270,
     language: {
-      search: ""
+      search: "",
+      zeroRecords: "Din filtrering gav ingen resultater"
     }
   });
 
@@ -110,6 +111,24 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  $("#overordnedeaktoerer").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#underordnedeaktoerer").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
   $(".dataTables_filter input").attr("placeholder", "Filtrér");
 
   $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
@@ -120,10 +139,12 @@ $(document).ready(function() {
   $(".edit").on("click", function() {
     $(".readonly").hide();
     $(".write").show();
+    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
   });
 
   $(".save").on("click", function() {
     $(".readonly").show();
     $(".write").hide();
+    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
   });
 });
