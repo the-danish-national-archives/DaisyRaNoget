@@ -166,10 +166,9 @@ table.dataTable tbody tr:hover .icon {
 }
 
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
   display: block;
   z-index: 888;
   background: #f7f7f7;
@@ -182,6 +181,10 @@ table.dataTable tbody tr:hover .icon {
 
 .opentask {
   display: none;
+}
+
+.time {
+  font-size: 14px;
 }
 
 .dataTables_paginate .paginate_button {

@@ -76,7 +76,7 @@
           <div class="card special pt-3 pl-3 pr-3 pb-3">
             <div class="card-body">
               <!-- arbejdsopgave start -->
-              <form action="search-arbejdsopgave.html">
+              <form action="../search-arbejdsopgave.html">
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm-3">
@@ -98,14 +98,6 @@
                       />
                     </div>
                     <div class="col-sm-3">
-                      <label for="praefiks">Præfiks</label>
-                      <input
-                        type="text"
-                        class="form-control bg-light"
-                        id="praefiks"
-                      />
-                    </div>
-                    <div class="col-sm-3 mb-3">
                       <label for="ansvarlig">Ansvarlig</label>
                       <input
                         type="text"
@@ -113,56 +105,49 @@
                         id="ansvarlig"
                       />
                     </div>
-                  </div>
-                  <div class="row mb-3">
                     <div class="col-sm-3">
-                      <label for="status" class="mb-2">Status</label><br />
-                      <div class="form-check form-check-inline mr-4">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios1"
-                          value="option1"
-                          checked
-                        />
-                        <label class="form-check-label" for="exampleRadios1">
-                          Alle
-                        </label>
+                      <div class="form-group mb-0">
+                        <label for="status">Status</label>
+                        <select class="form-control bg-light" id="status">
+                          <option>Alle</option>
+                          <option>Åben</option>
+                          <option>Lukket</option>
+                        </select>
                       </div>
-                      <div class="form-check form-check-inline mr-4">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios2"
-                          value="option2"
-                        />
-                        <label class="form-check-label" for="exampleRadios2">
-                          Åben
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios3"
-                          value="option3"
-                        />
-                        <label class="form-check-label" for="exampleRadios3">
-                          Lukket
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-sm-3">
-                      <button type="submit" class="btn btn-primary search mt-4">
-                        Søg
-                      </button>
                     </div>
                   </div>
                 </div>
               </form>
+              <div class="row pl-3">
+                <div class="col-sm-4 mt-3 d-flex align-items-center">
+                  <button
+                    type="submit"
+                    class="btn btn-primary d-flex align-items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      class="mr-2 mt-1"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#ffffff"
+                        d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"
+                      />
+                    </svg>
+                    <span>Søg</span>
+                  </button>
+                  <button
+                    class="ml-3 btn btn-outline-primary"
+                    data-toggle="modal"
+                    data-target="#nyarbopgave"
+                  >
+                    <span>+ Ny arbejdsopgave</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
