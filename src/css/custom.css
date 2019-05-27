@@ -7062,6 +7062,10 @@ table.dataTable tbody tr .icon {
 table.dataTable tbody tr:hover .icon {
   visibility: visible; }
 
+table thead tr th {
+  border-bottom: 1px solid #ced4da !important;
+  border-top: 1px solid #ced4da !important; }
+
 .sticky {
   position: sticky;
   top: 0;
@@ -7131,7 +7135,7 @@ span.sort {
   font-size: 16px;
   font-weight: 400;
   color: #495057;
-  background-color: #fff;
+  background-color: #f8f9fa;
   border: 1px solid #ced4da;
   border-radius: 0.25rem; }
 
@@ -7139,3 +7143,6 @@ span.sort {
   .modal-xl {
     width: 90%;
     max-width: 1200px; } }
+
+.papir {
+  display: none; }

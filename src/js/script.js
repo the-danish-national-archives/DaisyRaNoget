@@ -147,4 +147,14 @@ $(document).ready(function() {
     $(".write").hide();
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
   });
+
+  $('[name="typeRadio"]').on("change", function() {
+    if ($(this).is(":checked") && $(this).attr("id") == "type1") {
+      $(".itkomponent").show();
+      $(".papir").hide();
+    } else {
+      $(".itkomponent").hide();
+      $(".papir").show();
+    }
+  });
 });
