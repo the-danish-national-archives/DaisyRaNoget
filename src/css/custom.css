@@ -7134,3 +7134,8 @@ span.sort {
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem; }
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+    max-width: 1200px; } }
