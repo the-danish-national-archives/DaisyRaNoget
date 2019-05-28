@@ -147,7 +147,7 @@
               </ul>
 
               <div class="tab-content" id="myTabContent">
-                <!-- beskrivelse start -->
+                <!-- Beskrivelse -->
                 <div
                   class="tab-pane show active"
                   id="beskrivelse"
@@ -331,7 +331,7 @@
                           <div class="card bg-white ml-3 mr-3">
                             <div class="card-body p-0 m-0">
                               <table
-                                id="navne"
+                                id=""
                                 width="100%"
                                 class="table sorting table-striped table-hover mb-0"
                               >
@@ -342,13 +342,11 @@
                                     <th scope="col">Fra</th>
                                     <th scope="col">Til</th>
                                     <th scope="col">Navnetype</th>
+                                    <th scope="col" class="hidden"></th>
                                   </tr>
                                 </thead>
                                 <tbody>
-                                  <tr
-                                    class="clickable-row readonly"
-                                    data-href="#heuristiskeenhed-modal"
-                                  >
+                                  <tr class="readonly">
                                     <td>
                                       FRB Politi
                                     </td>
@@ -356,11 +354,23 @@
                                     <td>1987</td>
                                     <td>1988</td>
                                     <td>Officielt</td>
+                                    <td width="25" class="text-right">
+                                      <span class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </td>
                                   </tr>
-                                  <tr
-                                    class="clickable-row readonly"
-                                    data-href="#heuristiskeenhed-modal"
-                                  >
+                                  <tr class="readonly">
                                     <td>
                                       FRB Politi
                                     </td>
@@ -368,6 +378,21 @@
                                     <td>1987</td>
                                     <td>1988</td>
                                     <td>Officielt</td>
+                                    <td width="25" class="text-right">
+                                      <span class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </td>
                                   </tr>
                                   <tr class="write">
                                     <td>
@@ -420,6 +445,9 @@
                                         </select>
                                       </div>
                                     </td>
+                                    <td width="25" class="text-right">
+                                      &nbsp;
+                                    </td>
                                   </tr>
                                   <tr class="write">
                                     <td>
@@ -471,6 +499,9 @@
                                           <option>5</option>
                                         </select>
                                       </div>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      &nbsp;
                                     </td>
                                   </tr>
                                 </tbody>
@@ -645,13 +676,13 @@ of Lorem Ipsum.
                                     d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
                                   />
                                 </svg>
-                                <span>Tilføj aktør</span>
+                                <span>Tilføj</span>
                               </button>
                             </div>
                             <div class="card mb-5">
                               <table
                                 id="overordnedeaktoerer"
-                                class="table sorting table-hover table-striped"
+                                class="table sorting table-hover table-striped mb-0"
                                 width="100%"
                               >
                                 <thead>
@@ -660,21 +691,17 @@ of Lorem Ipsum.
                                     <th scope="col">Fra</th>
                                     <th scope="col">Til</th>
                                     <th scope="col">Navnetype</th>
-                                    <th
-                                      scope="col"
-                                      style="visibility: hidden;"
-                                    ></th>
-                                    <th
-                                      scope="col"
-                                      style="visibility: hidden;"
-                                    ></th>
+                                    <th scope="col" class="hidden"></th>
+                                    <th scope="col" class="hidden"></th>
                                   </tr>
                                 </thead>
 
                                 <tbody>
                                   <tr class="readonly">
                                     <td>
-                                      <a href="#">Frederiksberg Politi</a>
+                                      <a href="/arkivskaber.html">
+                                        Frederiksberg Politi
+                                      </a>
                                     </td>
                                     <td>1972</td>
                                     <td>1988</td>
@@ -691,21 +718,21 @@ of Lorem Ipsum.
                                             fill="#000"
                                             fill-rule="nonzero"
                                             d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
-                                          /></svg
-                                      ></a>
+                                          />
+                                        </svg>
+                                      </a>
                                     </td>
                                     <td width="25" class="text-right">
                                       <a href="#" class="delete icon">
                                         <svg
                                           xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          viewBox="0 0 16 16"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
                                         >
                                           <path
-                                            fill="#000"
-                                            fill-rule="nonzero"
-                                            d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z"
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
                                           />
                                         </svg>
                                       </a>
@@ -807,7 +834,7 @@ of Lorem Ipsum.
                                     d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
                                   />
                                 </svg>
-                                <span>Tilføj aktør</span>
+                                <span>Tilføj</span>
                               </button>
                             </div>
                             <div class="card">
@@ -822,21 +849,17 @@ of Lorem Ipsum.
                                     <th scope="col">Fra</th>
                                     <th scope="col">Til</th>
                                     <th scope="col">Navnetype</th>
-                                    <th
-                                      scope="col"
-                                      style="visibility: hidden;"
-                                    ></th>
-                                    <th
-                                      scope="col"
-                                      style="visibility: hidden;"
-                                    ></th>
+                                    <th scope="col" class="hidden"></th>
+                                    <th scope="col" class="hidden"></th>
                                   </tr>
                                 </thead>
 
                                 <tbody>
                                   <tr class="readonly">
                                     <td>
-                                      <a href="#">Frederiksberg Politi</a>
+                                      <a href="/arkivskaber.html"
+                                        >Frederiksberg Politi</a
+                                      >
                                     </td>
                                     <td>1972</td>
                                     <td>1988</td>
@@ -853,21 +876,21 @@ of Lorem Ipsum.
                                             fill="#000"
                                             fill-rule="nonzero"
                                             d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
-                                          /></svg
-                                      ></a>
+                                          />
+                                        </svg>
+                                      </a>
                                     </td>
                                     <td width="25" class="text-right">
                                       <a href="#" class="delete icon">
                                         <svg
                                           xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          viewBox="0 0 16 16"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
                                         >
                                           <path
-                                            fill="#000"
-                                            fill-rule="nonzero"
-                                            d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z"
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
                                           />
                                         </svg>
                                       </a>
@@ -1005,14 +1028,7 @@ of Lorem Ipsum.
                                     <th scope="col">Type</th>
                                     <th scope="col">Sorteringsfelt</th>
                                     <th scope="col">Beskrivelsesniveau</th>
-                                    <th
-                                      scope="col"
-                                      style="visibility: hidden;"
-                                    ></th>
-                                    <th
-                                      scope="col"
-                                      style="visibility: hidden;"
-                                    ></th>
+                                    <th scope="col" class="hidden"></th>
                                   </tr>
                                 </thead>
 
@@ -1032,32 +1048,16 @@ of Lorem Ipsum.
                                     <td>sb49924</td>
                                     <td>2. niveau</td>
                                     <td width="25" class="text-right">
-                                      <a href="#" class="edit icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="20"
-                                          height="20"
-                                          viewBox="0 0 20 20"
-                                        >
-                                          <path
-                                            fill="#000"
-                                            fill-rule="nonzero"
-                                            d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
-                                          /></svg
-                                      ></a>
-                                    </td>
-                                    <td width="25" class="text-right">
                                       <a href="#" class="delete icon">
                                         <svg
                                           xmlns="http://www.w3.org/2000/svg"
-                                          width="16"
-                                          height="16"
-                                          viewBox="0 0 16 16"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
                                         >
                                           <path
-                                            fill="#000"
-                                            fill-rule="nonzero"
-                                            d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16zM4 7v2h8V7H4z"
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
                                           />
                                         </svg>
                                       </a>
@@ -1065,99 +1065,6 @@ of Lorem Ipsum.
                                   </tr>
                                 </tbody>
                               </table>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Noter -->
-                <div
-                  class="tab-pane"
-                  id="noter"
-                  role="tabpanel"
-                  aria-labelledby="noter-tab"
-                >
-                  <div class="container-fluid">
-                    <div class="row mb-3">
-                      <div class="col-sm-12 p-0">
-                        <div class="card bg-light mt-3 p-lg-3">
-                          <div class="card-body">
-                            <div class="row">
-                              <div class="col-sm-6">
-                                <h4 class="font-weight-bold mb-4">
-                                  Interne noter
-                                </h4>
-                                <p>
-                                  Oversigt. Udskrive slides, noter eller
-                                  uddelingskopier Du er færdig med at oprette
-                                  din præsentation og vil nu udskrive
-                                  uddelingskopier til dit publikum.
-                                </p>
-                                <button
-                                  class="btn btn-outline-primary d-flex align-items-center"
-                                  data-toggle="modal"
-                                  data-target="#redigerArkivskaber"
-                                >
-                                  <svg
-                                    height="16px"
-                                    version="1.1"
-                                    viewBox="0 0 16 16"
-                                    class="mr-2"
-                                    width="16px"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                  >
-                                    <g
-                                      transform="translate(-384.000000, -192.000000)"
-                                    >
-                                      <path
-                                        d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
-                                        id="Triangle 313"
-                                      />
-                                    </g>
-                                  </svg>
-                                  <span>Rediger</span>
-                                </button>
-                              </div>
-                              <div class="col-sm-6">
-                                <h4 class="font-weight-bold mb-4">
-                                  Publikums noter
-                                </h4>
-                                <p>
-                                  Oversigt. Udskrive slides, noter eller
-                                  uddelingskopier Du er færdig med at oprette
-                                  din præsentation og vil nu udskrive
-                                  uddelingskopier til dit publikum.
-                                </p>
-                                <button
-                                  class="btn btn-outline-primary d-flex align-items-center"
-                                  data-toggle="modal"
-                                  data-target="#redigerArkivskaber"
-                                >
-                                  <svg
-                                    height="16px"
-                                    version="1.1"
-                                    viewBox="0 0 16 16"
-                                    class="mr-2"
-                                    width="16px"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                  >
-                                    <g
-                                      transform="translate(-384.000000, -192.000000)"
-                                    >
-                                      <path
-                                        d="M385,203.950806 L389,208 L385,208 Z M392,196 L396,200 L389.978638,207.044189 L386,203 Z M394.084619,193.781497 C394.709458,193.156658 395.90929,193.343426 396.764518,194.198654 L397.538782,194.972918 C398.394011,195.828147 398.580778,197.027979 397.95594,197.652817 L396.720394,198.888363 L392.849074,195.017043 Z M394.084619,193.781497"
-                                        id="Triangle 313"
-                                      />
-                                    </g>
-                                  </svg>
-                                  <span>Rediger</span>
-                                </button>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -1176,29 +1083,369 @@ of Lorem Ipsum.
                   <div class="container-fluid">
                     <div class="row mb-3">
                       <div class="col-sm-12 p-0">
-                        <div class="card bg-light mt-3">
-                          <div class="card-body p-0">
-                            <h4 class="font-weight-bold ml-3 mt-3">
-                              Henvisninger
-                            </h4>
-                            <table
-                              id=""
-                              class="table sorting tabledisplay table-hover table-striped mb-3"
-                              width="100%"
+                        <div class="card mt-3 mb-5 p-lg-3">
+                          <div class="card-body">
+                            <div
+                              class="d-flex align-items-center justify-content-between"
                             >
-                              <thead>
-                                <tr>
-                                  <th scope="col">Proveniens</th>
-                                  <th scope="col">Henvisning</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>2+0005</td>
-                                  <td>2+0005</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                              <h4 class="mb-3 ml-1 mt-3 font-weight-bold">
+                                <div class="d-flex align-items-center">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 12 16"
+                                  >
+                                    <path
+                                      fill="#686868"
+                                      fill-rule="evenodd"
+                                      d="M4 12h1v1H2v-1h1v-2H2V9h2v3zm8-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5zM8 4H6v1h1v2H6v1h3V7H8V4zM2 4h3v4H2V4zm1 3h1V5H3v2zm3 2h3v4H6V9zm1 3h1v-2H7v2z"
+                                    />
+                                  </svg>
+                                  <span class="ml-3">Proveniens nr.</span>
+                                </div>
+                              </h4>
+                            </div>
+                            <div class="card">
+                              <table
+                                id="proveniensnr"
+                                class="table sorting table-hover table-striped mb-0"
+                                width="100%"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Proveniens nr.</th>
+                                    <th scope="col" class="hidden"></th>
+                                  </tr>
+                                </thead>
+
+                                <tbody>
+                                  <tr class="readonly">
+                                    <td>
+                                      <a href="#">5+DG-001</a>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <a href="#" class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <h4 class="mb-3 ml-1 mt-3 font-weight-bold">
+                                <div class="d-flex align-items-center">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 12 16"
+                                  >
+                                    <path
+                                      fill="#686868"
+                                      fill-rule="evenodd"
+                                      d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
+                                    />
+                                  </svg>
+                                  <span class="ml-3"
+                                    >Anden arkivalieinformation</span
+                                  >
+                                </div>
+                              </h4>
+                            </div>
+                            <div class="card">
+                              <table
+                                id="andenarkivalie"
+                                class="table sorting table-hover table-striped mb-0"
+                                width="100%"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Dokumenttype</th>
+                                    <th scope="col">Titel</th>
+                                    <th scope="col">Dokumentdato</th>
+                                    <th scope="col">Filnavn</th>
+                                    <th scope="col">Medie Id</th>
+                                    <th scope="col">Placering</th>
+                                    <th scope="col" class="hidden"></th>
+                                    <th scope="col" class="hidden"></th>
+                                  </tr>
+                                </thead>
+
+                                <tbody>
+                                  <tr class="readonly">
+                                    <td>
+                                      <a
+                                        href="#"
+                                        data-toggle="modal"
+                                        data-target="#visningheuristiskenhed"
+                                        >5+DG-001</a
+                                      >
+                                    </td>
+                                    <td>5+DG-001</td>
+                                    <td>5+DG-001</td>
+                                    <td>5+DG-001</td>
+                                    <td>5+DG-001</td>
+                                    <td>5+DG-001</td>
+                                    <td width="25" class="text-right">
+                                      <a href="#" class="edit icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="20"
+                                          height="20"
+                                          viewBox="0 0 20 20"
+                                        >
+                                          <path
+                                            fill="#000"
+                                            fill-rule="nonzero"
+                                            d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <a href="#" class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr class="write">
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="Ordensmagt Røverier"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="1987"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="1997"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="1997"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="1997"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="1997"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <button class="btn btn-sm save">
+                                        Annuller
+                                      </button>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <button
+                                        class="btn btn-primary btn-sm save"
+                                      >
+                                        Gem
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <button
+                              class="btn btn-primary btn-sm d-flex align-items-center mt-3 addrow-1"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="16"
+                                viewBox="0 0 12 16"
+                                class="mr-2"
+                              >
+                                <path
+                                  fill="#fff"
+                                  fill-rule="evenodd"
+                                  d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                                />
+                              </svg>
+                              <span>Tilføj ny række</span>
+                            </button>
+                          </div>
+                          <div class="card-body">
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <h4 class="mb-3 ml-1 mt-3 font-weight-bold">
+                                <div class="d-flex align-items-center">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 12 16"
+                                  >
+                                    <path
+                                      fill="#686868"
+                                      fill-rule="evenodd"
+                                      d="M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM6 4.5l4 3-4 3v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73.73-.84 1.69-1.27 2.88-1.27v-2H6z"
+                                    />
+                                  </svg>
+                                  <span class="ml-3">Henvisning</span>
+                                </div>
+                              </h4>
+                            </div>
+                            <div class="card">
+                              <table
+                                id="henvisning"
+                                class="table sorting table-hover table-striped mb-0"
+                                width="100%"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Henvisning</th>
+                                    <th scope="col" class="hidden"></th>
+                                    <th scope="col" class="hidden"></th>
+                                  </tr>
+                                </thead>
+
+                                <tbody>
+                                  <tr class="readonly">
+                                    <td>
+                                      <a
+                                        href="#"
+                                        data-toggle="modal"
+                                        data-target="#visningheuristiskenhed"
+                                        >5+DG-001</a
+                                      >
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <a href="#" class="edit icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="20"
+                                          height="20"
+                                          viewBox="0 0 20 20"
+                                        >
+                                          <path
+                                            fill="#000"
+                                            fill-rule="nonzero"
+                                            d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <a href="#" class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr class="write">
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="5+DG-001"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <button class="btn btn-sm save">
+                                        Annuller
+                                      </button>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <button
+                                        class="btn btn-primary btn-sm save"
+                                      >
+                                        Gem
+                                      </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <button
+                              class="btn btn-primary btn-sm d-flex align-items-center mt-3 addrow-2"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="16"
+                                viewBox="0 0 12 16"
+                                class="mr-2"
+                              >
+                                <path
+                                  fill="#fff"
+                                  fill-rule="evenodd"
+                                  d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                                />
+                              </svg>
+                              <span>Tilføj ny række</span>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -1253,7 +1500,7 @@ of Lorem Ipsum.
           </div>
           <div class="modal-body pb-0">
             <div class="d-flex justify-content-end align-items-center mb-3">
-              <a href="#">
+              <a href="/heuristiskenhed.html">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -1263,8 +1510,9 @@ of Lorem Ipsum.
                   <path
                     fill-rule="evenodd"
                     d="M11 10h1v3c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h3v1H1v10h10v-3zM6 2l2.25 2.25L5 7.5 6.5 9l3.25-3.25L12 8V2H6z"
-                  /></svg
-                ><span class="ml-1">Åben i nyt vindue</span>
+                  />
+                </svg>
+                <span class="ml-1">Åben i nyt vindue</span>
               </a>
             </div>
             <div class="card mb-3">
@@ -1320,7 +1568,7 @@ of Lorem Ipsum.
             <div class="form-group row">
               <label class="col-sm-4 col-form-label" for="type">Type</label>
               <div class="col-sm-8">
-                <div class="form-check">
+                <div class="form-check-inline">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -1333,7 +1581,7 @@ of Lorem Ipsum.
                     IT-Komponent
                   </label>
                 </div>
-                <div class="form-check">
+                <div class="form-check-inline">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -1381,7 +1629,7 @@ of Lorem Ipsum.
             <div class="form-group row">
               <label class="col-sm-4 col-form-label" for="type">Kladde</label>
               <div class="col-sm-8">
-                <div class="form-check">
+                <div class="form-check-inline">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -1394,7 +1642,7 @@ of Lorem Ipsum.
                     Ja
                   </label>
                 </div>
-                <div class="form-check">
+                <div class="form-check-inline">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -1426,9 +1674,7 @@ of Lorem Ipsum.
                 </div>
               </div>
               <div class="form-group row">
-                <label for="ename" class="col-sm-4 col-form-label"
-                >E-nr.</label
-                >
+                <label for="ename" class="col-sm-4 col-form-label">E-nr.</label>
                 <div class="col-sm-8">
                   <input type="text" class="form-control" id="ename" />
                 </div>
@@ -1437,12 +1683,12 @@ of Lorem Ipsum.
             <div class="papir">
               <div class="form-group row">
                 <label for="sortfelt" class="col-sm-4 col-form-label"
-                >Sorteringsfelt</label
+                  >Sorteringsfelt</label
                 >
                 <div class="col-sm-8">
                   <input type="text" class="form-control" id="sortfelt" />
                 </div>
-              </div>              
+              </div>
             </div>
             <div class="form-group row mb-0">
               <div class="col-sm-12">
@@ -1472,19 +1718,19 @@ of Lorem Ipsum.
               data-dismiss="modal"
               onclick="window.location.href='/heuristiskenhed.html'"
             >
-                                            <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="12"
-                                  height="16"
-                                  viewBox="0 0 12 16"
-                                  class="mr-2"
-                                >
-                                  <path
-                                    fill="#fff"
-                                    fill-rule="evenodd"
-                                    d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                                  />
-                                </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="16"
+                viewBox="0 0 12 16"
+                class="mr-2"
+              >
+                <path
+                  fill="#fff"
+                  fill-rule="evenodd"
+                  d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                />
+              </svg>
               <span>Opret HE</span>
             </button>
           </div>

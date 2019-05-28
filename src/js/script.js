@@ -102,25 +102,14 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  $("#navne").DataTable({
-    paging: false,
-    info: false,
-    searching: false,
-    lengthChange: false,
-    responsive: true,
-    scrollX: true
-  });
-
-  $("#overordnedeaktoerer").DataTable({
-    paging: false,
-    info: false,
-    searching: false,
-    lengthChange: false,
-    responsive: true,
-    scrollX: true
-  });
-
-  $("#underordnedeaktoerer").DataTable({
+  $(
+    "#navne",
+    "#overordnedeaktoerer",
+    "#underordnedeaktoerer",
+    "#proveniensnr",
+    "#andenarkivalie",
+    "#henvisning"
+  ).DataTable({
     paging: false,
     info: false,
     searching: false,
@@ -156,5 +145,41 @@ $(document).ready(function() {
       $(".itkomponent").hide();
       $(".papir").show();
     }
+  });
+
+  $(".delete").on("click", function() {
+    $(this)
+      .parents("tr")
+      .remove();
+  });
+
+  $(".addrow-1").click(function() {
+    $("#andenarkivalie").each(function() {
+      var tds = "<tr>";
+      jQuery.each($("tr:last td", this), function() {
+        tds += "<td>" + $(this).html() + "</td>";
+      });
+      tds += "</tr>";
+      if ($("tbody", this).length > 0) {
+        $("tbody", this).append(tds);
+      } else {
+        $(this).append(tds);
+      }
+    });
+  });
+
+  $(".addrow-2").click(function() {
+    $("#henvisning").each(function() {
+      var tds = "<tr>";
+      jQuery.each($("tr:last td", this), function() {
+        tds += "<td>" + $(this).html() + "</td>";
+      });
+      tds += "</tr>";
+      if ($("tbody", this).length > 0) {
+        $("tbody", this).append(tds);
+      } else {
+        $(this).append(tds);
+      }
+    });
   });
 });

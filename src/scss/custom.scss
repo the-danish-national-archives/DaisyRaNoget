@@ -158,10 +158,10 @@ table.dataTable thead tr th {
   font-weight: 600;
 }
 
-table.dataTable tbody tr .icon {
+table.sorting tbody tr .icon {
   visibility: hidden;
 }
-table.dataTable tbody tr:hover .icon {
+table.sorting tbody tr:hover .icon {
   visibility: visible;
 }
 
@@ -190,6 +190,10 @@ table thead tr th {
 
 .time {
   font-size: 14px;
+}
+
+.hidden .arrow-hack {
+  display: none;
 }
 
 .dataTables_paginate .paginate_button {
