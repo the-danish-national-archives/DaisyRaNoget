@@ -66,10 +66,10 @@
               <a href="/search/search-heuristiskenhed.html" class="d-flex mb-4"
                 >« Tilbage til søgning</a
               >
-              <span class="badge badge-success badge-pill mt-2 mb-2"
+              <span class="badge badge-info badge-pill mt-2 mb-4"
                 >Heuristisk Enhed</span
               >
-              <h1 class="font-weight-extrabold">Kredsaflytningssystem</h1>
+              <h1 class="font-weight-bold">Kredsaflytningssystem</h1>
               <h3 class="text-secondary mb-5">
                 Indenrigsministeriet, 1950 - 1975
               </h3>
@@ -95,249 +95,738 @@
                         </button>
                       </div>
                     </div>
-
-                    <div class="card-body">
-                      <h5 class="font-weight-bold mt-3 ml-3 mb-3">
-                        Detaljer
-                      </h5>
-                      <ul
-                        class="list-group list-group-flush mb-5 w-50 mr-3 ml-3"
-                      >
-                        <li class="list-group-item">
-                          <div class="row d-flex align-items-center">
-                            <div class="col-sm-6">Navnetype</div>
-                            <div class="col-sm-6 readonly">Officielt</div>
-                            <div class="col-sm-6 write">
-                              <div class="form-group mb-0">
-                                <select
-                                  class="form-control"
-                                  id="exampleFormControlSelect1"
-                                >
-                                  <option>Officielt</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="list-group-item">
-                          <div class="row d-flex align-items-center">
-                            <div class="col-sm-6">Beskrivelsesniveau</div>
-                            <div class="col-sm-6 readonly">2. niveau</div>
-                            <div class="col-sm-6 write">
-                              <div class="form-group mb-0">
-                                <select
-                                  class="form-control"
-                                  id="exampleFormControlSelect1"
-                                >
-                                  <option>2. niveau</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="list-group-item">
-                          <div class="row d-flex align-items-center">
-                            <div class="col-sm-6">Kladde</div>
-                            <div class="col-sm-6 readonly">Ja</div>
-                            <div class="col-sm-6 write">
-                              <div class="form-check form-check-inline mr-3">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="exampleRadios"
-                                  id="exampleRadios1"
-                                  value="option1"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="exampleRadios1"
-                                >
-                                  Ja
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="exampleRadios"
-                                  id="exampleRadios2"
-                                  value="option2"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="exampleRadios2"
-                                >
-                                  Nej
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                      <h5 class="font-weight-bold mt-3 ml-3 mb-3">Navne</h5>
-                      <div class="card bg-white ml-3 mr-3">
-                        <div class="card-body p-0 m-0">
-                          <table
-                            id="navne"
-                            width="100%"
-                            class="table table-hover mb-0"
+                    <div class="card-body p-lg-3">
+                      <h4 class="font-weight-bold mt-3 ml-3 mb-4">
+                        <div class="d-flex align-items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 12 16"
                           >
-                            <thead>
-                              <tr>
-                                <th scope="col">Præfiks</th>
-                                <th scope="col">Navn</th>
-                                <th scope="col">Fra</th>
-                                <th scope="col">Til</th>
-                                <th scope="col">Navnetype</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr
-                                class="clickable-row readonly"
-                                data-href="#heuristiskeenhed-modal"
-                              >
-                                <td>
-                                  sh001
-                                </td>
-                                <td>Ordensmagt Røverier</td>
-                                <td>1987</td>
-                                <td>1988</td>
-                                <td>Officielt</td>
-                              </tr>
-                              <tr
-                                class="clickable-row readonly"
-                                data-href="#heuristiskeenhed-modal"
-                              >
-                                <td>
-                                  sh001
-                                </td>
-                                <td>Ordensmagt Røverier</td>
-                                <td>1987</td>
-                                <td>1988</td>
-                                <td>Officielt</td>
-                              </tr>
-                              <tr class="write">
-                                <td>
-                                  <div class="form-group mb-0">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      value="sh001"
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="form-group mb-0">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      value="Ordensmagt Røverier"
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="form-group mb-0">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      value="1987"
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="form-group mb-0">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      value="1997"
-                                    />
-                                  </div>
-                                </td>
-                                <td>
+                            <path
+                              fill-rule="evenodd"
+                              fill="#686868"
+                              d="M2 13c0 .59 0 1-.59 1H.59C0 14 0 13.59 0 13c0-.59 0-1 .59-1h.81c.59 0 .59.41.59 1H2zm2.59-9h6.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1H4.59C4 2 4 2.41 4 3c0 .59 0 1 .59 1zM1.41 7H.59C0 7 0 7.41 0 8c0 .59 0 1 .59 1h.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1h.01zm0-5H.59C0 2 0 2.41 0 3c0 .59 0 1 .59 1h.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1h.01zm10 5H4.59C4 7 4 7.41 4 8c0 .59 0 1 .59 1h6.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1h.01zm0 5H4.59C4 12 4 12.41 4 13c0 .59 0 1 .59 1h6.81c.59 0 .59-.41.59-1 0-.59 0-1-.59-1h.01z"
+                            />
+                          </svg>
+                          <span class="ml-3">Detaljer</span>
+                        </div>
+                      </h4>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <ul class="list-group mb-5 mr-3 ml-3">
+                            <li class="list-group-item">
+                              <div class="row d-flex align-items-center">
+                                <div class="col-sm-6 font-weight-semibold">
+                                  Type
+                                </div>
+                                <div class="col-sm-6 readonly">
+                                  IT-Komponent
+                                </div>
+                                <div class="col-sm-6 write">
                                   <div class="form-group mb-0">
                                     <select
                                       class="form-control"
                                       id="exampleFormControlSelect1"
                                     >
-                                      <option>Officielt</option>
+                                      <option>IT-Komponent</option>
                                       <option>2</option>
                                       <option>3</option>
                                       <option>4</option>
                                       <option>5</option>
                                     </select>
                                   </div>
-                                </td>
-                              </tr>
-                              <tr class="write">
-                                <td>
-                                  <div class="form-group mb-0">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      value="sh001"
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="form-group mb-0">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      value="Ordensmagt Røverier"
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="form-group mb-0">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      value="1987"
-                                    />
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="form-group mb-0">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      value="1997"
-                                    />
-                                  </div>
-                                </td>
-                                <td>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row d-flex align-items-center">
+                                <div class="col-sm-6 font-weight-semibold">
+                                  Undertype
+                                </div>
+                                <div class="col-sm-6 readonly">Type2</div>
+                                <div class="col-sm-6 write">
                                   <div class="form-group mb-0">
                                     <select
                                       class="form-control"
                                       id="exampleFormControlSelect1"
                                     >
-                                      <option>Officielt</option>
+                                      <option>Type2</option>
                                       <option>2</option>
                                       <option>3</option>
                                       <option>4</option>
                                       <option>5</option>
                                     </select>
                                   </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row d-flex align-items-center">
+                                <div class="col-sm-6 font-weight-semibold">
+                                  Kladde
+                                </div>
+                                <div class="col-sm-6 readonly">Ja</div>
+                                <div class="col-sm-6 write">
+                                  <div
+                                    class="form-check form-check-inline mr-3"
+                                  >
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="exampleRadios"
+                                      id="exampleRadios1"
+                                      value="option1"
+                                      checked
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="exampleRadios1"
+                                    >
+                                      Ja
+                                    </label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input
+                                      class="form-check-input"
+                                      type="radio"
+                                      name="exampleRadios"
+                                      id="exampleRadios2"
+                                      value="option2"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="exampleRadios2"
+                                    >
+                                      Nej
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row d-flex align-items-center">
+                                <div class="col-sm-6 font-weight-semibold">
+                                  Beskrivelsesniveau
+                                </div>
+                                <div class="col-sm-6 readonly">2. niveau</div>
+                                <div class="col-sm-6 write">
+                                  <div class="form-group mb-0">
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>2. niveau</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row d-flex align-items-center">
+                                <div class="col-sm-6 font-weight-semibold">
+                                  Sorteringsfelt
+                                </div>
+                                <div class="col-sm-6 readonly">Sh29123</div>
+                                <div class="col-sm-6 write">
+                                  <div class="form-group mb-0">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      value="Sh29123"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="row d-flex align-items-center">
+                                <div class="col-sm-6 font-weight-semibold">
+                                  E-nr.
+                                </div>
+                                <div class="col-sm-6 readonly">
+                                  2149xiu12oi3u
+                                </div>
+                                <div class="col-sm-6 write">
+                                  <div class="form-group mb-0">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      value="2149xiu12oi3u"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="row mb-5">
+                        <div class="col-sm-6">
+                          <div
+                            class="d-flex align-items-center justify-content-between mr-3 ml-1"
+                          >
+                            <h4 class="font-weight-bold mt-3 ml-3 mb-4">
+                              <div class="d-flex align-items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 14 16"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    fill="#686868"
+                                    d="M9 4V3c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v1H1c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1H9zM6 3h2v1H6V3zm7 6H8v1H6V9H1V5h1v3h10V5h1v4z"
+                                  />
+                                </svg>
+                                <span class="ml-3">HE-Navne</span>
+                              </div>
+                            </h4>
+                            <button
+                              class="btn btn-primary readonly"
+                              data-toggle="modal"
+                              data-target="#tilfoejnavne"
+                            >
+                              <span class="d-flex align-items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="12"
+                                  height="16"
+                                  viewBox="0 0 12 16"
+                                  class="mr-2"
+                                >
+                                  <path
+                                    fill="#fff"
+                                    fill-rule="evenodd"
+                                    d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                                  />
+                                </svg>
+                                <span>Tilføj</span>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="card bg-white ml-3 mr-3">
+                            <div class="card-body p-0 m-0">
+                              <table
+                                id=""
+                                width="100%"
+                                class="table sorting table-striped table-hover mb-0"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">HE-Navn</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col" class="hidden"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="readonly">
+                                    <td>
+                                      FRB Politi
+                                    </td>
+                                    <td>Ordensmagt Røverier</td>
+                                    <td width="25" class="text-right">
+                                      <span class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr class="readonly">
+                                    <td>
+                                      FRB Politi
+                                    </td>
+                                    <td>Ordensmagt Røverier</td>
+                                    <td width="25" class="text-right">
+                                      <span class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr class="write">
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="sh001"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="Ordensmagt Røverier"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div
+                            class="d-flex align-items-center justify-content-between mr-3 ml-1"
+                          >
+                            <h4 class="font-weight-bold mt-3 ml-3 mb-4">
+                              <div class="d-flex align-items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 14 16"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    fill="#686868"
+                                    d="M9 4V3c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v1H1c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1H9zM6 3h2v1H6V3zm7 6H8v1H6V9H1V5h1v3h10V5h1v4z"
+                                  />
+                                </svg>
+                                <span class="ml-3">Tider</span>
+                              </div>
+                            </h4>
+                            <button
+                              class="btn btn-primary readonly"
+                              data-toggle="modal"
+                              data-target="#tilfoejnavne"
+                            >
+                              <span class="d-flex align-items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="12"
+                                  height="16"
+                                  viewBox="0 0 12 16"
+                                  class="mr-2"
+                                >
+                                  <path
+                                    fill="#fff"
+                                    fill-rule="evenodd"
+                                    d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                                  />
+                                </svg>
+                                <span>Tilføj</span>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="card bg-white ml-3 mr-3">
+                            <div class="card-body p-0 m-0">
+                              <table
+                                id=""
+                                width="100%"
+                                class="table sorting table-striped table-hover mb-0"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Fra</th>
+                                    <th scope="col">Til</th>
+                                    <th scope="col" class="hidden"></th>
+                                    <th scope="col" class="hidden"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="readonly">
+                                    <td>
+                                      FRB Politi
+                                    </td>
+                                    <td>2149</td>
+                                    <td>3000</td>
+                                    <td width="25" class="text-right">
+                                      <a href="#" class="edit icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="20"
+                                          height="20"
+                                          viewBox="0 0 20 20"
+                                        >
+                                          <path
+                                            fill="#000"
+                                            fill-rule="nonzero"
+                                            d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <span class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr class="write">
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="FRB Politi"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="2149"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="3000"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      &nbsp;
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row mb-5">
+                        <div class="col-sm-6">
+                          <div
+                            class="d-flex align-items-center justify-content-between mr-3 ml-1"
+                          >
+                            <h4 class="font-weight-bold mt-3 ml-3 mb-4">
+                              <div class="d-flex align-items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 14 16"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    fill="#686868"
+                                    d="M9 4V3c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v1H1c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1H9zM6 3h2v1H6V3zm7 6H8v1H6V9H1V5h1v3h10V5h1v4z"
+                                  />
+                                </svg>
+                                <span class="ml-3">Arkivskaber</span>
+                              </div>
+                            </h4>
+                            <button
+                              class="btn btn-primary readonly"
+                              data-toggle="modal"
+                              data-target="#tilfoejnavne"
+                            >
+                              <span class="d-flex align-items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="12"
+                                  height="16"
+                                  viewBox="0 0 12 16"
+                                  class="mr-2"
+                                >
+                                  <path
+                                    fill="#fff"
+                                    fill-rule="evenodd"
+                                    d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                                  />
+                                </svg>
+                                <span>Tilføj</span>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="card bg-white ml-3 mr-3">
+                            <div class="card-body p-0 m-0">
+                              <table
+                                id=""
+                                width="100%"
+                                class="table sorting table-striped table-hover mb-0"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Navn</th>
+                                    <th scope="col">Fra</th>
+                                    <th scope="col">Til</th>
+                                    <th scope="col" class="hidden"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="readonly">
+                                    <td>
+                                      FRB Politi
+                                    </td>
+                                    <td>4194</td>
+                                    <td>4195</td>
+                                    <td width="25" class="text-right">
+                                      <span class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr class="readonly">
+                                    <td>
+                                      FRB Politi
+                                    </td>
+                                    <td>4194</td>
+                                    <td>4195</td>
+                                    <td width="25" class="text-right">
+                                      <span class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr class="write">
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="sh001"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="Ordensmagt Røverier"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div
+                            class="d-flex align-items-center justify-content-between mr-3 ml-1"
+                          >
+                            <h4 class="font-weight-bold mt-3 ml-3 mb-4">
+                              <div class="d-flex align-items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 14 16"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    fill="#686868"
+                                    d="M9 4V3c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v1H1c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1H9zM6 3h2v1H6V3zm7 6H8v1H6V9H1V5h1v3h10V5h1v4z"
+                                  />
+                                </svg>
+                                <span class="ml-3">Referencer</span>
+                              </div>
+                            </h4>
+                            <button
+                              class="btn btn-primary readonly"
+                              data-toggle="modal"
+                              data-target="#tilfoejnavne"
+                            >
+                              <span class="d-flex align-items-center">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="12"
+                                  height="16"
+                                  viewBox="0 0 12 16"
+                                  class="mr-2"
+                                >
+                                  <path
+                                    fill="#fff"
+                                    fill-rule="evenodd"
+                                    d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                                  />
+                                </svg>
+                                <span>Tilføj</span>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="card bg-white ml-3 mr-3">
+                            <div class="card-body p-0 m-0">
+                              <table
+                                id=""
+                                width="100%"
+                                class="table sorting table-striped table-hover mb-0"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Reference</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col" class="hidden"></th>
+                                    <th scope="col" class="hidden"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="readonly">
+                                    <td>
+                                      XE/D
+                                    </td>
+                                    <td>IT-Komponent</td>
+                                    <td width="25" class="text-right">
+                                      <a href="#" class="edit icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="20"
+                                          height="20"
+                                          viewBox="0 0 20 20"
+                                        >
+                                          <path
+                                            fill="#000"
+                                            fill-rule="nonzero"
+                                            d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
+                                          />
+                                        </svg>
+                                      </a>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      <span class="delete icon">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="24"
+                                          height="24"
+                                          viewBox="0 0 12 16"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                          />
+                                        </svg>
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr class="write">
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="FRB Politi"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="2149"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="form-group mb-0">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          value="3000"
+                                        />
+                                      </div>
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      &nbsp;
+                                    </td>
+                                    <td width="25" class="text-right">
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div class="row mt-5">
                         <div class="col-sm-6">
-                          <h5 class="font-weight-bold mt-3 ml-3 mb-3">
-                            Interne noter
-                          </h5>
+                          <h4 class="font-weight-bold mt-3 ml-3 mb-3">
+                            <div class="d-flex align-items-center">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 14 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  fill="#686868"
+                                  d="M3 10h4V9H3v1zm0-2h6V7H3v1zm0-2h8V5H3v1zm10 6H1V3h12v9zM1 2c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1H1z"
+                                />
+                              </svg>
+                              <span class="ml-3">Interne noter</span>
+                            </div>
+                          </h4>
                           <p class="ml-3 mr-3 readonly">
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. Lorem Ipsum has been the
@@ -371,14 +860,28 @@ Letraset sheets containing Lorem Ipsum passages,
 and more recently with desktop publishing
 software like Aldus PageMaker including versions
 of Lorem Ipsum.
-                              </textarea
+                                </textarea
                             >
                           </div>
                         </div>
                         <div class="col-sm-6">
-                          <h5 class="font-weight-bold mt-3 ml-3 mb-3">
-                            Publikums noter
-                          </h5>
+                          <h4 class="font-weight-bold mt-3 ml-3 mb-3">
+                            <div class="d-flex align-items-center">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 14 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  fill="#686868"
+                                  d="M3 10h4V9H3v1zm0-2h6V7H3v1zm0-2h8V5H3v1zm10 6H1V3h12v9zM1 2c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1H1z"
+                                />
+                              </svg>
+                              <span class="ml-3">Publikums noter</span>
+                            </div>
+                          </h4>
                           <p class="ml-3 mr-3 readonly">
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. Lorem Ipsum has been the
@@ -412,7 +915,7 @@ Letraset sheets containing Lorem Ipsum passages,
 and more recently with desktop publishing
 software like Aldus PageMaker including versions
 of Lorem Ipsum.
-                              </textarea
+                                </textarea
                             >
                           </div>
                         </div>
