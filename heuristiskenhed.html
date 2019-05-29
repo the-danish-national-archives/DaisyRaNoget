@@ -1298,110 +1298,494 @@ of Lorem Ipsum.
                           </span>
                         </button>
                       </div>
-                      <div class="card">
-                        <table
-                          id="heeksemplar-tabel"
-                          width="100%"
-                          class="table sorting table-hover table-striped mb-0"
-                        >
-                          <thead>
-                            <tr>
-                              <th>Navn</th>
-                              <th>Type</th>
-                              <th class="hidden" width="9%"></th>
-                            </tr>
-                          </thead>
+                      <div class="accordion ml-3 mr-3" id="accordionExample">
+                        <div class="card">
+                          <div
+                            class="card-header d-flex justify-content-between align-items-center bg-light"
+                            id="headingThree"
+                          >
+                            <h4 class="mb-0">
+                              Eksx14
+                              <small class="ml-2 text-muted"
+                                >Papir m. original</small
+                              >
+                            </h4>
+                            <button
+                              class="btn btn-primary edit readonly collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseOne"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
+                              Rediger
+                            </button>
+                            <div class="float-right write">
+                              <button
+                                class="btn btn-link write save collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="false"
+                                aria-controls="collapseOne"
+                              >
+                                Annuller
+                              </button>
+                              <button
+                                class="btn btn-primary write save collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="false"
+                                aria-controls="collapseOne"
+                              >
+                                Gem
+                              </button>
+                            </div>
+                          </div>
 
-                          <tbody>
-                            <tr
-                              data-toggle="collapse"
-                              data-target="#td1"
-                              class="clickable collapse-row collapsed"
-                            >
-                              <td>Eks14x</td>
-                              <td>Papir m. original</td>
-                              <td class="text-center">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="20"
-                                  height="20"
-                                  viewBox="0 0 20 20"
-                                >
-                                  <path
-                                    fill="#000"
-                                    fill-rule="nonzero"
-                                    d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
-                                  />
-                                </svg>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="3" style="width:100%">
-                                <div id="td1" class="collapse">
-                                  her er indhold 1
+                          <div
+                            id="collapseOne"
+                            class="collapse"
+                            aria-labelledby="headingOne"
+                            data-parent="#accordionExample"
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="form-group mb-3">
+                                    <label for="exampleFormControlSelect1">
+                                      Formålstype
+                                    </label>
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>IT-Komponent</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group mb-3">
+                                    <label for="exampleFormControlSelect1">
+                                      Medietype
+                                    </label>
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>Papir m.m.</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="tyvetaekkelig"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="tyvetaekkelig"
+                                      >Tyvetækkelig</label
+                                    >
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="maaudlaanes"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="maaudlaanes"
+                                      >Må udlånes</label
+                                    >
+                                  </div>
+                                  <div class="add-checkboxes">
+                                    <div class="form-check ml-3">
+                                      <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="maareserveres"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="maareserveres"
+                                        >Må reserveres</label
+                                      >
+                                    </div>
+                                    <div class="form-check ml-3">
+                                      <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="maafjernlaanes"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="maafjernlaanes"
+                                        >Må fjernlånes</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="aoscannet"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="aoscannet"
+                                      >AOScannet</label
+                                    >
+                                  </div>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr
-                              data-toggle="collapse"
-                              data-target="#td2"
-                              class="clickable collapse-row collapsed"
-                            >
-                              <td>Eks15x</td>
-                              <td>Papir m. original</td>
-                              <td class="text-center">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="20"
-                                  height="20"
-                                  viewBox="0 0 20 20"
-                                >
-                                  <path
-                                    fill="#000"
-                                    fill-rule="nonzero"
-                                    d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
-                                  />
-                                </svg>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="3" style="width:100%">
-                                <div id="td2" class="collapse">
-                                  her er indhold 2
+                                <div class="col-sm-8">
+                                  <div class="form-group">
+                                    <label for="myndighedsnoter"
+                                      >Myndighedsnoter</label
+                                    >
+                                    <textarea
+                                      class="form-control"
+                                      id="myndighedsnoter"
+                                      rows="10"
+                                    ></textarea>
+                                  </div>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div
+                            class="card-header d-flex justify-content-between align-items-center bg-light"
+                            id="headingThree"
+                          >
+                            <h4 class="mb-0">
+                              Eksx15
+                              <small class="ml-2 text-muted"
+                                >Papir m. original</small
+                              >
+                            </h4>
+                            <button
+                              class="btn btn-primary edit readonly collapsed"
+                              type="button"
                               data-toggle="collapse"
-                              data-target="#td3"
-                              class="clickable collapse-row collapsed"
+                              data-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
                             >
-                              <td>Eks16x</td>
-                              <td>Papir m. original</td>
-                              <td class="text-center">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="20"
-                                  height="20"
-                                  viewBox="0 0 20 20"
-                                >
-                                  <path
-                                    fill="#000"
-                                    fill-rule="nonzero"
-                                    d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
-                                  />
-                                </svg>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="3" style="width:100%">
-                                <div id="td3" class="collapse">
-                                  her er indhold 3
+                              Rediger
+                            </button>
+                            <div class="float-right write">
+                              <button
+                                class="btn btn-link write save collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                              >
+                                Annuller
+                              </button>
+                              <button
+                                class="btn btn-primary write save collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                              >
+                                Gem
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            id="collapseTwo"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-parent="#accordionExample"
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="form-group mb-3">
+                                    <label for="exampleFormControlSelect1">
+                                      Formålstype
+                                    </label>
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>IT-Komponent</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group mb-3">
+                                    <label for="exampleFormControlSelect1">
+                                      Medietype
+                                    </label>
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>Papir m.m.</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="tyvetaekkelig"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="tyvetaekkelig"
+                                      >Tyvetækkelig</label
+                                    >
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="maaudlaanes"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="maaudlaanes"
+                                      >Må udlånes</label
+                                    >
+                                  </div>
+                                  <div class="add-checkboxes">
+                                    <div class="form-check ml-3">
+                                      <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="maareserveres"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="maareserveres"
+                                        >Må reserveres</label
+                                      >
+                                    </div>
+                                    <div class="form-check ml-3">
+                                      <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="maafjernlaanes"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="maafjernlaanes"
+                                        >Må fjernlånes</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="aoscannet"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="aoscannet"
+                                      >AOScannet</label
+                                    >
+                                  </div>
                                 </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                                <div class="col-sm-8">
+                                  <div class="form-group">
+                                    <label for="myndighedsnoter"
+                                      >Myndighedsnoter</label
+                                    >
+                                    <textarea
+                                      class="form-control"
+                                      id="myndighedsnoter"
+                                      rows="10"
+                                    ></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div
+                            class="card-header d-flex justify-content-between align-items-center bg-light"
+                            id="headingThree"
+                          >
+                            <h4 class="mb-0">
+                              Eksx16
+                              <small class="ml-2 text-muted"
+                                >Papir m. original</small
+                              >
+                            </h4>
+                            <button
+                              class="btn btn-primary edit readonly collapsed"
+                              type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              Rediger
+                            </button>
+                            <div class="float-right write">
+                              <button
+                                class="btn btn-link write save collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                              >
+                                Annuller
+                              </button>
+                              <button
+                                class="btn btn-primary write save collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                              >
+                                Gem
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            id="collapseThree"
+                            class="collapse"
+                            aria-labelledby="headingThree"
+                            data-parent="#accordionExample"
+                          >
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="form-group mb-3">
+                                    <label for="exampleFormControlSelect1">
+                                      Formålstype
+                                    </label>
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>IT-Komponent</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group mb-3">
+                                    <label for="exampleFormControlSelect1">
+                                      Medietype
+                                    </label>
+                                    <select
+                                      class="form-control"
+                                      id="exampleFormControlSelect1"
+                                    >
+                                      <option>Papir m.m.</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="tyvetaekkelig"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="tyvetaekkelig"
+                                      >Tyvetækkelig</label
+                                    >
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="maaudlaanes"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="maaudlaanes"
+                                      >Må udlånes</label
+                                    >
+                                  </div>
+                                  <div class="add-checkboxes">
+                                    <div class="form-check ml-3">
+                                      <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="maareserveres"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="maareserveres"
+                                        >Må reserveres</label
+                                      >
+                                    </div>
+                                    <div class="form-check ml-3">
+                                      <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="maafjernlaanes"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="maafjernlaanes"
+                                        >Må fjernlånes</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      id="aoscannet"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="aoscannet"
+                                      >AOScannet</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="col-sm-8">
+                                  <div class="form-group">
+                                    <label for="myndighedsnoter"
+                                      >Myndighedsnoter</label
+                                    >
+                                    <textarea
+                                      class="form-control"
+                                      id="myndighedsnoter"
+                                      rows="10"
+                                    ></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

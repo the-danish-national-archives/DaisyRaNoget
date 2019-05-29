@@ -23,6 +23,10 @@ $(document).ready(function() {
       );
   });
 
+  $("#maaudlaanes").on("change", function() {
+    $(".add-checkboxes").toggle();
+  });
+
   $("#closetask").on("click", function() {
     $(".btn.readonly").hide();
     $(".btn.opentask").show();
