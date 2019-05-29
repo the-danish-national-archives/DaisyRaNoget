@@ -269,3 +269,7 @@ span.sort {
 .papir {
   display: none;
 }
+
+.collapse-row.collapsed + tr {
+  display: none;
+}

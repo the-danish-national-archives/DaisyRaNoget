@@ -70,19 +70,6 @@ $(document).ready(function() {
   else $("#tabs a:first").tab("show");
 
   //Activate datatables
-  $(".tabledisplay").DataTable({
-    paging: false,
-    info: false,
-    searching: true,
-    lengthChange: false,
-    responsive: true,
-    scrollX: true,
-    scrollY: 270,
-    language: {
-      search: "",
-      zeroRecords: "Din filtrering gav ingen resultater"
-    }
-  });
 
   $("#search").DataTable({
     paging: false,
@@ -102,14 +89,114 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  $(
-    "#navne",
-    "#overordnedeaktoerer",
-    "#underordnedeaktoerer",
-    "#proveniensnr",
-    "#andenarkivalie",
-    "#henvisning"
-  ).DataTable({
+  $("#navne-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#overordnedeaktoerer").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#underordnedeaktoerer-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: true,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true,
+    language: {
+      search: "",
+      zeroRecords: "Din filtrering gav ingen resultater"
+    }
+  });
+
+  $("#heuristiskeenheder-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: true,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true,
+    language: {
+      search: "",
+      zeroRecords: "Din filtrering gav ingen resultater"
+    }
+  });
+
+  $("#proveniensnr-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#andenarkivalie-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#henvisning-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#henavne-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#tider-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#arkivskaber-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#referencer-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#heeksemplar-tabel").DataTable({
     paging: false,
     info: false,
     searching: false,
@@ -154,7 +241,7 @@ $(document).ready(function() {
   });
 
   $(".addrow-1").click(function() {
-    $("#andenarkivalie").each(function() {
+    $("#andenarkivalie-tabel").each(function() {
       var tds = "<tr>";
       jQuery.each($("tr:last td", this), function() {
         tds += "<td>" + $(this).html() + "</td>";
@@ -169,7 +256,7 @@ $(document).ready(function() {
   });
 
   $(".addrow-2").click(function() {
-    $("#henvisning").each(function() {
+    $("#henvisning-tabel").each(function() {
       var tds = "<tr>";
       jQuery.each($("tr:last td", this), function() {
         tds += "<td>" + $(this).html() + "</td>";
