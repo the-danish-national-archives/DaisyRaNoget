@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // Makes the header sticky when reaching 360 pixels down on the page
   $(window).scroll(function() {
     if ($(this).scrollTop() > 360) {
       $(".card-header").addClass("sticky");
@@ -7,7 +8,7 @@ $(document).ready(function() {
     }
   });
 
-  // clickable rows
+  // Make the entire row in a table clickable
   $(".clickable-row").on("click", function() {
     window.location = $(this).data("href");
   });
@@ -23,7 +24,8 @@ $(document).ready(function() {
       );
   });
 
-  $("#maaudlaanes").on("change", function() {
+  // Toogle additional checkboxes when #maaudlaanes is activated
+  $(".maaudlaanes").on("change", function() {
     $(".add-checkboxes").toggle();
   });
 
@@ -37,7 +39,7 @@ $(document).ready(function() {
     $(".btn.opentask").hide();
   });
 
-  // Move datatables sorting arrows
+  // Change look of datatables sorting arrows
   var spanSorting = '<span class="arrow-hack sort">&nbsp;&nbsp;&nbsp;</span>',
     spanAsc = '<span class="arrow-hack asc">&nbsp;&nbsp;&nbsp;</span>',
     spanDesc = '<span class="arrow-hack desc">&nbsp;&nbsp;&nbsp;</span>';
@@ -63,18 +65,18 @@ $(document).ready(function() {
     });
   });
 
+  // Activate sorting
   $(".sorting th")
     .first()
     .click()
     .click();
 
-  // Make tabs open direcrly on target page
+  // Make tabs open directly on target page
   var hash = window.location.hash;
   if (hash != "") $('#tabs a[href="' + hash + '"]').tab("show");
   else $("#tabs a:first").tab("show");
 
   //Activate datatables
-
   $("#search").DataTable({
     paging: false,
     info: false,
@@ -209,8 +211,19 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  $("#magasinenhed-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  // Change default placeholder text for search field in table
   $(".dataTables_filter input").attr("placeholder", "Filtrér");
 
+  // Adjust columns in tables when changing tabs
   $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
   });
@@ -228,6 +241,7 @@ $(document).ready(function() {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
   });
 
+  // Change what the user sees when toggling between paper and it component
   $('[name="typeRadio"]').on("change", function() {
     if ($(this).is(":checked") && $(this).attr("id") == "type1") {
       $(".itkomponent").show();
@@ -238,12 +252,33 @@ $(document).ready(function() {
     }
   });
 
+  // Removes row in table
   $(".delete").on("click", function() {
     $(this)
       .parents("tr")
       .remove();
   });
 
+  // Adjust column when opening an accordion item
+  $("#accordionExample").on("shown.bs.collapse", function() {
+    $.each($.fn.dataTable.tables(true), function() {
+      $(this)
+        .DataTable()
+        .columns.adjust()
+        .draw();
+    });
+  });
+
+  $(".modal").on("shown.bs.modal", function() {
+    $.each($.fn.dataTable.tables(true), function() {
+      $(this)
+        .DataTable()
+        .columns.adjust()
+        .draw();
+    });
+  });
+
+  // Adds row in anden akavalie-tabel
   $(".addrow-1").click(function() {
     $("#andenarkivalie-tabel").each(function() {
       var tds = "<tr>";
@@ -259,6 +294,7 @@ $(document).ready(function() {
     });
   });
 
+  // Adds row in henvisning-tabel
   $(".addrow-2").click(function() {
     $("#henvisning-tabel").each(function() {
       var tds = "<tr>";

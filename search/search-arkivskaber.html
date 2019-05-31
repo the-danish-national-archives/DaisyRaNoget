@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../src/css/custom.css" />
-    <title>Daisy RA</title>
+    <title>Søgeresultat - Arkivskaber - Daisy RA</title>
   </head>
 
   <body class="bg-light">
@@ -103,7 +103,7 @@
           <div class="card special pt-3 pl-3 pr-3 pb-3">
             <div class="card-body">
               <!-- arkivskaber start -->
-              <form action="search-arkivskaber.html">
+              <form>
                 <div class="container-fluid">
                   <div class="row mb-3">
                     <div class="col-sm-3">
@@ -131,7 +131,7 @@
                         id="geografi"
                       />
                     </div>
-                    <div class="col-sm-3 mb-3">
+                    <div class="col-sm-3 mb-0">
                       <label for="proveniensnr">Proveniens-nr.</label>
                       <input
                         type="text"
@@ -139,20 +139,36 @@
                         id="proveniensnr"
                       />
                     </div>
-                    <div class="col-sm-12">
-                      <button type="submit" class="btn btn-primary search">
-                        Søg
-                      </button>
-                      <button
-                        type="submit"
-                        class="ml-2 btn btn-outline-primary"
-                      >
-                        + Ny arkivskaber
-                      </button>
-                    </div>
                   </div>
                 </div>
               </form>
+              <div class="row pl-3">
+                <div class="col-sm-4 mt-0 d-flex align-items-center">
+                  <button class="btn btn-primary d-flex align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      class="mr-2 mt-1"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        fill="#ffffff"
+                        d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"
+                      />
+                    </svg>
+                    <span>Søg</span>
+                  </button>
+                  <button
+                    class="ml-3 btn btn-outline-primary"
+                    data-toggle="modal"
+                    data-target="#opretArkivskaber"
+                  >
+                    <span>+ Ny arkivskaber</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -217,6 +233,165 @@
                 </table>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal ny arkivskaber -->
+    <div
+      class="modal fade"
+      id="opretArkivskaber"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="nyarbopgaveModalLabel">
+              Ny arkivskaber
+            </h5>
+            <button
+              type="button"
+              class="btn close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 12 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group row">
+              <label for="name" class="col-sm-4 col-form-label">Navn</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="name" />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="praefiks"
+                >Præfiks</label
+              >
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="praefiks" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="type"
+                >Dannelsestid</label
+              >
+              <div class="col-sm-8">
+                <div class="form-inline row">
+                  <input
+                    type="text"
+                    class="form-control col-sm-5 ml-3"
+                    placeholder="fra"
+                    id="name"
+                  />
+                  <input
+                    type="text"
+                    class="form-control col-sm-5 ml-4"
+                    placeholder="til"
+                    id="name"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="navnetype"
+                >Navnetype</label
+              >
+              <div class="col-sm-8">
+                <select class="form-control" id="navnetype">
+                  <option>Kaldenavn</option>
+                  <option>Officielt</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="beskrivelsesniveau"
+                >Beskrivelsesniveau</label
+              >
+              <div class="col-sm-8">
+                <select class="form-control" id="beskrivelsesniveau">
+                  <option>1. niveau</option>
+                  <option>2. niveau</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="type">Kladde</label>
+              <div class="col-sm-8">
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="KladdeRadio1"
+                    value="option1"
+                    checked
+                  />
+                  <label class="form-check-label" for="KladdeRadio1">
+                    Ja
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="KladdeRadio2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="KladdeRadio2">
+                    Nej
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row mb-0">
+              <div class="col-sm-12">
+                <div class="alert alert-info text-center mb-0" role="alert">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 16 16"
+                    class="mr-3 mb-1"
+                  >
+                    <path
+                      fill="#11545F"
+                      fill-rule="evenodd"
+                      d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"
+                    />
+                  </svg>
+                  Indhold kan tilføjes når arkivskaberen er oprettet.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-dismiss="modal"
+              onclick="window.location.href='/arkivskaber.html'"
+            >
+              Opret Arkivskaber
+            </button>
           </div>
         </div>
       </div>

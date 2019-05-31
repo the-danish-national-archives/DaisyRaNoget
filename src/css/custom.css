@@ -7009,10 +7009,12 @@ textarea.form-control {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-.btn-outline-primary svg {
+.btn-outline-primary svg,
+.btn-primary svg {
   fill: #1a232a; }
 
-.btn-outline-primary:hover svg {
+.btn-outline-primary:hover svg,
+.btn-primary:hover svg {
   fill: #fff; }
 
 .badge {
@@ -7074,6 +7076,9 @@ table thead tr th {
   z-index: 888;
   background: #f7f7f7;
   transition: 0.4s all; }
+
+.sticky-dialog {
+  top: 120px; }
 
 .write {
   display: none; }
@@ -7146,6 +7151,10 @@ span.sort {
   .modal-xl {
     width: 90%;
     max-width: 1200px; } }
+
+.modal-body {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto; }
 
 .papir {
   display: none; }
