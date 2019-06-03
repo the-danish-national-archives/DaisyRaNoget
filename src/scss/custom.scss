@@ -172,6 +172,11 @@ table thead tr th {
   border-top: 1px solid #ced4da !important;
 }
 
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
 .sticky {
   position: sticky;
   top: 0;

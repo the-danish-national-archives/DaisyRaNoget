@@ -64,7 +64,7 @@
           <div class="card bg-white pt-3 pr-4 pl-4 pb-5">
             <div class="card-body">
               <a href="/search/search-arbejdsopgave.html" class="d-flex mb-4"
-                >« Tilbage til søgning</a
+                >« Tilbage</a
               >
               <span class="badge badge-primary badge-pill mt-2 mb-4"
                 >Arbejdsopgave</span
@@ -316,27 +316,6 @@ Nørregade 56
                             <span class="ml-3">Eksemplarer</span>
                           </div>
                         </h4>
-                        <button
-                          class="btn btn-outline-primary mb-3 mr-3 readonly"
-                          data-toggle="modal"
-                          data-target="#tilfoejeks"
-                        >
-                          <span class="d-flex align-items-center">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="12"
-                              height="16"
-                              viewBox="0 0 12 16"
-                              class="mr-2"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                              />
-                            </svg>
-                            <span>Tilføj</span>
-                          </span>
-                        </button>
                       </div>
                       <div class="card bg-white ml-3 mr-3">
                         <div class="card-body p-0 m-0">
@@ -359,9 +338,11 @@ Nørregade 56
                               </tr>
                             </thead>
                             <tbody>
-                              <tr class="clickable-row readonly">
+                              <tr class="readonly">
                                 <td>
-                                  FRB. Politi
+                                  <a href="/heuristiskenhed.html"
+                                    >FRB. Politi</a
+                                  >
                                 </td>
                                 <td>Indenrigsministeriet</td>
                                 <td>Kredsaflytningssystem</td>
@@ -371,7 +352,7 @@ Nørregade 56
                                 <td>Akvalie</td>
                                 <td>sh2048</td>
                                 <td width="20">
-                                  <a href="#" class="icon">
+                                  <a href="#" class="icon delete">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       width="24"
@@ -386,9 +367,11 @@ Nørregade 56
                                   </a>
                                 </td>
                               </tr>
-                              <tr class="clickable-row readonly">
+                              <tr class="readonly">
                                 <td>
-                                  FRB. Politi
+                                  <a href="/heuristiskenhed.html"
+                                    >FRB. Politi</a
+                                  >
                                 </td>
                                 <td>Indenrigsministeriet</td>
                                 <td>Kredsaflytningssystem</td>
@@ -398,7 +381,7 @@ Nørregade 56
                                 <td>Akvalie</td>
                                 <td>sh2048</td>
                                 <td width="20">
-                                  <a href="#" class="icon">
+                                  <a href="#" class="icon delete">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       width="24"
@@ -417,6 +400,27 @@ Nørregade 56
                           </table>
                         </div>
                       </div>
+                      <button
+                        class="btn btn-outline-primary readonly btn-sm mt-3 ml-3"
+                        data-toggle="modal"
+                        data-target="#tilfoejeks"
+                      >
+                        <span class="d-flex align-items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="16"
+                            viewBox="0 0 12 16"
+                            class="mr-2"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                            />
+                          </svg>
+                          <span>Tilføj Eksemplar</span></span
+                        >
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -464,136 +468,201 @@ Nørregade 56
             </button>
           </div>
           <div class="modal-body">
-            <div class="card bg-light">
+            <div class="card bg-light pt-3 pb-3 mb-3">
               <div class="card-body">
-                <input
-                  type="text"
-                  class="form-control form-control-lg"
-                  placeholder="Søg..."
-                />
+                <form>
+                  <div class="container-fluid">
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <label for="arkivskaber">Arkivskaber</label>
+                        <input
+                          type="text"
+                          class="form-control bg-white"
+                          value="Frederiksberg Politi"
+                          id="arkivskaber"
+                        />
+                      </div>
+                      <div class="col-sm-3">
+                        <label for="henavn">HE-Navn</label>
+                        <input
+                          type="text"
+                          class="form-control bg-white"
+                          id="henavn"
+                          value=""
+                        />
+                      </div>
+                      <div class="col-sm-3">
+                        <label for="fra">Fra</label>
+                        <input
+                          type="text"
+                          class="form-control bg-white"
+                          id="fra"
+                        />
+                      </div>
+                      <div class="col-sm-3">
+                        <label for="til">Til</label>
+                        <input
+                          type="text"
+                          class="form-control bg-white"
+                          id="til"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <label for="formaal">Formål</label>
+                        <input
+                          type="text"
+                          class="form-control bg-white"
+                          id="formaal"
+                        />
+                      </div>
+                      <div class="col-sm-3">
+                        <label for="medie">Medie</label>
+                        <input
+                          type="text"
+                          class="form-control bg-white"
+                          id="medie"
+                        />
+                      </div>
+                      <div class="col-sm-3">
+                        <button
+                          type="submit"
+                          class="btn btn-primary search mt-4"
+                        >
+                          Søg
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="table-responsive">
-              <table
-                id=""
-                width="100%"
-                class="table sorting table-hover table-striped mb-0"
-              >
-                <thead>
-                  <tr>
-                    <th scope="col" class="d-flex align-items-center">
-                      <div
-                        class="form-check form-inline p-0 d-flex align-items-center"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="defaultCheck1"
-                        />
-                      </div>
-                    </th>
-                    <th scope="col">Præfiks</th>
-                    <th scope="col">Arkivskaber</th>
-                    <th scope="col">HE-Navn</th>
-                    <th scope="col">HE-Fra</th>
-                    <th scope="col">HE-Til</th>
-                    <th scope="col">Eks. Type</th>
-                    <th scope="col">Eks. Navn</th>
-                    <th scope="col">Sort. felt.</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="clickable-checkbox">
-                    <td>
-                      <div
-                        class="form-check form-inline p-0 d-flex align-items-center mt-1"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="defaultCheck1"
-                        />
-                      </div>
-                    </td>
-                    <td>FRB Politi</td>
-                    <td>Frederiksberg Politi</td>
-                    <td>Kredsaflytningssystem</td>
-                    <td>1988</td>
-                    <td>2020</td>
-                    <td>Papir</td>
-                    <td>Eksx2424</td>
-                    <td>sh29942</td>
-                  </tr>
-                  <tr class="clickable-checkbox">
-                    <td>
-                      <div
-                        class="form-check form-inline p-0 d-flex align-items-center mt-1"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="defaultCheck1"
-                        />
-                      </div>
-                    </td>
-                    <td>FRB Politi</td>
-                    <td>Frederiksberg Politi</td>
-                    <td>Kredsaflytningssystem</td>
-                    <td>1988</td>
-                    <td>2020</td>
-                    <td>Papir</td>
-                    <td>Eksx2424</td>
-                    <td>sh29942</td>
-                  </tr>
-                  <tr class="clickable-checkbox">
-                    <td>
-                      <div
-                        class="form-check form-inline p-0 d-flex align-items-center mt-1"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="defaultCheck1"
-                        />
-                      </div>
-                    </td>
-                    <td>FRB Politi</td>
-                    <td>Frederiksberg Politi</td>
-                    <td>Kredsaflytningssystem</td>
-                    <td>1988</td>
-                    <td>2020</td>
-                    <td>Papir</td>
-                    <td>Eksx2424</td>
-                    <td>sh29942</td>
-                  </tr>
-                  <tr class="clickable-checkbox">
-                    <td>
-                      <div
-                        class="form-check form-inline p-0 d-flex align-items-center mt-1"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="defaultCheck1"
-                        />
-                      </div>
-                    </td>
-                    <td>FRB Politi</td>
-                    <td>Frederiksberg Politi</td>
-                    <td>Kredsaflytningssystem</td>
-                    <td>1988</td>
-                    <td>2020</td>
-                    <td>Papir</td>
-                    <td>Eksx2424</td>
-                    <td>sh29942</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="card special">
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table
+                    id=""
+                    width="100%"
+                    class="table sorting table-hover table-striped mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col" class="d-flex align-items-center">
+                          <div
+                            class="form-check form-inline p-0 d-flex align-items-center"
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="defaultCheck1"
+                            />
+                          </div>
+                        </th>
+                        <th scope="col">Præfiks</th>
+                        <th scope="col">Arkivskaber</th>
+                        <th scope="col">HE-Navn</th>
+                        <th scope="col">HE-Fra</th>
+                        <th scope="col">HE-Til</th>
+                        <th scope="col">Eks. Type</th>
+                        <th scope="col">Eks. Navn</th>
+                        <th scope="col">Sort. felt.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="clickable-checkbox">
+                        <td>
+                          <div
+                            class="form-check form-inline p-0 d-flex align-items-center mt-1"
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="defaultCheck1"
+                            />
+                          </div>
+                        </td>
+                        <td>FRB Politi</td>
+                        <td>Frederiksberg Politi</td>
+                        <td>Kredsaflytningssystem</td>
+                        <td>1988</td>
+                        <td>2020</td>
+                        <td>Papir</td>
+                        <td>Eksx2424</td>
+                        <td>sh29942</td>
+                      </tr>
+                      <tr class="clickable-checkbox">
+                        <td>
+                          <div
+                            class="form-check form-inline p-0 d-flex align-items-center mt-1"
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="defaultCheck1"
+                            />
+                          </div>
+                        </td>
+                        <td>FRB Politi</td>
+                        <td>Frederiksberg Politi</td>
+                        <td>Kredsaflytningssystem</td>
+                        <td>1988</td>
+                        <td>2020</td>
+                        <td>Papir</td>
+                        <td>Eksx2424</td>
+                        <td>sh29942</td>
+                      </tr>
+                      <tr class="clickable-checkbox">
+                        <td>
+                          <div
+                            class="form-check form-inline p-0 d-flex align-items-center mt-1"
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="defaultCheck1"
+                            />
+                          </div>
+                        </td>
+                        <td>FRB Politi</td>
+                        <td>Frederiksberg Politi</td>
+                        <td>Kredsaflytningssystem</td>
+                        <td>1988</td>
+                        <td>2020</td>
+                        <td>Papir</td>
+                        <td>Eksx2424</td>
+                        <td>sh29942</td>
+                      </tr>
+                      <tr class="clickable-checkbox">
+                        <td>
+                          <div
+                            class="form-check form-inline p-0 d-flex align-items-center mt-1"
+                          >
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="defaultCheck1"
+                            />
+                          </div>
+                        </td>
+                        <td>FRB Politi</td>
+                        <td>Frederiksberg Politi</td>
+                        <td>Kredsaflytningssystem</td>
+                        <td>1988</td>
+                        <td>2020</td>
+                        <td>Papir</td>
+                        <td>Eksx2424</td>
+                        <td>sh29942</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
           <div class="modal-footer">
