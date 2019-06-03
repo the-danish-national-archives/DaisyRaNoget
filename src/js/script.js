@@ -309,4 +309,20 @@ $(document).ready(function() {
       }
     });
   });
+
+  // Adds row in navne-tabel
+  $(".addrow-3").click(function() {
+    $("#navne-tabel").each(function() {
+      var tds = "<tr>";
+      jQuery.each($("tr:last td", this), function() {
+        tds += "<td>" + $(this).html() + "</td>";
+      });
+      tds += "</tr>";
+      if ($("tbody", this).length > 0) {
+        $("tbody", this).append(tds);
+      } else {
+        $(this).append(tds);
+      }
+    });
+  });
 });
