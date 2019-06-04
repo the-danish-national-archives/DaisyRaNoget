@@ -278,15 +278,11 @@ Nørregade 56
                                 <div class="col-sm-12 readonly">
                                   <button
                                     class="btn btn-outline-danger readonly"
-                                    data-toggle="modal"
-                                    data-target="#lukopgave"
+                                    id="closetask"
                                   >
                                     Luk opgave
                                   </button>
-                                  <button
-                                    class="btn btn-success opentask"
-                                    data-toggle="modal"
-                                  >
+                                  <button class="btn btn-success opentask">
                                     Gen-åben opgave
                                   </button>
                                 </div>
@@ -691,65 +687,6 @@ Nørregade 56
       </div>
     </div>
 
-    <!-- Modal Luk arbejdsopgave -->
-    <div
-      class="modal fade"
-      id="lukopgave"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="lukopgaveModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title font-weight-bold" id="lukopgaveModalLabel">
-              Luk opgave
-            </h5>
-            <button
-              type="button"
-              class="btn close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 12 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Er du sikker på at du vil lukke opgaven?</p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn d-flex align-items-center"
-              data-dismiss="modal"
-            >
-              Annuller
-            </button>
-            <button
-              type="button"
-              class="btn btn-danger d-flex align-items-center"
-              data-dismiss="modal"
-              id="closetask"
-            >
-              Luk opgave
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
