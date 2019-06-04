@@ -858,7 +858,7 @@ of Lorem Ipsum.
                                 d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
                               />
                             </svg>
-                            <span>Tilføj Aktør</span>
+                            <span>Tilknyt Overordnede Aktør</span>
                           </button>
                           <div
                             class="d-flex align-items-center justify-content-between"
@@ -1105,7 +1105,7 @@ of Lorem Ipsum.
                                 d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
                               />
                             </svg>
-                            <span>Tilføj Aktør</span>
+                            <span>Tilknyt Underordnede Aktør</span>
                           </button>
                         </div>
                       </div>
@@ -1266,7 +1266,6 @@ of Lorem Ipsum.
                                 <thead>
                                   <tr>
                                     <th scope="col">Proveniensnr.</th>
-                                    <th scope="col" class="hidden"></th>
                                   </tr>
                                 </thead>
 
@@ -1274,21 +1273,6 @@ of Lorem Ipsum.
                                   <tr class="readonly">
                                     <td>
                                       <a href="#">5+DG-001</a>
-                                    </td>
-                                    <td width="25" class="text-right">
-                                      <a href="#" class="delete icon">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="24"
-                                          height="24"
-                                          viewBox="0 0 12 16"
-                                        >
-                                          <path
-                                            fill-rule="evenodd"
-                                            d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
-                                          />
-                                        </svg>
-                                      </a>
                                     </td>
                                   </tr>
                                 </tbody>
@@ -1685,38 +1669,8 @@ of Lorem Ipsum.
                 </div>
               </div>
             </div>
-            <div class="form-group row">
-              <label class="col-sm-4 col-form-label" for="type">Kladde</label>
-              <div class="col-sm-8">
-                <div class="form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="exampleRadios"
-                    id="KladdeRadio1"
-                    value="option1"
-                    checked
-                  />
-                  <label class="form-check-label" for="KladdeRadio1">
-                    Ja
-                  </label>
-                </div>
-                <div class="form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="exampleRadios"
-                    id="KladdeRadio2"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="KladdeRadio2">
-                    Nej
-                  </label>
-                </div>
-              </div>
-            </div>
             <hr />
-            <div class="itsystem mb-3">
+            <div class="box itsystem mb-3">
               <div class="form-group row">
                 <label class="col-sm-4 col-form-label" for="undertype"
                   >Undertype</label
@@ -1732,14 +1686,8 @@ of Lorem Ipsum.
                   </select>
                 </div>
               </div>
-              <div class="form-group row">
-                <label for="ename" class="col-sm-4 col-form-label">E-nr.</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" id="ename" />
-                </div>
-              </div>
             </div>
-            <div class="papir">
+            <div class="box papir">
               <div class="form-group row">
                 <label for="sortfelt" class="col-sm-4 col-form-label"
                   >Sorteringsfelt</label
@@ -2200,150 +2148,6 @@ of Lorem Ipsum.
       </div>
     </div>
 
-    <!-- Modal tilfoej navne -->
-    <div
-      class="modal fade"
-      id="tilfoejnavne"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="tilfoejnavneModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5
-              class="modal-title font-weight-bold"
-              id="tilfoejnavneModalLabel"
-            >
-              Tilføj Aktører
-            </h5>
-            <button
-              type="button"
-              class="btn close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 12 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
-                  />
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="card bg-light">
-              <div class="card-body">
-                <input
-                  type="text"
-                  class="form-control form-control-lg"
-                  placeholder="Søg..."
-                />
-              </div>
-            </div>
-            <div class="table-responsive">
-              <table
-                id=""
-                width="100%"
-                class="table sorting table-hover table-striped mb-0"
-              >
-                <thead>
-                  <tr>
-                    <th scope="col" class="d-flex align-items-center">
-                      <div
-                        class="form-check form-inline p-0 d-flex align-items-center"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="defaultCheck1"
-                        />
-                      </div>
-                    </th>
-                    <th scope="col">Præfiks</th>
-                    <th scope="col">Navn</th>
-                    <th scope="col">Fra</th>
-                    <th scope="col">Til</th>
-                    <th scope="col">Navnetype</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="clickable-checkbox">
-                    <td>
-                      <div
-                        class="form-check form-inline p-0 d-flex align-items-center mt-1"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="defaultCheck1"
-                        />
-                      </div>
-                    </td>
-                    <td>FRB Politi</td>
-                    <td>Frederiksberg Politi</td>
-                    <td>1988</td>
-                    <td>2040</td>
-                    <td>Papir</td>
-                  </tr>
-                  <tr class="clickable-checkbox">
-                    <td>
-                      <div
-                        class="form-check form-inline p-0 d-flex align-items-center mt-1"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="defaultCheck1"
-                        />
-                      </div>
-                    </td>
-                    <td>FRB Politi</td>
-                    <td>Frederiksberg Politi</td>
-                    <td>1988</td>
-                    <td>2020</td>
-                    <td>sh29942</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary d-flex align-items-center"
-              data-dismiss="modal"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="16"
-                viewBox="0 0 12 16"
-                class="mr-2"
-              >
-                <path
-                  fill="#fff"
-                  fill-rule="evenodd"
-                  d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                />
-              </svg>
-              <span>Tilføj</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>

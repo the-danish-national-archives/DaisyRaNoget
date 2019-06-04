@@ -250,19 +250,24 @@ $(document).ready(function() {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
   });
 
-  $("#type").change(function() {
-    var selected = $(this)
-      .children("option:selected")
-      .val();
-    console.log(selected);
-    if (selected === "itsystem") {
-      $(".itsystem").show();
-      $(".papir").hide();
-    } else {
-      $(".papir").show();
-      $(".itsystem").hide();
-    }
-  });
+  // Change shown boxes based on value selected in dropdown
+  $("#type")
+    .change(function() {
+      $(this)
+        .find("option:selected")
+        .each(function() {
+          var optionValue = $(this).attr("value");
+          if (optionValue) {
+            $(".box")
+              .not("." + optionValue)
+              .hide();
+            $("." + optionValue).show();
+          } else {
+            $(".box").hide();
+          }
+        });
+    })
+    .change();
 
   // Removes row in table
   $(".delete").on("click", function() {
@@ -300,8 +305,12 @@ $(document).ready(function() {
       tds += "</tr>";
       if ($("tbody", this).length > 0) {
         $("tbody", this).append(tds);
+        $(".readonly").hide();
+        $(".write").show();
+        $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
       } else {
         $(this).append(tds);
+        $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
       }
     });
   });
