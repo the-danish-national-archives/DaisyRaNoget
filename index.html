@@ -183,7 +183,7 @@
                       </div>
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <label for="proveniensnr">Proveniens nr.</label>
+                          <label for="proveniensnr">Proveniensnr.</label>
                           <input
                             type="text"
                             class="form-control bg-light"
@@ -415,20 +415,30 @@
 
                       <div class="row mb-3">
                         <div class="col-sm-6">
-                          <label for="formaal">Formål</label>
-                          <input
-                            type="text"
-                            class="form-control bg-light"
-                            id="formaal"
-                          />
+                          <div class="form-group mb-0">
+                            <label for="formaalstype">Formålstype</label>
+                            <select
+                              class="form-control bg-light"
+                              id="formaalstype"
+                            >
+                              <option>Original</option>
+                              <option>Brugskopi</option>
+                              <option>Sikkerhedskopi</option>
+                            </select>
+                          </div>
                         </div>
                         <div class="col-sm-6">
-                          <label for="medie">Medie</label>
-                          <input
-                            type="text"
-                            class="form-control bg-light"
-                            id="medie"
-                          />
+                          <div class="form-group mb-0">
+                            <label for="medietype">Medietype</label>
+                            <select
+                              class="form-control bg-light"
+                              id="medietype"
+                            >
+                              <option>Papir m. m.</option>
+                              <option>Mikrofilm 16 mm</option>
+                              <option>Mikrofilm 35 mm</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
 
@@ -516,11 +526,13 @@
                     <div class="container-fluid">
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <label for="opgavenavn">Opgavenavn</label>
+                          <label for="arbejdsopgavenavn"
+                            >Arbejdsopgavenavn</label
+                          >
                           <input
                             type="text"
                             class="form-control form-control-lg bg-light"
-                            id="opgavenavn"
+                            id="arbejdsopgavenavn"
                           />
                         </div>
                       </div>
@@ -651,9 +663,7 @@
               </div>
             </div>
             <div class="form-group row">
-              <label class="col-sm-4 col-form-label" for="type"
-                >Dannelsestid</label
-              >
+              <label class="col-sm-4 col-form-label" for="type">Tid</label>
               <div class="col-sm-8">
                 <div class="form-inline row">
                   <input
@@ -668,47 +678,6 @@
                     placeholder="til"
                     id="name"
                   />
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-4 col-form-label" for="navnetype"
-                >Navnetype</label
-              >
-              <div class="col-sm-8">
-                <select class="form-control" id="navnetype">
-                  <option>Kaldenavn</option>
-                  <option>Officielt</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="col-sm-4 col-form-label" for="type">Kladde</label>
-              <div class="col-sm-8">
-                <div class="form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="exampleRadios"
-                    id="KladdeRadio1"
-                    value="option1"
-                    checked
-                  />
-                  <label class="form-check-label" for="KladdeRadio1">
-                    Ja
-                  </label>
-                </div>
-                <div class="form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="exampleRadios"
-                    id="KladdeRadio2"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="KladdeRadio2">
-                    Nej
-                  </label>
                 </div>
               </div>
             </div>
@@ -786,7 +755,7 @@
           <div class="modal-body">
             <div class="form-group row">
               <label for="name" class="col-sm-4 col-form-label"
-                >Opgavenavn</label
+                >Arbejdsopgavenavn</label
               >
               <div class="col-sm-8">
                 <input type="text" class="form-control" id="name" />

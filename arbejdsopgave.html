@@ -71,7 +71,7 @@
               >
               <h1 class="font-weight-bold">Min arbejdsopgave</h1>
               <h3 class="text-secondary mb-5">
-                Åbnet: 10. juni 2002 &nbsp;&bull;&nbsp; Lukket: 15. juni 2002
+                Oprettet: 10. juni 2002 &nbsp;&bull;&nbsp; Lukket: 15. juni 2002
               </h3>
 
               <div class="container-fluid">
@@ -268,7 +268,11 @@ Nørregade 56
                                       type="text"
                                       class="form-control"
                                       value="12345678x"
+                                      disabled
                                     />
+                                    <small class="muted">
+                                      Password kan ikke redigeres.
+                                    </small>
                                   </div>
                                 </div>
                               </div>
@@ -278,7 +282,8 @@ Nørregade 56
                                 <div class="col-sm-12 readonly">
                                   <button
                                     class="btn btn-outline-danger readonly"
-                                    id="closetask"
+                                    data-toggle="modal"
+                                    data-target="#lukopgave"
                                   >
                                     Luk opgave
                                   </button>
@@ -414,7 +419,7 @@ Nørregade 56
                               d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
                             />
                           </svg>
-                          <span>Tilføj Eksemplar</span></span
+                          <span>Tilknyt Eksemplar</span></span
                         >
                       </button>
                     </div>
@@ -440,7 +445,7 @@ Nørregade 56
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title font-weight-bold" id="tilfoejeksModalLabel">
-              Tilføj Eksemplar
+              Tilknyt Eksemplar
             </h5>
             <button
               type="button"
@@ -506,19 +511,31 @@ Nørregade 56
                     </div>
                     <div class="row mb-3">
                       <div class="col-sm-3">
-                        <label for="formaal">Formål</label>
-                        <input
-                          type="text"
-                          class="form-control bg-white"
-                          id="formaal"
-                        />
+                        <div class="form-group mb-0">
+                          <label for="formaalstype">Formålstype</label>
+                          <select class="form-control" id="formaalstype">
+                            <option>Original</option>
+                            <option>Brugskopi</option>
+                            <option>Sikkerhedskopi</option>
+                          </select>
+                        </div>
                       </div>
                       <div class="col-sm-3">
-                        <label for="medie">Medie</label>
+                        <div class="form-group mb-0">
+                          <label for="medietype">Medietype</label>
+                          <select class="form-control" id="medietype">
+                            <option>Papir m. m.</option>
+                            <option>Mikrofilm 16 mm</option>
+                            <option>Mikrofilm 35 mm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <label for="sortfelt">Sorteringsfelt</label>
                         <input
                           type="text"
                           class="form-control bg-white"
-                          id="medie"
+                          id="sortfelt"
                         />
                       </div>
                       <div class="col-sm-3">
@@ -680,7 +697,70 @@ Nørregade 56
                   d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
                 />
               </svg>
-              <span>Tilføj</span>
+              <span>Tilknyt</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Luk arbejdsopgave -->
+    <div
+      class="modal fade"
+      id="lukopgave"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="lukopgaveModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="lukopgaveModalLabel">
+              Luk opgave
+            </h5>
+            <button
+              type="button"
+              class="btn close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 12 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Er du sikker på at du vil lukke opgaven og fjerne alle kladde
+              markeringer?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn d-flex align-items-center"
+              data-dismiss="modal"
+            >
+              Annuller
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger d-flex align-items-center"
+              data-dismiss="modal"
+              id="closetask"
+            >
+              Luk opgave
             </button>
           </div>
         </div>

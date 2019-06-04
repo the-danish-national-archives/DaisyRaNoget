@@ -220,6 +220,15 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  $("#arkiveringsversion-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
   // Change default placeholder text for search field in table
   $(".dataTables_filter input").attr("placeholder", "Filtrér");
 
@@ -241,14 +250,17 @@ $(document).ready(function() {
     $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
   });
 
-  // Change what the user sees when toggling between paper and it component
-  $('[name="typeRadio"]').on("change", function() {
-    if ($(this).is(":checked") && $(this).attr("id") == "type1") {
-      $(".itkomponent").show();
+  $("#type").change(function() {
+    var selected = $(this)
+      .children("option:selected")
+      .val();
+    console.log(selected);
+    if (selected === "itsystem") {
+      $(".itsystem").show();
       $(".papir").hide();
     } else {
-      $(".itkomponent").hide();
       $(".papir").show();
+      $(".itsystem").hide();
     }
   });
 
@@ -361,6 +373,22 @@ $(document).ready(function() {
   // Adds row in navne-tabel
   $(".addrow-6").click(function() {
     $("#referencer-tabel").each(function() {
+      var tds = "<tr>";
+      jQuery.each($("tr:last td", this), function() {
+        tds += "<td>" + $(this).html() + "</td>";
+      });
+      tds += "</tr>";
+      if ($("tbody", this).length > 0) {
+        $("tbody", this).append(tds);
+      } else {
+        $(this).append(tds);
+      }
+    });
+  });
+
+  // Adds row in navne-tabel
+  $(".addrow-7").click(function() {
+    $("#arkiveringsversion-tabel").each(function() {
       var tds = "<tr>";
       jQuery.each($("tr:last td", this), function() {
         tds += "<td>" + $(this).html() + "</td>";

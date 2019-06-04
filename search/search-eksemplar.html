@@ -145,20 +145,24 @@
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm-3">
-                      <label for="formaal">Formål</label>
-                      <input
-                        type="text"
-                        class="form-control bg-light"
-                        id="formaal"
-                      />
+                      <div class="form-group mb-0">
+                        <label for="formaalstype">Formålstype</label>
+                        <select class="form-control bg-light" id="formaalstype">
+                          <option>Original</option>
+                          <option>Brugskopi</option>
+                          <option>Sikkerhedskopi</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="col-sm-3">
-                      <label for="medie">Medie</label>
-                      <input
-                        type="text"
-                        class="form-control bg-light"
-                        id="medie"
-                      />
+                      <div class="form-group mb-0">
+                        <label for="medietype">Medietype</label>
+                        <select class="form-control bg-light" id="medietype">
+                          <option>Papir m. m.</option>
+                          <option>Mikrofilm 16 mm</option>
+                          <option>Mikrofilm 35 mm</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="col-sm-3">
                       <button type="submit" class="btn btn-primary search mt-4">
