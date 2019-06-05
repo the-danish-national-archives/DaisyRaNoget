@@ -229,7 +229,7 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  $("#eksemplar-tabel tr").on("click", function() {
+  $("#heeksemplar-tabel tr").on("click", function() {
     $(this)
       .addClass("selected")
       .siblings()
