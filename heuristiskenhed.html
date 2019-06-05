@@ -1507,7 +1507,7 @@ of Lorem Ipsum.
                       <div
                         class="d-flex align-items-center justify-content-between"
                       >
-                        <h4 class="font-weight-bold mt-3 ml-3 mb-4">
+                        <h4 class="font-weight-bold mt-3 ml-3 mb-4" id="Eksemplarer">
                           <div class="d-flex align-items-center">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -1525,6 +1525,23 @@ of Lorem Ipsum.
                             <span class="ml-3">Eksemplarer</span>
                           </div>
                         </h4>
+                        <button
+                          class="btn btn-outline-primary btn-sm d-flex align-items-center mt-3 mr-3 addrow-8"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="16"
+                            viewBox="0 0 12 16"
+                            class="mr-2"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                            />
+                          </svg>
+                          <span>Tilføj nyt Eksemplar</span>
+                        </button>
                       </div>
                       <div class="row mt-3 mb-5 ml-1 mr-1">
                         <div class="col-sm-12">
@@ -1540,6 +1557,7 @@ of Lorem Ipsum.
                                     <th scope="col">Navn</th>
                                     <th scope="col">Formålstype</th>
                                     <th scope="col">Medietype</th>
+                                    <th scope="col" class="hidden">&nbsp;</th>
                                   </tr>
                                 </thead>
 
@@ -1552,10 +1570,17 @@ of Lorem Ipsum.
                                     href="#collapseOne"
                                   >
                                     <td>
-                                      <a href="/magasinenhed.html">Eksx14</a>
+                                      <a href="#">Eksx14</a>
                                     </td>
                                     <td>VIII.b-1</td>
                                     <td>8 cm. stort format</td>
+                                    <td class="text-right">
+                                      <button
+                                        class="btn btn-outline-primary btn-sm"
+                                      >
+                                        Detaljer
+                                      </button>
+                                    </td>
                                   </tr>
                                   <tr
                                     data-toggle="collapse"
@@ -1565,10 +1590,17 @@ of Lorem Ipsum.
                                     href="#collapseTwo"
                                   >
                                     <td>
-                                      <a href="/magasinenhed.html">Eksx15</a>
+                                      <a href="#">Eksx15</a>
                                     </td>
                                     <td>VIII.b-1</td>
                                     <td>8 cm. stort format</td>
+                                    <td class="text-right">
+                                      <button
+                                        class="btn btn-outline-primary btn-sm"
+                                      >
+                                        Detaljer
+                                      </button>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -1580,9 +1612,28 @@ of Lorem Ipsum.
                               >
                                 <div class="card m-lg-3 bg-light">
                                   <div class="card-body">
-                                    <h4 class="font-weight-bold mt-3 mb-3">
-                                      Eksx14
-                                    </h4>
+                                    <div
+                                      class="d-flex align-items-center justify-content-between"
+                                    >
+                                      <h3 class="font-weight-bold mt-3 mb-3">
+                                        Eksx14
+                                      </h3>
+                                      <button
+                                        class="btn btn-primary float-right readonly edit"
+                                      >
+                                        Rediger
+                                      </button>
+                                      <div class="float-right write">
+                                        <button class="btn write save">
+                                          Annuller
+                                        </button>
+                                        <button
+                                          class="btn btn-primary write save"
+                                        >
+                                          Gem
+                                        </button>
+                                      </div>
+                                    </div>
                                     <div class="row">
                                       <div class="col-sm-4">
                                         <ul class="list-group mb-5 mt-3">
@@ -1596,7 +1647,7 @@ of Lorem Ipsum.
                                                 Formålstype
                                               </div>
                                               <div class="col-sm-6 readonly">
-                                                IT-Komponent
+                                                VIII.b-1
                                               </div>
                                               <div class="col-sm-6 write">
                                                 <div class="form-group mb-0">
@@ -1604,9 +1655,7 @@ of Lorem Ipsum.
                                                     class="form-control"
                                                     id="exampleFormControlSelect1"
                                                   >
-                                                    <option
-                                                      >IT-Komponent</option
-                                                    >
+                                                    <option>VIII.b-1</option>
                                                     <option>2</option>
                                                     <option>3</option>
                                                     <option>4</option>
@@ -1626,7 +1675,7 @@ of Lorem Ipsum.
                                                 Medietype
                                               </div>
                                               <div class="col-sm-6 readonly">
-                                                Papir m.m.
+                                                8 cm. stort format
                                               </div>
                                               <div class="col-sm-6 write">
                                                 <div class="form-group mb-0">
@@ -1634,7 +1683,11 @@ of Lorem Ipsum.
                                                     class="form-control"
                                                     id="exampleFormControlSelect1"
                                                   >
-                                                    <option>Type2</option>
+                                                    <option
+                                                      >8 cm. stort
+                                                      format</option
+                                                    >
+                                                    <option>Papir m.m.</option>
                                                     <option>2</option>
                                                     <option>3</option>
                                                     <option>4</option>
@@ -1663,14 +1716,14 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios1"
+                                                    name="tyveradio"
+                                                    id="tyveradio1"
                                                     value="option1"
                                                     checked
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios1"
+                                                    for="tyveradio1"
                                                   >
                                                     Ja
                                                   </label>
@@ -1681,13 +1734,13 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios2"
+                                                    name="tyveradio"
+                                                    id="tyveradio2"
                                                     value="option2"
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios2"
+                                                    for="tyveradio2"
                                                   >
                                                     Nej
                                                   </label>
@@ -1714,14 +1767,14 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios1"
+                                                    name="udlaanes"
+                                                    id="udlaanes1"
                                                     value="option1"
                                                     checked
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios1"
+                                                    for="udlaanes1"
                                                   >
                                                     Ja
                                                   </label>
@@ -1732,13 +1785,13 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios2"
+                                                    name="udlaanes"
+                                                    id="udlaanes2"
                                                     value="option2"
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios2"
+                                                    for="udlaanes2"
                                                   >
                                                     Nej
                                                   </label>
@@ -1765,14 +1818,14 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios1"
+                                                    name="reserveres"
+                                                    id="reserveres1"
                                                     value="option1"
                                                     checked
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios1"
+                                                    for="reserveres1"
                                                   >
                                                     Ja
                                                   </label>
@@ -1783,13 +1836,13 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios2"
+                                                    name="reserveres"
+                                                    id="reserveres2"
                                                     value="option2"
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios2"
+                                                    for="reserveres2"
                                                   >
                                                     Nej
                                                   </label>
@@ -1816,14 +1869,14 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios1"
+                                                    name="fjernlaanes"
+                                                    id="fjernlaanes1"
                                                     value="option1"
                                                     checked
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios1"
+                                                    for="fjernlaanes1"
                                                   >
                                                     Ja
                                                   </label>
@@ -1834,13 +1887,13 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios2"
+                                                    name="fjernlaanes"
+                                                    id="fjernlaanes2"
                                                     value="option2"
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios2"
+                                                    for="fjernlaanes2"
                                                   >
                                                     Nej
                                                   </label>
@@ -1867,14 +1920,14 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios1"
+                                                    name="AOScannet"
+                                                    id="AOScannet1"
                                                     value="option1"
                                                     checked
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios1"
+                                                    for="AOScannet1"
                                                   >
                                                     Ja
                                                   </label>
@@ -1885,13 +1938,13 @@ of Lorem Ipsum.
                                                   <input
                                                     class="form-check-input"
                                                     type="radio"
-                                                    name="exampleRadios"
-                                                    id="exampleRadios2"
+                                                    name="AOScannet"
+                                                    id="AOScannet2"
                                                     value="option2"
                                                   />
                                                   <label
                                                     class="form-check-label"
-                                                    for="exampleRadios2"
+                                                    for="AOScannet2"
                                                   >
                                                     Nej
                                                   </label>
@@ -1909,7 +1962,7 @@ of Lorem Ipsum.
                                                 Myndighedsnoter
                                               </p>
 
-                                              <p>
+                                              <p class="readonly">
                                                 Lorem Ipsum is simply dummy text
                                                 of the printing and typesetting
                                                 industry. Lorem Ipsum has been
@@ -1930,6 +1983,27 @@ of Lorem Ipsum.
                                                 Aldus PageMaker including
                                                 versions of Lorem Ipsum.
                                               </p>
+                                              <textarea
+                                                rows="10"
+                                                class="form-control write"
+                                              >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+text ever since the 1500s, when
+an unknown printer took a galley
+of type and scrambled it to make
+a type specimen book. It has
+survived not only five
+centuries, but also the leap
+into electronic typesetting,
+remaining essentially unchanged.
+It was popularised in the 1960s
+with the release of Letraset
+sheets containing Lorem Ipsum
+passages, and more recently with
+desktop publishing software like
+Aldus PageMaker including
+versions of Lorem Ipsum.            
+                                              </textarea>
                                             </div>
                                           </div>
                                         </div>
@@ -1937,9 +2011,11 @@ of Lorem Ipsum.
                                     </div>
                                     <div class="row">
                                       <div class="col-sm-12">
-                                        <h4 class="font-weight-bold mt-3">
+                                        <h5
+                                          class="font-weight-bold mt-3 ml-1 mb-3"
+                                        >
                                           Magasinenhed / Billedserie
-                                        </h4>
+                                        </h5>
                                         <div class="card">
                                           <div class="card-body p-0 m-0">
                                             <table
@@ -2002,8 +2078,10 @@ of Lorem Ipsum.
                                         </div>
                                         <button
                                           class="btn btn-outline-primary mt-3 mb-4"
+                                          data-toggle="modal"
+                                          data-target="#visrelateredearbejdsopgaver"
                                         >
-                                          Vis arbejdsopgaver
+                                          Vis relaterede arbejdsopgaver
                                         </button>
                                       </div>
                                     </div>
@@ -2023,23 +2101,6 @@ of Lorem Ipsum.
                             </div>
                           </div>
                         </div>
-                        <button
-                          class="btn btn-outline-primary edit btn-sm d-flex align-items-center mt-3 ml-3 addrow-7"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="16"
-                            viewBox="0 0 12 16"
-                            class="mr-2"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                            />
-                          </svg>
-                          <span>Tilføj ny arkiveringsversion</span>
-                        </button>
                       </div>
                     </div>
                   </div>
@@ -2443,6 +2504,105 @@ of Lorem Ipsum.
                         data-dismiss="modal"
                       >
                         <td>Frederiksberg Politi</td>
+                        <td>1988</td>
+                        <td>2020</td>
+                        <td>Officielt</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal vis relaterede arbejdsopgaver -->
+    <div
+      class="modal fade"
+      id="visrelateredearbejdsopgaver"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="visrelateredearbejdsopgaverModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title font-weight-bold"
+              id="visrelateredearbejdsopgaverModalLabel"
+            >
+              Relaterede Arbejdsopgaver
+            </h5>
+            <button
+              type="button"
+              class="btn close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 12 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="modal-body pb-0">
+            <div class="card special mt-3 mb-3">
+              <div class="card-body p-0">
+                <div class="table-responsive">
+                  <table
+                    id=""
+                    width="100%"
+                    class="table sorting table-hover table-striped mb-0"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">Arbejdsopgavenavn</th>
+                        <th scope="col">Ansvarlig</th>
+                        <th scope="col">Dato Åbnet</th>
+                        <th scope="col">Dato Lukket</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="arbejdsopgave.html">Frederiksberg Politi</a>
+                        </td>
+                        <td>1988</td>
+                        <td>2020</td>
+                        <td>Officielt</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="arbejdsopgave.html">Frederiksberg Politi</a>
+                        </td>
+                        <td>1988</td>
+                        <td>2020</td>
+                        <td>Officielt</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="arbejdsopgave.html">Frederiksberg Politi</a>
+                        </td>
+                        <td>1988</td>
+                        <td>2020</td>
+                        <td>Officielt</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="arbejdsopgave.html">Frederiksberg Politi</a>
+                        </td>
                         <td>1988</td>
                         <td>2020</td>
                         <td>Officielt</td>

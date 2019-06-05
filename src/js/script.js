@@ -283,15 +283,14 @@ $(document).ready(function() {
       .remove();
   });
 
-  // Adjust column when opening an accordion item
-  // $("#accordionExample").on("shown.bs.collapse", function() {
-  //   $.each($.fn.dataTable.tables(true), function() {
-  //     $(this)
-  //       .DataTable()
-  //       .columns.adjust()
-  //       .draw();
-  //   });
-  // });
+  $(".collapse").on("shown.bs.collapse", function() {
+    $.each($.fn.dataTable.tables(true), function() {
+      $(this)
+        .DataTable()
+        .columns.adjust()
+        .draw();
+    });
+  });
 
   $(".collapse").on("show.bs.collapse", function() {
     $(".collapse.show").each(function() {
@@ -411,6 +410,22 @@ $(document).ready(function() {
   // Adds row in navne-tabel
   $(".addrow-7").click(function() {
     $("#arkiveringsversion-tabel").each(function() {
+      var tds = "<tr>";
+      jQuery.each($("tr:last td", this), function() {
+        tds += "<td>" + $(this).html() + "</td>";
+      });
+      tds += "</tr>";
+      if ($("tbody", this).length > 0) {
+        $("tbody", this).append(tds);
+      } else {
+        $(this).append(tds);
+      }
+    });
+  });
+
+  // Adds row in navne-tabel
+  $(".addrow-8").click(function() {
+    $("#eksemplar-tabel").each(function() {
       var tds = "<tr>";
       jQuery.each($("tr:last td", this), function() {
         tds += "<td>" + $(this).html() + "</td>";

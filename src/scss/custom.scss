@@ -242,8 +242,17 @@ table thead tr th {
 
 table.dataTable tbody tr.selected,
 table.dataTable tbody tr.selected a {
-  background: #1a232a !important;
+  background: #686868 !important;
   color: #fff;
+}
+
+table.dataTable tbody tr.selected .btn-outline-primary {
+  color: #fff;
+  border-color: #fff;
+}
+
+table.dataTable tbody tr:hover {
+  cursor: pointer;
 }
 
 span.arrow-hack {
