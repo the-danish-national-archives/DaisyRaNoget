@@ -229,6 +229,13 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  $("#eksemplar-tabel tr").on("click", function() {
+    $(this)
+      .addClass("selected")
+      .siblings()
+      .removeClass("selected");
+  });
+
   // Change default placeholder text for search field in table
   $(".dataTables_filter input").attr("placeholder", "Filtrér");
 
@@ -277,12 +284,18 @@ $(document).ready(function() {
   });
 
   // Adjust column when opening an accordion item
-  $("#accordionExample").on("shown.bs.collapse", function() {
-    $.each($.fn.dataTable.tables(true), function() {
-      $(this)
-        .DataTable()
-        .columns.adjust()
-        .draw();
+  // $("#accordionExample").on("shown.bs.collapse", function() {
+  //   $.each($.fn.dataTable.tables(true), function() {
+  //     $(this)
+  //       .DataTable()
+  //       .columns.adjust()
+  //       .draw();
+  //   });
+  // });
+
+  $(".collapse").on("show.bs.collapse", function() {
+    $(".collapse.show").each(function() {
+      $(this).collapse("hide");
     });
   });
 

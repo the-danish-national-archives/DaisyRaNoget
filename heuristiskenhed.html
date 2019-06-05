@@ -1525,235 +1525,521 @@ of Lorem Ipsum.
                             <span class="ml-3">Eksemplarer</span>
                           </div>
                         </h4>
-                        <button
-                          class="btn btn-outline-primary mb-3 mr-3 readonly"
-                          data-toggle="modal"
-                          data-target="#tilfoejeks"
-                        >
-                          <span class="d-flex align-items-center">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="12"
-                              height="16"
-                              viewBox="0 0 12 16"
-                              class="mr-2"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                              />
-                            </svg>
-                            <span>Tilføj</span>
-                          </span>
-                        </button>
                       </div>
-                      <div class="accordion ml-3 mr-3" id="accordionExample">
-                        <div class="card">
-                          <div
-                            class="card-header d-flex justify-content-between align-items-center bg-light"
-                            id="headingThree"
-                          >
-                            <h5 class="mb-0">
-                              Eksx14
-                            </h5>
-                            <p class="mb-0">Medietype</p>
-                            <p class="mb-0">Formålstype</p>
-                            <button
-                              class="btn btn-primary collapsed"
-                              type="button"
-                              data-toggle="collapse"
-                              data-target="#collapseOne"
-                              aria-expanded="false"
-                              aria-controls="collapseOne"
-                            >
-                              Detaljer
-                            </button>
-                          </div>
+                      <div class="row mt-3 mb-5 ml-1 mr-1">
+                        <div class="col-sm-12">
+                          <div class="card">
+                            <div class="card-body p-0 m-0">
+                              <table
+                                id="eksemplar-tabel"
+                                class="table sorting table-hover table-striped mb-0"
+                                width="100%"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Navn</th>
+                                    <th scope="col">Formålstype</th>
+                                    <th scope="col">Medietype</th>
+                                  </tr>
+                                </thead>
 
-                          <div
-                            id="collapseOne"
-                            class="collapse"
-                            aria-labelledby="headingOne"
-                            data-parent="#accordionExample"
-                          >
-                            <div class="card-body">
-                              <h4 class="font-weight-bold mt-3 mb-3">
-                                Eksx14
-                              </h4>
-                              <div class="row">
-                                <div class="col-sm-4">
-                                  <div class="form-group mb-3">
-                                    <label for="exampleFormControlSelect1">
-                                      Formålstype
-                                    </label>
-                                    <select
-                                      class="form-control"
-                                      id="exampleFormControlSelect1"
-                                    >
-                                      <option>IT-Komponent</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group mb-3">
-                                    <label for="exampleFormControlSelect1">
-                                      Medietype
-                                    </label>
-                                    <select
-                                      class="form-control"
-                                      id="exampleFormControlSelect1"
-                                    >
-                                      <option>Papir m.m.</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-check">
-                                    <input
-                                      type="checkbox"
-                                      class="form-check-input"
-                                      id="tyvetaekkelig"
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="tyvetaekkelig"
-                                      >Tyvetækkelig</label
-                                    >
-                                  </div>
-                                  <div class="form-check">
-                                    <input
-                                      type="checkbox"
-                                      class="form-check-input maaudlaanes"
-                                      id="maaudlaanes"
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="maaudlaanes"
-                                      >Må udlånes</label
-                                    >
-                                  </div>
-                                  <div class="add-checkboxes">
-                                    <div class="form-check ml-3">
-                                      <input
-                                        type="checkbox"
-                                        class="form-check-input"
-                                        id="maareserveres"
-                                      />
-                                      <label
-                                        class="form-check-label"
-                                        for="maareserveres"
-                                        >Må reserveres</label
-                                      >
+                                <tbody id="accordionEks">
+                                  <tr
+                                    data-toggle="collapse"
+                                    data-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                    href="#collapseOne"
+                                  >
+                                    <td>
+                                      <a href="/magasinenhed.html">Eksx14</a>
+                                    </td>
+                                    <td>VIII.b-1</td>
+                                    <td>8 cm. stort format</td>
+                                  </tr>
+                                  <tr
+                                    data-toggle="collapse"
+                                    data-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                    href="#collapseTwo"
+                                  >
+                                    <td>
+                                      <a href="/magasinenhed.html">Eksx15</a>
+                                    </td>
+                                    <td>VIII.b-1</td>
+                                    <td>8 cm. stort format</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div
+                                id="collapseOne"
+                                class="collapse"
+                                aria-labelledby="headingOne"
+                                data-parent="#accordionEks"
+                              >
+                                <div class="card m-lg-3 bg-light">
+                                  <div class="card-body">
+                                    <h4 class="font-weight-bold mt-3 mb-3">
+                                      Eksx14
+                                    </h4>
+                                    <div class="row">
+                                      <div class="col-sm-4">
+                                        <ul class="list-group mb-5 mt-3">
+                                          <li class="list-group-item">
+                                            <div
+                                              class="row d-flex align-items-center"
+                                            >
+                                              <div
+                                                class="col-sm-6 font-weight-semibold"
+                                              >
+                                                Formålstype
+                                              </div>
+                                              <div class="col-sm-6 readonly">
+                                                IT-Komponent
+                                              </div>
+                                              <div class="col-sm-6 write">
+                                                <div class="form-group mb-0">
+                                                  <select
+                                                    class="form-control"
+                                                    id="exampleFormControlSelect1"
+                                                  >
+                                                    <option
+                                                      >IT-Komponent</option
+                                                    >
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div
+                                              class="row d-flex align-items-center"
+                                            >
+                                              <div
+                                                class="col-sm-6 font-weight-semibold"
+                                              >
+                                                Medietype
+                                              </div>
+                                              <div class="col-sm-6 readonly">
+                                                Papir m.m.
+                                              </div>
+                                              <div class="col-sm-6 write">
+                                                <div class="form-group mb-0">
+                                                  <select
+                                                    class="form-control"
+                                                    id="exampleFormControlSelect1"
+                                                  >
+                                                    <option>Type2</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div
+                                              class="row d-flex align-items-center"
+                                            >
+                                              <div
+                                                class="col-sm-6 font-weight-semibold"
+                                              >
+                                                Tyvetækkelig
+                                              </div>
+                                              <div class="col-sm-6 readonly">
+                                                Ja
+                                              </div>
+                                              <div class="col-sm-6 write">
+                                                <div
+                                                  class="form-check form-check-inline mr-3"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios1"
+                                                    value="option1"
+                                                    checked
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios1"
+                                                  >
+                                                    Ja
+                                                  </label>
+                                                </div>
+                                                <div
+                                                  class="form-check form-check-inline"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios2"
+                                                    value="option2"
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios2"
+                                                  >
+                                                    Nej
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div
+                                              class="row d-flex align-items-center"
+                                            >
+                                              <div
+                                                class="col-sm-6 font-weight-semibold"
+                                              >
+                                                Må Udlånes
+                                              </div>
+                                              <div class="col-sm-6 readonly">
+                                                Ja
+                                              </div>
+                                              <div class="col-sm-6 write">
+                                                <div
+                                                  class="form-check form-check-inline mr-3"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios1"
+                                                    value="option1"
+                                                    checked
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios1"
+                                                  >
+                                                    Ja
+                                                  </label>
+                                                </div>
+                                                <div
+                                                  class="form-check form-check-inline"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios2"
+                                                    value="option2"
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios2"
+                                                  >
+                                                    Nej
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div
+                                              class="row d-flex align-items-center"
+                                            >
+                                              <div
+                                                class="col-sm-6 font-weight-semibold"
+                                              >
+                                                Må reserveres
+                                              </div>
+                                              <div class="col-sm-6 readonly">
+                                                Ja
+                                              </div>
+                                              <div class="col-sm-6 write">
+                                                <div
+                                                  class="form-check form-check-inline mr-3"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios1"
+                                                    value="option1"
+                                                    checked
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios1"
+                                                  >
+                                                    Ja
+                                                  </label>
+                                                </div>
+                                                <div
+                                                  class="form-check form-check-inline"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios2"
+                                                    value="option2"
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios2"
+                                                  >
+                                                    Nej
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div
+                                              class="row d-flex align-items-center"
+                                            >
+                                              <div
+                                                class="col-sm-6 font-weight-semibold"
+                                              >
+                                                Må fjernlånes
+                                              </div>
+                                              <div class="col-sm-6 readonly">
+                                                Ja
+                                              </div>
+                                              <div class="col-sm-6 write">
+                                                <div
+                                                  class="form-check form-check-inline mr-3"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios1"
+                                                    value="option1"
+                                                    checked
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios1"
+                                                  >
+                                                    Ja
+                                                  </label>
+                                                </div>
+                                                <div
+                                                  class="form-check form-check-inline"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios2"
+                                                    value="option2"
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios2"
+                                                  >
+                                                    Nej
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <div
+                                              class="row d-flex align-items-center"
+                                            >
+                                              <div
+                                                class="col-sm-6 font-weight-semibold"
+                                              >
+                                                AOScannet
+                                              </div>
+                                              <div class="col-sm-6 readonly">
+                                                Ja
+                                              </div>
+                                              <div class="col-sm-6 write">
+                                                <div
+                                                  class="form-check form-check-inline mr-3"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios1"
+                                                    value="option1"
+                                                    checked
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios1"
+                                                  >
+                                                    Ja
+                                                  </label>
+                                                </div>
+                                                <div
+                                                  class="form-check form-check-inline"
+                                                >
+                                                  <input
+                                                    class="form-check-input"
+                                                    type="radio"
+                                                    name="exampleRadios"
+                                                    id="exampleRadios2"
+                                                    value="option2"
+                                                  />
+                                                  <label
+                                                    class="form-check-label"
+                                                    for="exampleRadios2"
+                                                  >
+                                                    Nej
+                                                  </label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <div class="col-sm-8">
+                                        <div class="form-group">
+                                          <div class="card mt-3">
+                                            <div class="card-body">
+                                              <p class="font-weight-semibold">
+                                                Myndighedsnoter
+                                              </p>
+
+                                              <p>
+                                                Lorem Ipsum is simply dummy text
+                                                of the printing and typesetting
+                                                industry. Lorem Ipsum has been
+                                                the industry's standard dummy
+                                                text ever since the 1500s, when
+                                                an unknown printer took a galley
+                                                of type and scrambled it to make
+                                                a type specimen book. It has
+                                                survived not only five
+                                                centuries, but also the leap
+                                                into electronic typesetting,
+                                                remaining essentially unchanged.
+                                                It was popularised in the 1960s
+                                                with the release of Letraset
+                                                sheets containing Lorem Ipsum
+                                                passages, and more recently with
+                                                desktop publishing software like
+                                                Aldus PageMaker including
+                                                versions of Lorem Ipsum.
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div class="form-check ml-3">
-                                      <input
-                                        type="checkbox"
-                                        class="form-check-input"
-                                        id="maafjernlaanes"
-                                      />
-                                      <label
-                                        class="form-check-label"
-                                        for="maafjernlaanes"
-                                        >Må fjernlånes</label
-                                      >
+                                    <div class="row">
+                                      <div class="col-sm-12">
+                                        <h4 class="font-weight-bold mt-3">
+                                          Magasinenhed / Billedserie
+                                        </h4>
+                                        <div class="card">
+                                          <div class="card-body p-0 m-0">
+                                            <table
+                                              id="magasinenhed-tabel"
+                                              class="table sorting table-hover table-striped mb-0"
+                                              width="100%"
+                                            >
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">Stregkode</th>
+                                                  <th scope="col">Løber</th>
+                                                  <th scope="col">Type</th>
+                                                  <th scope="col">Første</th>
+                                                  <th scope="col">Sidste</th>
+                                                  <th scope="col">Plads Sti</th>
+                                                  <th
+                                                    scope="col"
+                                                    class="hidden"
+                                                  ></th>
+                                                </tr>
+                                              </thead>
+
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <a href="/magasinenhed.html"
+                                                      >802367816</a
+                                                    >
+                                                  </td>
+                                                  <td>VIII.b-1</td>
+                                                  <td>8 cm. stort format</td>
+                                                  <td>1919 10 1</td>
+                                                  <td>1948</td>
+                                                  <td>21+Mez5+1+101+09+04</td>
+                                                  <td
+                                                    width="25"
+                                                    class="text-right"
+                                                  >
+                                                    <a
+                                                      href="#"
+                                                      class="delete icon"
+                                                    >
+                                                      <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 12 16"
+                                                      >
+                                                        <path
+                                                          fill-rule="evenodd"
+                                                          d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
+                                                        />
+                                                      </svg>
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <button
+                                          class="btn btn-outline-primary mt-3 mb-4"
+                                        >
+                                          Vis arbejdsopgaver
+                                        </button>
+                                      </div>
                                     </div>
-                                  </div>
-                                  <div class="form-check">
-                                    <input
-                                      type="checkbox"
-                                      class="form-check-input"
-                                      id="aoscannet"
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="aoscannet"
-                                      >AOScannet</label
-                                    >
-                                  </div>
-                                </div>
-                                <div class="col-sm-8">
-                                  <div class="form-group">
-                                    <label for="myndighedsnoter"
-                                      >Myndighedsnoter</label
-                                    >
-                                    <textarea
-                                      class="form-control"
-                                      id="myndighedsnoter"
-                                      rows="10"
-                                    ></textarea>
                                   </div>
                                 </div>
                               </div>
-                              <div class="row">
-                                <div class="col-sm-12">
-                                  <h4 class="font-weight-bold mt-3">
-                                    Magasinenhed / Billedserie
-                                  </h4>
-                                  <div class="card">
-                                    <div class="card-body p-0 m-0">
-                                      <table
-                                        id="magasinenhed-tabel"
-                                        class="table sorting table-hover table-striped mb-0"
-                                        width="100%"
-                                      >
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Stregkode</th>
-                                            <th scope="col">Løber</th>
-                                            <th scope="col">Type</th>
-                                            <th scope="col">Første</th>
-                                            <th scope="col">Sidste</th>
-                                            <th scope="col">Plads Sti</th>
-                                            <th scope="col" class="hidden"></th>
-                                          </tr>
-                                        </thead>
-
-                                        <tbody>
-                                          <tr>
-                                            <td>
-                                              <a href="/magasinenhed.html"
-                                                >802367816</a
-                                              >
-                                            </td>
-                                            <td>VIII.b-1</td>
-                                            <td>8 cm. stort format</td>
-                                            <td>1919 10 1</td>
-                                            <td>1948</td>
-                                            <td>21+Mez5+1+101+09+04</td>
-                                            <td width="25" class="text-right">
-                                              <a href="#" class="delete icon">
-                                                <svg
-                                                  xmlns="http://www.w3.org/2000/svg"
-                                                  width="24"
-                                                  height="24"
-                                                  viewBox="0 0 12 16"
-                                                >
-                                                  <path
-                                                    fill-rule="evenodd"
-                                                    d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
-                                                  />
-                                                </svg>
-                                              </a>
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                  <button
-                                    class="btn btn-outline-primary mt-3 mb-4"
-                                  >
-                                    Vis arbejdsopgaver
-                                  </button>
+                              <div
+                                id="collapseTwo"
+                                class="collapse"
+                                aria-labelledby="headingTwo"
+                                data-parent="#accordionEks"
+                              >
+                                <div class="card-body">
+                                  collapse 2
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
+                        <button
+                          class="btn btn-outline-primary edit btn-sm d-flex align-items-center mt-3 ml-3 addrow-7"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="16"
+                            viewBox="0 0 12 16"
+                            class="mr-2"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                            />
+                          </svg>
+                          <span>Tilføj ny arkiveringsversion</span>
+                        </button>
                       </div>
                     </div>
                   </div>
