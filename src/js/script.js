@@ -411,8 +411,8 @@ $(document).ready(function() {
   $(".addrow-7").click(function() {
     $("#arkiveringsversion-tabel").each(function() {
       var tds = "<tr>";
-      jQuery.each($("tr:last td", this), function() {
-        tds += "<td>" + $(this).html() + "</td>";
+      jQuery.each($("tr:last", this), function() {
+        tds += $(this).html();
       });
       tds += "</tr>";
       if ($("tbody", this).length > 0) {
@@ -425,10 +425,10 @@ $(document).ready(function() {
 
   // Adds row in navne-tabel
   $(".addrow-8").click(function() {
-    $("#eksemplar-tabel").each(function() {
+    $("#heeksemplar-tabel").each(function() {
       var tds = "<tr>";
-      jQuery.each($("tr:last td", this), function() {
-        tds += "<td>" + $(this).html() + "</td>";
+      jQuery.each($("tr:last", this), function() {
+        tds += $(this).html();
       });
       tds += "</tr>";
       if ($("tbody", this).length > 0) {
