@@ -229,6 +229,15 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  $("#tilknyteks-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: false
+  });
+
   $("#heeksemplar-tabel tr").on("click", function() {
     $(this)
       .addClass("selected")
