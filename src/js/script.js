@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Makes the header sticky when reaching 360 pixels down on the page
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 360) {
       $(".card-header").addClass("sticky");
     } else {
@@ -9,32 +9,32 @@ $(document).ready(function() {
   });
 
   // Make the entire row in a table clickable
-  $(".clickable-row").on("click", function() {
+  $(".clickable-row").on("click", function () {
     window.location = $(this).data("href");
   });
 
-  $(".clickable-checkbox").on("click", function() {
+  $(".clickable-checkbox").on("click", function () {
     $(this)
       .find("input[type=checkbox]")
       .prop(
         "checked",
         !$(this)
-          .find("input[type=checkbox]")
-          .prop("checked")
+        .find("input[type=checkbox]")
+        .prop("checked")
       );
   });
 
   // Toogle additional checkboxes when #maaudlaanes is activated
-  $(".maaudlaanes").on("change", function() {
+  $(".maaudlaanes").on("change", function () {
     $(".add-checkboxes").toggle();
   });
 
-  $("#closetask").on("click", function() {
+  $("#closetask").on("click", function () {
     $(".btn.readonly").hide();
     $(".btn.opentask").show();
   });
 
-  $(".opentask").on("click", function() {
+  $(".opentask").on("click", function () {
     $(".btn.readonly").show();
     $(".btn.opentask").hide();
   });
@@ -44,8 +44,8 @@ $(document).ready(function() {
     spanAsc = '<span class="arrow-hack asc">&nbsp;&nbsp;&nbsp;</span>',
     spanDesc = '<span class="arrow-hack desc">&nbsp;&nbsp;&nbsp;</span>';
 
-  $(".sorting").on("click", "th", function() {
-    $(".sorting thead th").each(function(i, th) {
+  $(".sorting").on("click", "th", function () {
+    $(".sorting thead th").each(function (i, th) {
       $(th)
         .find(".arrow-hack")
         .remove();
@@ -238,7 +238,7 @@ $(document).ready(function() {
     scrollX: false
   });
 
-  $("#heeksemplar-tabel tr").on("click", function() {
+  $("#heeksemplar-tabel tr").on("click", function () {
     $(this)
       .addClass("selected")
       .siblings()
@@ -249,29 +249,38 @@ $(document).ready(function() {
   $(".dataTables_filter input").attr("placeholder", "Filtrér");
 
   // Adjust columns in tables when changing tabs
-  $('a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
-    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+  $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+    $.fn.dataTable.tables({
+      visible: true,
+      api: true
+    }).columns.adjust();
   });
 
   // Enable / Disable edit mode
-  $(".edit").on("click", function() {
+  $(".edit").on("click", function () {
     $(".readonly").hide();
     $(".write").show();
-    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+    $.fn.dataTable.tables({
+      visible: true,
+      api: true
+    }).columns.adjust();
   });
 
-  $(".save").on("click", function() {
+  $(".save").on("click", function () {
     $(".readonly").show();
     $(".write").hide();
-    $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+    $.fn.dataTable.tables({
+      visible: true,
+      api: true
+    }).columns.adjust();
   });
 
   // Change shown boxes based on value selected in dropdown
   $("#type")
-    .change(function() {
+    .change(function () {
       $(this)
         .find("option:selected")
-        .each(function() {
+        .each(function () {
           var optionValue = $(this).attr("value");
           if (optionValue) {
             $(".box")
@@ -286,14 +295,14 @@ $(document).ready(function() {
     .change();
 
   // Removes row in table
-  $(".delete").on("click", function() {
+  $(".delete").on("click", function () {
     $(this)
       .parents("tr")
       .remove();
   });
 
-  $(".collapse").on("shown.bs.collapse", function() {
-    $.each($.fn.dataTable.tables(true), function() {
+  $(".collapse").on("shown.bs.collapse", function () {
+    $.each($.fn.dataTable.tables(true), function () {
       $(this)
         .DataTable()
         .columns.adjust()
@@ -301,14 +310,14 @@ $(document).ready(function() {
     });
   });
 
-  $(".collapse").on("show.bs.collapse", function() {
-    $(".collapse.show").each(function() {
+  $(".collapse").on("show.bs.collapse", function () {
+    $(".collapse.show").each(function () {
       $(this).collapse("hide");
     });
   });
 
-  $(".modal").on("shown.bs.modal", function() {
-    $.each($.fn.dataTable.tables(true), function() {
+  $(".modal").on("shown.bs.modal", function () {
+    $.each($.fn.dataTable.tables(true), function () {
       $(this)
         .DataTable()
         .columns.adjust()
@@ -317,10 +326,10 @@ $(document).ready(function() {
   });
 
   // Adds row in anden akavalie-tabel
-  $(".addrow-1").click(function() {
-    $("#andenarkivalie-tabel").each(function() {
+  $(".addrow-1").click(function () {
+    $("#andenarkivalie-tabel").each(function () {
       var tds = "<tr>";
-      jQuery.each($("tr:last td", this), function() {
+      jQuery.each($("tr:last td", this), function () {
         tds += "<td>" + $(this).html() + "</td>";
       });
       tds += "</tr>";
@@ -328,19 +337,25 @@ $(document).ready(function() {
         $("tbody", this).append(tds);
         $(".readonly").hide();
         $(".write").show();
-        $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+        $.fn.dataTable.tables({
+          visible: true,
+          api: true
+        }).columns.adjust();
       } else {
         $(this).append(tds);
-        $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+        $.fn.dataTable.tables({
+          visible: true,
+          api: true
+        }).columns.adjust();
       }
     });
   });
 
   // Adds row in henvisning-tabel
-  $(".addrow-2").click(function() {
-    $("#henvisning-tabel").each(function() {
+  $(".addrow-2").click(function () {
+    $("#henvisning-tabel").each(function () {
       var tds = "<tr>";
-      jQuery.each($("tr:last td", this), function() {
+      jQuery.each($("tr:last td", this), function () {
         tds += "<td>" + $(this).html() + "</td>";
       });
       tds += "</tr>";
@@ -353,10 +368,10 @@ $(document).ready(function() {
   });
 
   // Adds row in navne-tabel
-  $(".addrow-3").click(function() {
-    $("#navne-tabel").each(function() {
+  $(".addrow-3").click(function () {
+    $("#navne-tabel").each(function () {
       var tds = "<tr>";
-      jQuery.each($("tr:last td", this), function() {
+      jQuery.each($("tr:last td", this), function () {
         tds += "<td>" + $(this).html() + "</td>";
       });
       tds += "</tr>";
@@ -369,10 +384,10 @@ $(document).ready(function() {
   });
 
   // Adds row in navne-tabel
-  $(".addrow-4").click(function() {
-    $("#henavne-tabel").each(function() {
+  $(".addrow-4").click(function () {
+    $("#henavne-tabel").each(function () {
       var tds = "<tr>";
-      jQuery.each($("tr:last td", this), function() {
+      jQuery.each($("tr:last td", this), function () {
         tds += "<td>" + $(this).html() + "</td>";
       });
       tds += "</tr>";
@@ -385,10 +400,10 @@ $(document).ready(function() {
   });
 
   // Adds row in navne-tabel
-  $(".addrow-5").click(function() {
-    $("#tider-tabel").each(function() {
+  $(".addrow-5").click(function () {
+    $("#tider-tabel").each(function () {
       var tds = "<tr>";
-      jQuery.each($("tr:last td", this), function() {
+      jQuery.each($("tr:last td", this), function () {
         tds += "<td>" + $(this).html() + "</td>";
       });
       tds += "</tr>";
@@ -401,10 +416,10 @@ $(document).ready(function() {
   });
 
   // Adds row in navne-tabel
-  $(".addrow-6").click(function() {
-    $("#referencer-tabel").each(function() {
+  $(".addrow-6").click(function () {
+    $("#referencer-tabel").each(function () {
       var tds = "<tr>";
-      jQuery.each($("tr:last td", this), function() {
+      jQuery.each($("tr:last td", this), function () {
         tds += "<td>" + $(this).html() + "</td>";
       });
       tds += "</tr>";
@@ -417,10 +432,10 @@ $(document).ready(function() {
   });
 
   // Adds row in navne-tabel
-  $(".addrow-7").click(function() {
-    $("#arkiveringsversion-tabel").each(function() {
+  $(".addrow-7").click(function () {
+    $("#arkiveringsversion-tabel").each(function () {
       var tds = "<tr>";
-      jQuery.each($("tr:last", this), function() {
+      jQuery.each($("tr:last", this), function () {
         tds += $(this).html();
       });
       tds += "</tr>";
@@ -433,10 +448,10 @@ $(document).ready(function() {
   });
 
   // Adds row in navne-tabel
-  $(".addrow-8").click(function() {
-    $("#heeksemplar-tabel").each(function() {
+  $("#addEks").click(function () {
+    $("#heeksemplar-tabel").each(function () {
       var tds = "<tr>";
-      jQuery.each($("tr:last", this), function() {
+      jQuery.each($("tr:last", this), function () {
         tds += $(this).html();
       });
       tds += "</tr>";

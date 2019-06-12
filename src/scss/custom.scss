@@ -1,12 +1,11 @@
-$theme-colors: (
-  "primary": #1a232a,
+$theme-colors: ("primary": #1a232a,
   "secondary": #686868,
   "success": #309188,
-  "danger": #c84343
-);
+  "danger": #c84343);
 
 $body-bg: #fff;
-$font-family-base: "Source Sans Pro", sans-serif;
+$font-family-base: "Source Sans Pro",
+sans-serif;
 
 $breadcrumb-bg: transparent;
 $breadcrumb-padding-x: 0.4rem;
@@ -23,18 +22,17 @@ $input-placeholder-color: #848484;
 
 $spacer: 1rem !default;
 // prettier-ignore
-$spacers: (
-    0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3),
-    6: ($spacer * 4),
-    7: ($spacer * 5),
-    8: ($spacer * 6),
-    9: ($spacer * 7),
-    10: ($spacer * 8),
+$spacers: (0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4),
+  7: ($spacer * 5),
+  8: ($spacer * 6),
+  9: ($spacer * 7),
+  10: ($spacer * 8),
 );
 
 @import "../../node_modules/bootstrap/scss/functions";
@@ -60,7 +58,7 @@ $spacers: (
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/forms";
 
-.navbar-nav > li {
+.navbar-nav>li {
   padding-left: 1rem;
 }
 
@@ -83,7 +81,7 @@ $spacers: (
   border-left: 1px solid #dfdfdf;
 }
 
-.nav-tabs > li > a {
+.nav-tabs>li>a {
   margin-right: 2px;
 }
 
@@ -163,6 +161,7 @@ table.dataTable thead tr th {
 table.sorting tbody tr .icon {
   visibility: hidden;
 }
+
 table.sorting tbody tr:hover .icon {
   visibility: visible;
 }
@@ -246,9 +245,10 @@ table.dataTable tbody tr.selected a {
   color: #fff;
 }
 
-table.dataTable tbody tr.selected .btn-outline-primary {
+table.dataTable tbody tr.selected .icon {
   color: #fff;
   border-color: #fff;
+  fill: #fff;
 }
 
 table.dataTable tbody tr:hover {
@@ -258,12 +258,15 @@ table.dataTable tbody tr:hover {
 span.arrow-hack {
   margin-left: 5px;
 }
+
 span.asc {
   background: url("../images/up.svg") no-repeat center right !important;
 }
+
 span.desc {
   background: url("../images/down.svg") no-repeat center right !important;
 }
+
 span.sort {
   background: url("../images/both.svg") no-repeat center right !important;
 }
@@ -310,7 +313,7 @@ span.sort {
   display: none;
 }
 
-.collapse-row.collapsed + tr {
+.collapse-row.collapsed+tr {
   display: none;
 }
 

@@ -7128,9 +7128,10 @@ table.dataTable tbody tr.selected a {
   background: #1a232a !important;
   color: #fff; }
 
-table.dataTable tbody tr.selected .btn-outline-primary {
+table.dataTable tbody tr.selected .icon {
   color: #fff;
-  border-color: #fff; }
+  border-color: #fff;
+  fill: #fff; }
 
 table.dataTable tbody tr:hover {
   cursor: pointer; }
