@@ -7053,7 +7053,8 @@ table.dataTable thead tr th,
 table.dataTable tbody th,
 table.dataTable tbody td {
   padding-left: 18px !important;
-  padding-right: 18px !important; }
+  padding-right: 18px !important;
+  word-wrap: break-word; }
 
 table.dataTable thead tr th {
   font-weight: 600; }
