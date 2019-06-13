@@ -7056,6 +7056,16 @@ table.dataTable tbody td {
   padding-right: 18px !important;
   word-wrap: break-word; }
 
+.handle {
+  cursor: move; }
+
+.dt-rowReorder-moving {
+  background: #686868 !important;
+  color: #fff !important; }
+
+.dt-rowReorder-moving svg {
+  fill: #fff !important; }
+
 table.dataTable thead tr th {
   font-weight: 600; }
 

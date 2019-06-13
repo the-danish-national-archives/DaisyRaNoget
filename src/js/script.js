@@ -229,6 +229,49 @@ $(document).ready(function () {
     scrollX: true
   });
 
+  $("#hif-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#hif-modal-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true,
+    rowReorder: {
+      update: false
+    },
+    "columnDefs": [{
+      "visible": false,
+      "targets": 0
+    }]
+  });
+
+  $("#rif-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#fif-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
   $("#tilknyteks-tabel").DataTable({
     paging: false,
     info: false,
@@ -236,6 +279,13 @@ $(document).ready(function () {
     lengthChange: false,
     responsive: true,
     scrollX: false
+  });
+
+  $.each($.fn.dataTable.tables(true), function () {
+    $(this)
+      .DataTable()
+      .columns.adjust()
+      .draw();
   });
 
   $("#heeksemplar-tabel tr").on("click", function () {
