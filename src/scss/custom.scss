@@ -1,11 +1,12 @@
-$theme-colors: ("primary": #1a232a,
+$theme-colors: (
+  "primary": #1a232a,
   "secondary": #686868,
   "success": #309188,
-  "danger": #c84343);
+  "danger": #c84343
+);
 
 $body-bg: #fff;
-$font-family-base: "Source Sans Pro",
-sans-serif;
+$font-family-base: "Source Sans Pro", sans-serif;
 
 $breadcrumb-bg: transparent;
 $breadcrumb-padding-x: 0.4rem;
@@ -58,7 +59,7 @@ $spacers: (0: 0,
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/forms";
 
-.navbar-nav>li {
+.navbar-nav > li {
   padding-left: 1rem;
 }
 
@@ -81,7 +82,7 @@ $spacers: (0: 0,
   border-left: 1px solid #dfdfdf;
 }
 
-.nav-tabs>li>a {
+.nav-tabs > li > a {
   margin-right: 2px;
 }
 
@@ -157,6 +158,10 @@ table.dataTable tbody td {
 
 .handle {
   cursor: move;
+}
+
+.form-check-input {
+  transform: scale(1.4, 1.4);
 }
 
 .dt-rowReorder-moving {
@@ -327,7 +332,7 @@ span.sort {
   display: none;
 }
 
-.collapse-row.collapsed+tr {
+.collapse-row.collapsed + tr {
   display: none;
 }
 

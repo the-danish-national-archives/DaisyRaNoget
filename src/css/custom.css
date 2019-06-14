@@ -7059,6 +7059,9 @@ table.dataTable tbody td {
 .handle {
   cursor: move; }
 
+.form-check-input {
+  transform: scale(1.4, 1.4); }
+
 .dt-rowReorder-moving {
   background: #686868 !important;
   color: #fff !important; }
