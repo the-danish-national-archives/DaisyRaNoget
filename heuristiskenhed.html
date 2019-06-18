@@ -1657,25 +1657,27 @@ of Lorem Ipsum.
                             </svg>
                             <span>Opret HIF</span>
                           </button>
-                          <button
-                            class="btn btn-outline-primary btn-sm d-flex align-items-center mt-3 ml-3"
-                            type="submit"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="12"
-                              height="16"
-                              viewBox="0 0 12 16"
-                              class="mr-2"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                              />
-                            </svg>
-                            <span>Tilføj Eksisterende HIF</span>
-                          </button>
                         </form>
+
+                        <button
+                          class="btn btn-outline-primary btn-sm d-flex align-items-center mt-3 ml-3"
+                          data-toggle="modal"
+                          data-target="#tilfoejHIF"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="16"
+                            viewBox="0 0 12 16"
+                            class="mr-2"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                            />
+                          </svg>
+                          <span>Tilføj Eksisterende HIF</span>
+                        </button>
                       </div>
                       <div class="row mt-3 mb-3 mr-1 ml-1">
                         <div class="col-sm-6">
@@ -2400,6 +2402,193 @@ of Lorem Ipsum.
                       </tr>
                     </tbody>
                   </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Tilføj Eksisterende HIF -->
+    <div
+      class="modal fade"
+      id="tilfoejHIF"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="tilfoejHIFmodallabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="tilfoejHIFmodallabel">
+              Tilføj Eksisterende HIF
+            </h5>
+            <button
+              type="button"
+              class="btn close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 12 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb"></ol>
+            </nav>
+            <div
+              id="carousel"
+              class="carousel slide"
+              data-ride="carousel"
+              data-interval="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card bg-light">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="form-check form-check-inline mr-4">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios1"
+                            value="option1"
+                            checked
+                          />
+                          <label
+                            class="form-check-label ml-2"
+                            for="exampleRadios1"
+                          >
+                            Arkivskaber
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios2"
+                            value="option2"
+                          />
+                          <label
+                            class="form-check-label ml-2"
+                            for="exampleRadios2"
+                          >
+                            Arbejdsopgave
+                          </label>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          placeholder="Søg..."
+                          value="Frederiksberg Politi"
+                        />
+                        <button class="btn btn-primary btn-lg ml-2">Søg</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mt-3">
+                    <div class="card-body p-0">
+                      <h4 class="mb-3 ml-3 mt-3">
+                        <span class="font-weight-bold">33</span> resultater
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card mt-3 mb-3">
+                    <div class="card-body p-0">
+                      <div class="table-responsive">
+                        <table
+                          id=""
+                          width="100%"
+                          class="table sorting table-hover table-striped mb-0"
+                        >
+                          <thead>
+                            <tr>
+                              <th scope="col">HE betegnelse</th>
+                              <th scope="col">Sorteringsfelt</th>
+                              <th scope="col">HE-Fra</th>
+                              <th scope="col">HE-Til</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr data-slide-to="1" data-target="#carousel">
+                              <td><a href="#">Kredsaflytningssystem</a></td>
+                              <td>sh29942</td>
+                              <td>1988</td>
+                              <td>2020</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <h5 class="font-weight-bold mb-3 mt-3">
+                    Vælg Identifikatorformater i markeret eksemplar
+                  </h5>
+                  <div class="card mt-3 mb-3">
+                    <div class="card-body p-0">
+                      <div class="table-responsive">
+                        <table
+                          id=""
+                          width="100%"
+                          class="table sorting table-hover table-striped mb-0"
+                        >
+                          <thead>
+                            <tr>
+                              <th scope="col">Type</th>
+                              <th scope="col">Betegnelse</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr
+                              data-slide-to="0"
+                              data-target="#carousel"
+                              data-dismiss="modal"
+                            >
+                              <td><a href="#">HIF</a></td>
+                              <td>Saggruppe</td>
+                            </tr>
+                            <tr
+                              data-slide-to="0"
+                              data-target="#carousel"
+                              data-dismiss="modal"
+                            >
+                              <td><a href="#">RIF</a></td>
+                              <td>Løbenr.</td>
+                            </tr>
+                            <tr
+                              data-slide-to="0"
+                              data-target="#carousel"
+                              data-dismiss="modal"
+                            >
+                              <td><a href="#">FIF</a></td>
+                              <td>Dato</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

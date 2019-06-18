@@ -8,9 +8,8 @@ $theme-colors: (
 $body-bg: #fff;
 $font-family-base: "Source Sans Pro", sans-serif;
 
-$breadcrumb-bg: transparent;
+$breadcrumb-bg: #f8f9fa;
 $breadcrumb-padding-x: 0.4rem;
-$breadcrumb-divider: "»";
 
 $navbar-padding-x: 0rem;
 
@@ -42,6 +41,7 @@ $spacers: (0: 0,
 
 @import "../../node_modules/bootstrap/scss/alert";
 @import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/carousel";
 @import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/breadcrumb";
 @import "../../node_modules/bootstrap/scss/tables";
@@ -198,6 +198,7 @@ table thead tr th {
 .table tr td a {
   font-weight: 600;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .table tr td a:hover {
@@ -338,4 +339,8 @@ span.sort {
 
 .add-checkboxes {
   display: none;
+}
+
+.carousel .carousel-item {
+  transition-duration: 0.4s;
 }

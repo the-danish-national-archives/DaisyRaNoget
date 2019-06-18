@@ -526,6 +526,13 @@ $(document).ready(function() {
   });
 
   // Adds row in navne-tabel
+  $(".addrow-9").click(function() {
+    var getRow = $("#hif-modal-tabel tbody tr:first-child").html();
+    console.log(getRow);
+    $("#hif-modal-tabel tbody").append("<tr>" + getRow + "</tr>");
+  });
+
+  // Adds row in navne-tabel
   $("#addEks").click(function() {
     $("#heeksemplar-tabel").each(function() {
       var tds = "<tr>";
@@ -540,4 +547,41 @@ $(document).ready(function() {
       }
     });
   });
+
+  $(".breadcrumb").hide();
+
+  $("#carousel").on("slide.bs.carousel", function() {
+    var currentIndex = $(".carousel-item.active").index() + 1;
+
+    var $one = $(
+      "<li class='breadcrumb-item' data-slide-to='0' data-target='#carousel'><a href='#'>Kredsaflytningssystem</a></li>"
+    );
+    var $two = $(
+      "<li class='breadcrumb-item' data-slide-to='1' data-target='#carousel'><a href='#'>HIF (Journalnr)</a></li>"
+    );
+
+    if (currentIndex === 1) {
+      $(".breadcrumb").show();
+      $(".breadcrumb").append($one);
+    }
+
+    if (currentIndex === 2) {
+      $(".breadcrumb").append($two);
+    }
+
+    if (currentIndex === 3) {
+      $(".breadcrumb").html("");
+      $(".breadcrumb").hide();
+    }
+  });
+});
+
+$("#tilknytDIF").on("hidden.bs.modal", function(e) {
+  $(".breadcrumb").html("");
+  $(".breadcrumb").hide();
+});
+
+$("#tilfoejHIF").on("hidden.bs.modal", function(e) {
+  $(".breadcrumb").html("");
+  $(".breadcrumb").hide();
 });
