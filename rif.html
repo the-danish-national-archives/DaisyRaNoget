@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/custom.css" />
-    <title>HIF - Daisy RA</title>
+    <title>RIF - Daisy RA</title>
   </head>
 
   <body class="bg-light">
@@ -63,32 +63,54 @@
         <div class="col-10 col-centered">
           <div class="card bg-white pt-3 pr-4 pl-4 pb-8">
             <div class="card-body">
-              <span class="badge badge-warning badge-pill mt-3 mb-4">HIF</span>
+              <span class="badge badge-warning badge-pill mt-3 mb-4">RIF</span>
               <h1 class="font-weight-bold mb-4">
-                Heuristik identikatorformat
+                Registreringsidentikatorformat
               </h1>
-              <div class="card bg-light mb-4 mt-3">
-                <div class="card-body pt-2 pb-2">
-                  <div class="row mt-3 mb-3">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label class="font-weight-semibold" for="betegnelse"
-                          >Betegnelse </label
-                        ><input
-                          id="betegnelse"
-                          class="form-control"
-                          type="text"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="form-group mb-0">
-                        <label class="font-weight-semibold" for="rolle"
-                          >Rolle<small class="ml-1 text-secondary"
-                            >(Valgfrit)</small
-                          ></label
-                        >
-                        <input id="rolle" type="text" class="form-control" />
+              <div class="row mt-3 mb-3">
+                <div class="col-sm-6">
+                  <div class="card bg-light mb-4 mt-3">
+                    <div class="card-body pt-3 pb-3">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label class="font-weight-semibold" for="betegnelse"
+                              >Betegnelse </label
+                            ><input
+                              id="betegnelse"
+                              class="form-control"
+                              type="text"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label for="etiket" class="font-weight-semibold"
+                              >På etiket</label
+                            >
+                            <select class="form-control" id="etiket">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-group">
+                            <label for="interval" class="font-weight-semibold"
+                              >Ej interval</label
+                            >
+                            <select class="form-control" id="interval">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -110,8 +132,6 @@
                         <th scope="col">DIF Skabelon</th>
                         <th scope="col">DIF Betegnelse</th>
                         <th scope="col">Sløres</th>
-                        <th scope="col" class="hidden"></th>
-                        <th scope="col" class="hidden"></th>
                       </tr>
                     </thead>
 
@@ -168,24 +188,6 @@
                             <input class="form-check-input" type="checkbox" />
                           </div>
                         </td>
-                        <td class="text-center">
-                          &nbsp;
-                        </td>
-                        <td width="25" class="text-right">
-                          <a href="#" class="delete icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 12 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
-                              />
-                            </svg>
-                          </a>
-                        </td>
                       </tr>
 
                       <tr>
@@ -241,159 +243,22 @@
                             <input class="form-check-input" type="checkbox" />
                           </div>
                         </td>
-                        <td class="text-center">
-                          &nbsp;
-                        </td>
-                        <td width="25" class="text-right">
-                          <a href="#" class="delete icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 12 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
-                              />
-                            </svg>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr style="display:none;">
-                        <td>3</td>
-                        <td>
-                          <svg
-                            class="handle"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                          >
-                            <defs>
-                              <path id="a" d="M0 0h24v24H0V0z" />
-                            </defs>
-                            <clipPath id="b">
-                              <use xlink:href="#a" overflow="visible" />
-                            </clipPath>
-                            <path
-                              clip-path="url(#b)"
-                              d="M20 9H4v2h16V9zM4 15h16v-2H4v2z"
-                            />
-                          </svg>
-                        </td>
-                        <td>3</td>
-                        <td>
-                          <div class="form-group mb-0 ml-2">
-                            Journalnr.
-                          </div>
-                        </td>
-                        <td>
-                          <div class="form-group mb-0 ml-2">
-                            Journalnr.
-                          </div>
-                        </td>
-                        <td width="25">
-                          <div
-                            class="form-check text-center form-inline d-flex align-items-center"
-                          >
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              checked
-                              disabled
-                            />
-                          </div>
-                        </td>
-                        <td class="text-center">
-                          <a
-                            href="#"
-                            class="icon"
-                            data-toggle="modal"
-                            data-target="#tilknytDIF"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                fill="#000"
-                                fill-rule="nonzero"
-                                d="M18.76 4.878a10.555 10.555 0 0 0-1.59-2.026 10.563 10.563 0 0 0-2.063-1.595L16.364 0s1.818 0 2.727.91C20 1.817 20 3.635 20 3.635l-1.24 1.242zM8.181 15.455H4.545v-3.637l.437-.436a7.624 7.624 0 0 1 3.636 3.636l-.436.437zm9.527-9.528l-8.042 8.041a10.502 10.502 0 0 0-3.652-3.62l8.058-8.057a7.594 7.594 0 0 1 3.636 3.636zm-14.982-3.2v14.546h14.546v-6.364L20 8.147v10.035A1.818 1.818 0 0 1 18.182 20H1.818A1.818 1.818 0 0 1 0 18.182V1.818C0 .815.815 0 1.818 0h10.01L9.098 2.727H2.727z"
-                              />
-                            </svg>
-                          </a>
-                        </td>
-                        <td width="25" class="text-right">
-                          <a href="#" class="delete icon">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 12 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"
-                              />
-                            </svg>
-                          </a>
-                        </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center">
-                  <button
-                    class="btn btn-outline-primary btn-sm d-flex align-items-center mt-3 addrow-9"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="16"
-                      viewBox="0 0 12 16"
-                      class="mr-2"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                      />
-                    </svg>
-                    <span>Tilføj ny DIF</span>
-                  </button>
-                  <button
-                    class="btn btn-outline-primary btn-sm d-flex align-items-center mt-3 ml-2"
-                    data-toggle="modal"
-                    data-target="#tilknytDIF"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="16"
-                      viewBox="0 0 12 16"
-                      class="mr-2"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                      />
-                    </svg>
-                    <span>Tilknyt eksisterende DIF</span>
-                  </button>
+              <div class="row bg p-lg-3">
+                <div class="col-sm-12 text-right">
+                  <form action="/heuristiskenhed.html#adresseringsnetvaerk">
+                    <button class="btn btn-link">
+                      Annuller
+                    </button>
+                    <button class="btn btn-primary">
+                      Gem
+                    </button>
+                  </form>
                 </div>
-                <form action="/heuristiskenhed.html#adresseringsnetvaerk">
-                  <button class="btn btn-link">
-                    Annuller
-                  </button>
-                  <button class="btn btn-primary">
-                    Gem
-                  </button>
-                </form>
               </div>
             </div>
           </div>
@@ -533,8 +398,8 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <h5 class="font-weight-semibold mb-3 mt-0 ml-2">
-                    Vælg Identifikatorformat
+                  <h5 class="font-weight-bold mb-3 mt-3">
+                    Vælg Identifikatorformater i markeret eksemplar
                   </h5>
                   <div class="card mt-3 mb-3">
                     <div class="card-body p-0">
@@ -570,8 +435,8 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <h5 class="font-weight-semibold mb-3 mt-0 ml-2">
-                    Vælg DIF
+                  <h5 class="font-weight-bold mb-3 mt-3">
+                    Vælg DIF'er fra markeret Identifikatorformat
                   </h5>
                   <div class="card mt-3 mb-3">
                     <div class="card-body p-0">

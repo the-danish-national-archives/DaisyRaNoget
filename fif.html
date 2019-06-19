@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/custom.css" />
-    <title>HIF - Daisy RA</title>
+    <title>FIF - Daisy RA</title>
   </head>
 
   <body class="bg-light">
@@ -63,14 +63,14 @@
         <div class="col-10 col-centered">
           <div class="card bg-white pt-3 pr-4 pl-4 pb-8">
             <div class="card-body">
-              <span class="badge badge-warning badge-pill mt-3 mb-4">HIF</span>
+              <span class="badge badge-warning badge-pill mt-3 mb-4">FIF</span>
               <h1 class="font-weight-bold mb-4">
-                Heuristik identikatorformat
+                Fremfindingsidentikatorformat
               </h1>
-              <div class="card bg-light mb-4 mt-3">
-                <div class="card-body pt-2 pb-2">
-                  <div class="row mt-3 mb-3">
-                    <div class="col-sm-6">
+              <div class="row mt-3 mb-3">
+                <div class="col-sm-6">
+                  <div class="card bg-light mb-4 mt-3">
+                    <div class="card-body p-lg-4">
                       <div class="form-group">
                         <label class="font-weight-semibold" for="betegnelse"
                           >Betegnelse </label
@@ -79,16 +79,6 @@
                           class="form-control"
                           type="text"
                         />
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="form-group mb-0">
-                        <label class="font-weight-semibold" for="rolle"
-                          >Rolle<small class="ml-1 text-secondary"
-                            >(Valgfrit)</small
-                          ></label
-                        >
-                        <input id="rolle" type="text" class="form-control" />
                       </div>
                     </div>
                   </div>
@@ -348,44 +338,25 @@
                 </div>
               </div>
               <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center">
-                  <button
-                    class="btn btn-outline-primary btn-sm d-flex align-items-center mt-3 addrow-9"
+                <button
+                  class="btn btn-outline-primary btn-sm d-flex align-items-center mt-3 ml-2"
+                  data-toggle="modal"
+                  data-target="#tilknytDIF"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="16"
+                    viewBox="0 0 12 16"
+                    class="mr-2"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="16"
-                      viewBox="0 0 12 16"
-                      class="mr-2"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                      />
-                    </svg>
-                    <span>Tilføj ny DIF</span>
-                  </button>
-                  <button
-                    class="btn btn-outline-primary btn-sm d-flex align-items-center mt-3 ml-2"
-                    data-toggle="modal"
-                    data-target="#tilknytDIF"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="16"
-                      viewBox="0 0 12 16"
-                      class="mr-2"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
-                      />
-                    </svg>
-                    <span>Tilknyt eksisterende DIF</span>
-                  </button>
-                </div>
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                    />
+                  </svg>
+                  <span>Tilknyt eksisterende DIF</span>
+                </button>
                 <form action="/heuristiskenhed.html#adresseringsnetvaerk">
                   <button class="btn btn-link">
                     Annuller
@@ -437,9 +408,6 @@
             </button>
           </div>
           <div class="modal-body">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb"></ol>
-            </nav>
             <div
               id="carousel"
               class="carousel slide"
@@ -448,92 +416,7 @@
             >
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <div class="card bg-light">
-                    <div class="card-body">
-                      <div class="d-flex align-items-center mb-3">
-                        <div class="form-check form-check-inline mr-4">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="exampleRadios"
-                            id="exampleRadios1"
-                            value="option1"
-                            checked
-                          />
-                          <label
-                            class="form-check-label ml-2"
-                            for="exampleRadios1"
-                          >
-                            Arkivskaber
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="exampleRadios"
-                            id="exampleRadios2"
-                            value="option2"
-                          />
-                          <label
-                            class="form-check-label ml-2"
-                            for="exampleRadios2"
-                          >
-                            Arbejdsopgave
-                          </label>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <input
-                          type="text"
-                          class="form-control form-control-lg"
-                          placeholder="Søg..."
-                          value="Frederiksberg Politi"
-                        />
-                        <button class="btn btn-primary btn-lg ml-2">Søg</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card mt-3">
-                    <div class="card-body p-0">
-                      <h4 class="mb-3 ml-3 mt-3">
-                        <span class="font-weight-bold">33</span> resultater
-                      </h4>
-                    </div>
-                  </div>
-                  <div class="card mt-3 mb-3">
-                    <div class="card-body p-0">
-                      <div class="table-responsive">
-                        <table
-                          id=""
-                          width="100%"
-                          class="table sorting table-hover table-striped mb-0"
-                        >
-                          <thead>
-                            <tr>
-                              <th scope="col">HE betegnelse</th>
-                              <th scope="col">Sorteringsfelt</th>
-                              <th scope="col">HE-Fra</th>
-                              <th scope="col">HE-Til</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr data-slide-to="1" data-target="#carousel">
-                              <td><a href="#">Kredsaflytningssystem</a></td>
-                              <td>sh29942</td>
-                              <td>1988</td>
-                              <td>2020</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <h5 class="font-weight-semibold mb-3 mt-0 ml-2">
+                  <h5 class="mb-3 mt-3 ml-2 font-weight-semibold">
                     Vælg Identifikatorformat
                   </h5>
                   <div class="card mt-3 mb-3">
@@ -546,22 +429,22 @@
                         >
                           <thead>
                             <tr>
-                              <th scope="col">Type</th>
                               <th scope="col">Betegnelse</th>
+                              <th scope="col">DIF</th>
                             </tr>
                           </thead>
                           <tbody>
-                            <tr data-slide-to="2" data-target="#carousel">
-                              <td><a href="#">HIF</a></td>
-                              <td>Journalnr</td>
+                            <tr data-slide-to="1" data-target="#carousel">
+                              <td><a href="#">Journalnr.</a></td>
+                              <td>År, Saggruppe, Løbenr.</td>
                             </tr>
-                            <tr data-slide-to="2" data-target="#carousel">
-                              <td><a href="#">FIF</a></td>
-                              <td>Løbenr.</td>
+                            <tr data-slide-to="1" data-target="#carousel">
+                              <td><a href="#">Journalside</a></td>
+                              <td>År, Sidenr</td>
                             </tr>
-                            <tr data-slide-to="2" data-target="#carousel">
-                              <td><a href="#">RIF</a></td>
-                              <td>Dato</td>
+                            <tr data-slide-to="1" data-target="#carousel">
+                              <td><a href="#">Dato</a></td>
+                              <td>År, Måned, Dag</td>
                             </tr>
                           </tbody>
                         </table>
@@ -570,7 +453,7 @@
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <h5 class="font-weight-semibold mb-3 mt-0 ml-2">
+                  <h5 class="mb-3 mt-3 ml-2 font-weight-semibold">
                     Vælg DIF
                   </h5>
                   <div class="card mt-3 mb-3">

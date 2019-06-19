@@ -554,7 +554,7 @@ $(document).ready(function() {
     var currentIndex = $(".carousel-item.active").index() + 1;
 
     var $one = $(
-      "<li class='breadcrumb-item' data-slide-to='0' data-target='#carousel'><a href='#'>Kredsaflytningssystem</a></li>"
+      "<li class='breadcrumb-item' data-slide-to='0' data-target='#carousel'><a href='#'>&laquo; Kredsaflytningssystem</a></li>"
     );
     var $two = $(
       "<li class='breadcrumb-item' data-slide-to='1' data-target='#carousel'><a href='#'>HIF (Journalnr)</a></li>"
