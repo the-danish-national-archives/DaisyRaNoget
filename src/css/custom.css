@@ -7303,13 +7303,13 @@ table.dataTable tbody tr:hover {
 span.arrow-hack {
   margin-left: 5px; }
 
-span.asc {
-  background: url("../images/up.svg") no-repeat center right !important; }
+.sorting_asc span {
+  background: url("../images/up-colored.svg") no-repeat center right !important; }
 
-span.desc {
-  background: url("../images/down.svg") no-repeat center right !important; }
+.sorting_desc span {
+  background: url("../images/down-colored.svg") no-repeat center right !important; }
 
-span.sort {
+table.dataTable thead .sorting span {
   background: url("../images/both.svg") no-repeat center right !important; }
 
 .tabledisplay,

@@ -290,12 +290,15 @@ $(document).ready(function() {
       .draw();
   });
 
-  $("#heeksemplar-tabel tr").on("click", function() {
-    $(this)
-      .addClass("selected")
-      .siblings()
-      .removeClass("selected");
-  });
+  $("#heeksemplar-tabel tr, #arkiveringsversion-tabel tr").on(
+    "click",
+    function() {
+      $(this)
+        .addClass("selected")
+        .siblings()
+        .removeClass("selected");
+    }
+  );
 
   // Change default placeholder text for search field in table
   $(".dataTables_filter input").attr("placeholder", "Filtrér");
