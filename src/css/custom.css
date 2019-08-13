@@ -7205,11 +7205,11 @@ table.dataTable tbody td {
   padding-right: 18px !important;
   word-wrap: break-word; }
 
+.sorting_disabled {
+  border: 0 !important; }
+
 .handle {
   cursor: move; }
-
-.form-check-input {
-  transform: scale(1.4, 1.4); }
 
 .dt-rowReorder-moving {
   background: #686868 !important;
@@ -7350,3 +7350,11 @@ table.dataTable thead .sorting span {
 
 .carousel .carousel-item {
   transition-duration: 0.4s; }
+
+.badge-purple {
+  background: #9f0b4a;
+  color: #fff; }
+
+.badge-green {
+  background: #3b8c0b;
+  color: #fff; }

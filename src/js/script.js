@@ -104,7 +104,7 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  $("#overordnedeaktoerer").DataTable({
+  $("#overordnedeaktoerer-tabel").DataTable({
     paging: false,
     info: false,
     searching: false,
@@ -211,13 +211,46 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  $("#magasinenhed-tabel").DataTable({
+  $("#magasinenhed-tabel-1").DataTable({
     paging: false,
     info: false,
     searching: false,
     lengthChange: false,
     responsive: true,
-    scrollX: true
+    scrollX: false,
+    order: [[1, "asc"]],
+    columnDefs: [{ orderable: false, targets: 0 }]
+  });
+
+  $("#magasinenhed-tabel-2").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: false,
+    order: [[1, "asc"]],
+    columnDefs: [{ orderable: false, targets: 0 }]
+  });
+
+  $("#tilknyt-underordnede").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: false,
+    order: [[1, "asc"]],
+    columnDefs: [{ orderable: false, targets: 0 }]
+  });
+
+  $("#tilknyt-overordnede").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: false
   });
 
   $("#arkiveringsversion-tabel").DataTable({
@@ -229,7 +262,16 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  $("#hif-tabel").DataTable({
+  $("#hif-tabel-1").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#hif-tabel-2").DataTable({
     paging: false,
     info: false,
     searching: false,
@@ -256,7 +298,7 @@ $(document).ready(function() {
     ]
   });
 
-  $("#rif-tabel").DataTable({
+  $("#rif-tabel-1").DataTable({
     paging: false,
     info: false,
     searching: false,
@@ -265,7 +307,25 @@ $(document).ready(function() {
     scrollX: true
   });
 
-  $("#fif-tabel").DataTable({
+  $("#rif-tabel-2").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#fif-tabel-1").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#fif-tabel-2").DataTable({
     paging: false,
     info: false,
     searching: false,
@@ -280,7 +340,9 @@ $(document).ready(function() {
     searching: false,
     lengthChange: false,
     responsive: true,
-    scrollX: false
+    scrollX: false,
+    order: [[1, "asc"]],
+    columnDefs: [{ orderable: false, targets: 0 }]
   });
 
   $.each($.fn.dataTable.tables(true), function() {
