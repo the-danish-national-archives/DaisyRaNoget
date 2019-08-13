@@ -7289,13 +7289,8 @@ table thead tr th {
 
 table.dataTable tbody tr.selected,
 table.dataTable tbody tr.selected a {
-  background: #1a232a !important;
-  color: #fff; }
-
-table.dataTable tbody tr.selected .icon {
-  color: #fff;
-  border-color: #fff;
-  fill: #fff; }
+  background: #f2f2f2 !important;
+  font-weight: 700; }
 
 table.dataTable tbody tr:hover {
   cursor: pointer; }
