@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // Makes the header sticky when reaching 360 pixels down on the page
   $(window).scroll(function() {
     if ($(this).scrollTop() > 360) {
       $(".card-header").addClass("sticky");
@@ -8,7 +7,6 @@ $(document).ready(function() {
     }
   });
 
-  // Make the entire row in a table clickable
   $(".clickable-row").on("click", function() {
     window.location = $(this).data("href");
   });
@@ -208,7 +206,9 @@ $(document).ready(function() {
     searching: false,
     lengthChange: false,
     responsive: true,
-    scrollX: true
+    scrollX: false,
+    order: [[1, "asc"]],
+    columnDefs: [{ orderable: false, targets: 0 }]
   });
 
   $("#magasinenhed-tabel-1").DataTable({
@@ -355,10 +355,33 @@ $(document).ready(function() {
   $("#heeksemplar-tabel tr, #arkiveringsversion-tabel tr").on(
     "click",
     function() {
-      $(this)
-        .addClass("selected")
-        .siblings()
-        .removeClass("selected");
+      if ($(this).hasClass("selected")) {
+        $(this)
+          .find("td .open-icon")
+          .show();
+        $(this)
+          .find("td .close-icon")
+          .hide();
+      } else {
+        $(this)
+          .addClass("selected")
+          .siblings()
+          .removeClass("selected");
+        $(this)
+          .find("td .open-icon")
+          .hide();
+        $(this)
+          .find("td .close-icon")
+          .show();
+        $(this)
+          .siblings()
+          .find("td .open-icon")
+          .show();
+        $(this)
+          .siblings()
+          .find("td .close-icon")
+          .hide();
+      }
     }
   );
 
@@ -457,7 +480,6 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in anden akavalie-tabel
   $(".addrow-1").click(function() {
     $("#andenarkivalie-tabel").each(function() {
       var tds = "<tr>";
@@ -487,7 +509,6 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in henvisning-tabel
   $(".addrow-2").click(function() {
     $("#henvisning-tabel").each(function() {
       var tds = "<tr>";
@@ -503,7 +524,6 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in navne-tabel
   $(".addrow-3").click(function() {
     $("#navne-tabel").each(function() {
       var tds = "<tr>";
@@ -519,7 +539,6 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in navne-tabel
   $(".addrow-4").click(function() {
     $("#henavne-tabel").each(function() {
       var tds = "<tr>";
@@ -535,7 +554,6 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in navne-tabel
   $(".addrow-5").click(function() {
     $("#tider-tabel").each(function() {
       var tds = "<tr>";
@@ -551,7 +569,6 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in navne-tabel
   $(".addrow-6").click(function() {
     $("#referencer-tabel").each(function() {
       var tds = "<tr>";
@@ -567,7 +584,6 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in navne-tabel
   $(".addrow-7").click(function() {
     $("#arkiveringsversion-tabel").each(function() {
       var tds = "<tr>";
@@ -583,7 +599,6 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in navne-tabel
   $(".addrow-8").click(function() {
     $("#hif-modal-tabel").each(function() {
       var tds = "<tr>";
@@ -599,14 +614,12 @@ $(document).ready(function() {
     });
   });
 
-  // Adds row in navne-tabel
   $(".addrow-9").click(function() {
     var getRow = $("#hif-modal-tabel tbody tr:first-child").html();
     console.log(getRow);
     $("#hif-modal-tabel tbody").append("<tr>" + getRow + "</tr>");
   });
 
-  // Adds row in navne-tabel
   $("#addEks").click(function() {
     $("#heeksemplar-tabel").each(function() {
       var tds = "<tr>";

@@ -549,27 +549,27 @@ Dette skal ikke konserveres efter aftale med Hans Jørgen på Slotsholmen</texta
                       <hr />
                       <div class="row mt-5 mb-3 ml-1 mr-1">
                         <div class="col-sm-12">
-                          <div
-                            class="d-flex align-items-center justify-content-between mr-3"
-                          >
-                            <h4 class="font-weight-bold mt-3 mb-4">
-                              <div class="d-flex align-items-center">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 16 16"
-                                >
-                                  <path
-                                    fill="#686868"
-                                    fill-rule="evenodd"
-                                    d="M15.5 4.7L8.5 0l-7 4.7c-.3.19-.5.45-.5.8V16l7.5-4 7.5 4V5.5c0-.34-.2-.61-.5-.8zm-.5 9.8l-6-3.25V10H8v1.25L2 14.5v-9l6-4V6h1V1.5l6 4v9zM6 7h5V5l3 3-3 3V9H6v2L3 8l3-3v2z"
-                                  />
-                                </svg>
-                                <span class="ml-3">Eksemplarer og indhold</span>
-                              </div>
+                          <div class="d-flex align-items-center mt-3 mb-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill="#686868"
+                                fill-rule="evenodd"
+                                d="M15.5 4.7L8.5 0l-7 4.7c-.3.19-.5.45-.5.8V16l7.5-4 7.5 4V5.5c0-.34-.2-.61-.5-.8zm-.5 9.8l-6-3.25V10H8v1.25L2 14.5v-9l6-4V6h1V1.5l6 4v9zM6 7h5V5l3 3-3 3V9H6v2L3 8l3-3v2z"
+                              />
+                            </svg>
+                            <h4 class="font-weight-bold mb-0 ml-3">
+                              Eksemplarer og indhold
                             </h4>
                           </div>
+                          <p class="ml-1 text-secondary mb-4">
+                            Klik på en et eksemplar for at se yderligere
+                            oplysninger.
+                          </p>
                           <div class="card">
                             <div class="card-body p-0 m-0">
                               <table
@@ -579,6 +579,9 @@ Dette skal ikke konserveres efter aftale med Hans Jørgen på Slotsholmen</texta
                               >
                                 <thead>
                                   <tr>
+                                    <th scope="col" class="hidden" width="20">
+                                      &nbsp;
+                                    </th>
                                     <th scope="col">Arkivskaber</th>
                                     <th scope="col">Eksemplar</th>
                                     <th scope="col">Indhold</th>
@@ -594,6 +597,34 @@ Dette skal ikke konserveres efter aftale med Hans Jørgen på Slotsholmen</texta
                                     aria-controls="collapseOne"
                                     href="#collapseOne"
                                   >
+                                    <td>
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="16"
+                                        viewBox="0 0 12 16"
+                                        class="open-icon"
+                                      >
+                                        <path
+                                          fill="#0C9320"
+                                          fill-rule="evenodd"
+                                          d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"
+                                        />
+                                      </svg>
+                                      <svg
+                                        width="12"
+                                        height="2"
+                                        viewBox="0 0 12 2"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="close-icon"
+                                      >
+                                        <path
+                                          d="M12 2H0V0h12z"
+                                          fill="#EA0000"
+                                          fill-rule="nonzero"
+                                        />
+                                      </svg>
+                                    </td>
                                     <td>
                                       <a href="#a">Kgl. Grønlandske Hand, Ø</a>
                                     </td>
