@@ -362,6 +362,7 @@ $(document).ready(function() {
         $(this)
           .find("td .close-icon")
           .hide();
+        $(this).removeClass("selected");
       } else {
         $(this)
           .addClass("selected")
