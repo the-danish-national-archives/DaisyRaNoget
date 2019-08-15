@@ -7358,3 +7358,6 @@ table.dataTable thead .sorting span {
 .badge-green {
   background: #3b8c0b;
   color: #fff; }
+
+.magasinenhed-buttons {
+  display: none; }

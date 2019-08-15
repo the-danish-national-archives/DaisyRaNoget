@@ -175,14 +175,14 @@
                                     <input
                                       class="form-check-input"
                                       type="radio"
-                                      name="exampleRadios"
-                                      id="exampleRadios1"
+                                      name="kladdeRadios"
+                                      id="kladdeRadios1"
                                       value="option1"
                                       checked
                                     />
                                     <label
                                       class="form-check-label"
-                                      for="exampleRadios1"
+                                      for="kladdeRadios1"
                                     >
                                       Ja
                                     </label>
@@ -191,13 +191,13 @@
                                     <input
                                       class="form-check-input"
                                       type="radio"
-                                      name="exampleRadios"
-                                      id="exampleRadios2"
+                                      name="kladdeRadios"
+                                      id="kladdeRadios2"
                                       value="option2"
                                     />
                                     <label
                                       class="form-check-label"
-                                      for="exampleRadios2"
+                                      for="kladdeRadios2"
                                     >
                                       Nej
                                     </label>
@@ -853,6 +853,7 @@
                                 >
                                   <path
                                     fill-rule="evenodd"
+                                    fill="#686868"
                                     d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
                                   />
                                 </svg>
@@ -1701,7 +1702,7 @@ of Lorem Ipsum.
                                       <div class="card-body">
                                         <div class="container-fluid">
                                           <div class="row">
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-5">
                                               <ul class="list-group mb-5 mt-3">
                                                 <li class="list-group-item">
                                                   <div
@@ -2042,7 +2043,7 @@ of Lorem Ipsum.
                                                 </li>
                                               </ul>
                                             </div>
-                                            <div class="col-sm-8">
+                                            <div class="col-sm-7">
                                               <div class="form-group">
                                                 <div class="card mt-3">
                                                   <div class="card-body">
@@ -2173,11 +2174,27 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     </div>
                                     <div class="row mt-3">
                                       <div class="col-sm-12">
-                                        <h5
-                                          class="font-weight-bold mt-3 ml-1 mb-3"
+                                        <div
+                                          class="d-flex align-items-center mt-5 mb-3 ml-1"
                                         >
-                                          Magasinenheder
-                                        </h5>
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path
+                                              fill="#686868"
+                                              fill-rule="evenodd"
+                                              d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"
+                                            />
+                                          </svg>
+                                          <h5
+                                            class="font-weight-bold ml-3 mb-0"
+                                          >
+                                            Magasinenheder
+                                          </h5>
+                                        </div>
                                         <div class="card">
                                           <div class="card-body p-0 m-0">
                                             <table
@@ -2237,7 +2254,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                                         class="form-check-input"
                                                         type="checkbox"
                                                         value=""
-                                                        id="defaultCheck1"
                                                       />
                                                     </div>
                                                   </td>
@@ -2286,6 +2302,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                         >
                                           <button
                                             class="btn btn-outline-primary d-flex align-items-center"
+                                            onclick="window.print();return false;"
                                           >
                                             <svg
                                               xmlns="http://www.w3.org/2000/svg"
@@ -2335,42 +2352,42 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                             >
                                           </button>
                                           <button
-                                            class="btn btn-outline-primary disabled d-flex align-items-center ml-2"
+                                            class="btn btn-outline-primary d-flex align-items-center ml-2"
                                             data-toggle="modal"
                                             data-target="#none"
                                           >
                                             <svg
                                               xmlns="http://www.w3.org/2000/svg"
-                                              width="16"
+                                              width="12"
                                               height="16"
-                                              class="mr-2"
-                                              viewBox="0 0 16 16"
+                                              viewBox="0 0 12 16"
                                             >
                                               <path
                                                 fill-rule="evenodd"
-                                                d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+                                                d="M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM6 4.5l4 3-4 3v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73.73-.84 1.69-1.27 2.88-1.27v-2H6z"
                                               />
                                             </svg>
-                                            <span> Omregisterér</span>
+                                            <span class="ml-2"
+                                              >Omregisterér</span
+                                            >
                                           </button>
                                           <button
-                                            class="btn btn-outline-primary disabled d-flex align-items-center ml-2"
+                                            class="btn btn-outline-primary d-flex align-items-center ml-2"
                                             data-toggle="modal"
                                             data-target="#none"
                                           >
                                             <svg
                                               xmlns="http://www.w3.org/2000/svg"
-                                              width="16"
+                                              width="12"
                                               height="16"
-                                              class="mr-2"
-                                              viewBox="0 0 16 16"
+                                              viewBox="0 0 12 16"
                                             >
                                               <path
                                                 fill-rule="evenodd"
-                                                d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+                                                d="M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM6 4.5l4 3-4 3v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73.73-.84 1.69-1.27 2.88-1.27v-2H6z"
                                               />
                                             </svg>
-                                            <span> Flyt</span>
+                                            <span class="ml-2">Flyt</span>
                                           </button>
                                         </div>
                                       </div>
@@ -2844,7 +2861,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                       <div class="card-body">
                                         <div class="container-fluid">
                                           <div class="row">
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-5">
                                               <ul class="list-group mb-5 mt-3">
                                                 <li class="list-group-item">
                                                   <div
@@ -3185,7 +3202,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                                 </li>
                                               </ul>
                                             </div>
-                                            <div class="col-sm-8">
+                                            <div class="col-sm-7">
                                               <div class="form-group">
                                                 <div class="card mt-3">
                                                   <div class="card-body">
@@ -3314,13 +3331,31 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="row mt-5">
                                       <div class="col-sm-12">
-                                        <h5
-                                          class="font-weight-bold mt-3 ml-1 mb-3"
+                                        <div
+                                          class="d-flex align-items-center mt-3 mb-3 ml-1"
                                         >
-                                          Magasinenheder
-                                        </h5>
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 16 16"
+                                          >
+                                            <path
+                                              fill="#686868"
+                                              fill-rule="evenodd"
+                                              d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"
+                                            />
+                                          </svg>
+
+                                          <h5
+                                            class="font-weight-bold ml-3 mb-0"
+                                          >
+                                            Magasinenheder
+                                          </h5>
+                                        </div>
+
                                         <div class="card">
                                           <div class="card-body p-0 m-0">
                                             <table
@@ -3429,6 +3464,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                         >
                                           <button
                                             class="btn btn-outline-primary d-flex align-items-center"
+                                            onclick="window.print();return false;"
                                           >
                                             <svg
                                               xmlns="http://www.w3.org/2000/svg"
@@ -3478,42 +3514,42 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                             >
                                           </button>
                                           <button
-                                            class="btn btn-outline-primary disabled d-flex align-items-center ml-2"
+                                            class="btn btn-outline-primary d-flex align-items-center ml-2"
                                             data-toggle="modal"
                                             data-target="#none"
                                           >
                                             <svg
                                               xmlns="http://www.w3.org/2000/svg"
-                                              width="16"
+                                              width="12"
                                               height="16"
-                                              class="mr-2"
-                                              viewBox="0 0 16 16"
+                                              viewBox="0 0 12 16"
                                             >
                                               <path
                                                 fill-rule="evenodd"
-                                                d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+                                                d="M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM6 4.5l4 3-4 3v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73.73-.84 1.69-1.27 2.88-1.27v-2H6z"
                                               />
                                             </svg>
-                                            <span> Omregisterér</span>
+                                            <span class="ml-2"
+                                              >Omregisterér</span
+                                            >
                                           </button>
                                           <button
-                                            class="btn btn-outline-primary disabled d-flex align-items-center ml-2"
+                                            class="btn btn-outline-primary d-flex align-items-center ml-2"
                                             data-toggle="modal"
                                             data-target="#none"
                                           >
                                             <svg
                                               xmlns="http://www.w3.org/2000/svg"
-                                              width="16"
+                                              width="12"
                                               height="16"
-                                              class="mr-2"
-                                              viewBox="0 0 16 16"
+                                              viewBox="0 0 12 16"
                                             >
                                               <path
                                                 fill-rule="evenodd"
-                                                d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"
+                                                d="M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM6 4.5l4 3-4 3v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73.73-.84 1.69-1.27 2.88-1.27v-2H6z"
                                               />
                                             </svg>
-                                            <span> Flyt</span>
+                                            <span class="ml-2">Flyt</span>
                                           </button>
                                         </div>
                                       </div>
