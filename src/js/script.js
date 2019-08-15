@@ -398,6 +398,15 @@ $(document).ready(function() {
       .columns.adjust();
   });
 
+  // Konserveres
+  $('input[name="radiokonserver"]').on("click", function() {
+    if ($(this).val() == "option1") {
+      $("#konserver").show();
+    } else {
+      $("#konserver").hide();
+    }
+  });
+
   // Change shown boxes based on value selected in dropdown
   $("#type")
     .change(function() {

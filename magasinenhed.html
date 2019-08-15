@@ -159,7 +159,18 @@
                                 <div class="col-sm-6 font-weight-semibold">
                                   Konserver
                                 </div>
-                                <div class="col-sm-6 readonly">Ja</div>
+                                <div class="col-sm-6 readonly">
+                                  <p class="mb-2">Ja</p>
+                                  <p class="mb-0">
+                                    <span class="font-weight-semibold"
+                                      >Note:</span
+                                    >
+                                    <em
+                                      >Dette skal ikke konserveres efter aftale
+                                      med Hans Jørgen på Slotsholmen</em
+                                    >
+                                  </p>
+                                </div>
                                 <div class="col-sm-6 write">
                                   <div
                                     class="form-check form-check-inline mr-3"
@@ -194,49 +205,13 @@
                                       Nej
                                     </label>
                                   </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="list-group-item">
-                              <div class="row d-flex align-items-center">
-                                <div class="col-sm-6 font-weight-semibold">
-                                  Uorden
-                                </div>
-                                <div class="col-sm-6 readonly">Ja</div>
-                                <div class="col-sm-6 write">
-                                  <div
-                                    class="form-check form-check-inline mr-3"
+                                  <textarea
+                                    class="form-control mt-2"
+                                    id="konserver"
+                                    rows="5"
                                   >
-                                    <input
-                                      class="form-check-input"
-                                      type="radio"
-                                      name="radioUorden"
-                                      id="radioUorden1"
-                                      value="option1"
-                                      checked
-                                    />
-                                    <label
-                                      class="form-check-label ml-2"
-                                      for="radioUorden11"
-                                    >
-                                      Ja
-                                    </label>
-                                  </div>
-                                  <div class="form-check form-check-inline">
-                                    <input
-                                      class="form-check-input"
-                                      type="radio"
-                                      name="radioUorden"
-                                      id="radioUorden2"
-                                      value="option2"
-                                    />
-                                    <label
-                                      class="form-check-label ml-2"
-                                      for="radioUorden2"
-                                    >
-                                      Nej
-                                    </label>
-                                  </div>
+Dette skal ikke konserveres efter aftale med Hans Jørgen på Slotsholmen</textarea
+                                  >
                                 </div>
                               </div>
                             </li>
@@ -572,12 +547,12 @@
                         </div>
                       </div>
                       <hr />
-                      <div class="row mt-5 mb-3 mr-1 ml-1">
+                      <div class="row mt-5 mb-3 ml-1 mr-1">
                         <div class="col-sm-12">
                           <div
-                            class="d-flex align-items-center justify-content-between mr-3 ml-1"
+                            class="d-flex align-items-center justify-content-between mr-3"
                           >
-                            <h4 class="font-weight-bold mt-3 ml-3 mb-4">
+                            <h4 class="font-weight-bold mt-3 mb-4">
                               <div class="d-flex align-items-center">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
@@ -649,14 +624,38 @@
                               </table>
                               <div
                                 id="collapseOne"
-                                class="collapse"
+                                class="collapse bg-secondary pt-2 pb-2"
                                 aria-labelledby="headingOne"
                                 data-parent="#accordionEks"
                               >
-                                <div class="card m-lg-3 bg-light">
+                                <div class="card m-lg-5 bg-light">
+                                  <div class="card-header">
+                                    <div
+                                      class="d-flex align-items-center justify-content-between"
+                                    >
+                                      <h5 class="mb-0">
+                                        Brevkopier (1966-1985)
+                                      </h5>
+                                      <button
+                                        class="btn btn-primary float-right readonly edit"
+                                      >
+                                        Rediger
+                                      </button>
+                                      <div class="float-right write">
+                                        <button class="btn write save">
+                                          Annuller
+                                        </button>
+                                        <button
+                                          class="btn btn-primary write save"
+                                        >
+                                          Gem
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
                                   <div class="card-body">
                                     <div class="row">
-                                      <div class="col-sm-4">
+                                      <div class="col-sm-6">
                                         <ul class="list-group mb-3">
                                           <li class="list-group-item">
                                             <div
@@ -711,7 +710,7 @@
                                           </li>
                                         </ul>
                                       </div>
-                                      <div class="col-sm-4">
+                                      <div class="col-sm-6">
                                         <ul class="list-group mb-3">
                                           <li class="list-group-item">
                                             <div
@@ -766,40 +765,47 @@
                                           </li>
                                         </ul>
                                       </div>
-                                      <div class="col-sm-4">
-                                        <button
-                                          class="btn btn-outline-primary write mb-3"
-                                        >
-                                          Flyt det valgte indhold til andet EP
-                                        </button>
-                                        <button
-                                          class="btn btn-outline-primary write"
-                                        >
-                                          Flyt alle indhold til andet EP
-                                        </button>
-                                      </div>
                                     </div>
                                     <div class="row">
-                                      <div class="col-sm-12">
-                                        <div
-                                          class="d-flex align-items-center justify-content-between"
+                                      <div class="col-sm-12 d-flex">
+                                        <button
+                                          class="btn btn-outline-primary mb-3 d-flex align-items-center"
                                         >
-                                          <button
-                                            class="btn btn-primary float-right readonly edit"
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="12"
+                                            height="16"
+                                            viewBox="0 0 12 16"
                                           >
-                                            Rediger
-                                          </button>
-                                          <div class="float-right write">
-                                            <button class="btn write save">
-                                              Annuller
-                                            </button>
-                                            <button
-                                              class="btn btn-primary write save"
-                                            >
-                                              Gem
-                                            </button>
-                                          </div>
-                                        </div>
+                                            <path
+                                              fill-rule="evenodd"
+                                              d="M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM6 4.5l4 3-4 3v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73.73-.84 1.69-1.27 2.88-1.27v-2H6z"
+                                            />
+                                          </svg>
+                                          <span class="ml-2"
+                                            >Flyt det valgte indhold til andet
+                                            EP</span
+                                          >
+                                        </button>
+                                        <button
+                                          class="btn btn-outline-primary mb-3 ml-2 d-flex align-items-center"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="12"
+                                            height="16"
+                                            viewBox="0 0 12 16"
+                                          >
+                                            <path
+                                              fill-rule="evenodd"
+                                              d="M8.5 1H1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V4.5L8.5 1zM11 14H1V2h7l3 3v9zM6 4.5l4 3-4 3v-2c-.98-.02-1.84.22-2.55.7-.71.48-1.19 1.25-1.45 2.3.02-1.64.39-2.88 1.13-3.73.73-.84 1.69-1.27 2.88-1.27v-2H6z"
+                                            />
+                                          </svg>
+                                          <span class="ml-2"
+                                            >Flyt alle indhold til andet
+                                            EP</span
+                                          >
+                                        </button>
                                       </div>
                                     </div>
                                   </div>
