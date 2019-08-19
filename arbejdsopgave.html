@@ -141,19 +141,14 @@
                                 <div class="col-sm-6 font-weight-semibold">
                                   Ansvarlig
                                 </div>
-                                <div class="col-sm-6 readonly">LAK</div>
+                                <div class="col-sm-6 readonly">Lars Larsen</div>
                                 <div class="col-sm-6 write">
                                   <div class="form-group mb-0">
-                                    <select
+                                    <input
+                                      type="text"
                                       class="form-control"
-                                      id="exampleFormControlSelect1"
-                                    >
-                                      <option>LAK</option>
-                                      <option>LAKAJK</option>
-                                      <option>PGA</option>
-                                      <option>UDAL</option>
-                                      <option>BOXODO</option>
-                                    </select>
+                                      value="Lars Larsen"
+                                    />
                                   </div>
                                 </div>
                               </div>
@@ -183,9 +178,11 @@
                                   Kontaktoplysninger
                                 </div>
                                 <div class="col-sm-6 readonly">
-                                  Jens Jensen<br />
+                                  Lars Larsen<br />
                                   Nørregade 56<br />
-                                  2300 København N
+                                  2300 København N<br />
+                                  ll@sa.dk<br />
+                                  +45 68686868
                                 </div>
                                 <div class="col-sm-6 write">
                                   <div class="form-group write mb-0 ml-0 mr-0">
@@ -194,9 +191,11 @@
                                       id="exampleFormControlTextarea1"
                                       rows="6"
                                     >
-Jens Jensen
+Lars Larsen
 Nørregade 56
 2300 København N
+ll@sa.dk
++45 68686868
                               </textarea
                                     >
                                   </div>
@@ -358,8 +357,8 @@ Nørregade 56
                               >
                                 <thead>
                                   <tr>
-                                    <th scope="col">Navn</th>
-                                    <th scope="col">Type</th>
+                                    <th scope="col">Præfiks</th>
+                                    <th scope="col">Aktørnavn</th>
                                     <th scope="col">HE-Navn</th>
                                     <th scope="col">HE-Fra</th>
                                     <th scope="col">HE-Til</th>
@@ -370,19 +369,20 @@ Nørregade 56
                                   </tr>
                                 </thead>
                                 <tbody>
-                                  <tr class="readonly">
+                                  <tr
+                                    class="readonly"
+                                    class="clickable-row"
+                                    data-href="../heuristiskenhed-papir.html#heeksemplarer"
+                                  >
                                     <td>
-                                      <a
-                                        href="/heuristiskenhed.html#heeksemplarer"
-                                        >FRB. Politi</a
-                                      >
+                                      FRB. Politi
                                     </td>
-                                    <td>Indenrigsministeriet</td>
+                                    <td>Ordenspolitiet</td>
                                     <td>Kredsaflytningssystem</td>
                                     <td>1972</td>
                                     <td>1988</td>
-                                    <td>Papir</td>
-                                    <td>Akvalie</td>
+                                    <td>IT-System</td>
+                                    <td></td>
                                     <td>sh2048</td>
                                     <td width="20">
                                       <a href="#" class="icon delete">
@@ -400,19 +400,20 @@ Nørregade 56
                                       </a>
                                     </td>
                                   </tr>
-                                  <tr class="readonly">
+                                  <tr
+                                    class="readonly"
+                                    class="clickable-row"
+                                    data-href="../heuristiskenhed-papir.html#heeksemplarer"
+                                  >
                                     <td>
-                                      <a
-                                        href="/heuristiskenhed.html#heeksemplarer"
-                                        >FRB. Politi</a
-                                      >
+                                      FRB. Politi
                                     </td>
-                                    <td>Indenrigsministeriet</td>
-                                    <td>Kredsaflytningssystem</td>
+                                    <td>Ordenspolitiet</td>
+                                    <td>Bødejournal</td>
                                     <td>1972</td>
                                     <td>1988</td>
-                                    <td>Pap</td>
-                                    <td>Akvalie</td>
+                                    <td>Papir</td>
+                                    <td></td>
                                     <td>sh2048</td>
                                     <td width="20">
                                       <a href="#" class="icon delete">
