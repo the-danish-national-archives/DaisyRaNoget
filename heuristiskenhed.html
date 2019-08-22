@@ -134,9 +134,6 @@
                                     >
                                       <option>IT-System</option>
                                       <option>Papir</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
                                     </select>
                                   </div>
                                 </div>
@@ -156,11 +153,9 @@
                                       class="form-control"
                                       id="exampleFormControlSelect1"
                                     >
-                                      <option>Type2</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
+                                      <option>IT-System uden dokumenter</option>
+                                      <option>IT-System med dokumenter</option>
+                                      <option>Register</option>
                                     </select>
                                   </div>
                                 </div>
@@ -226,10 +221,8 @@
                                       id="exampleFormControlSelect1"
                                     >
                                       <option>2. niveau</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
+                                      <option>1. niveau</option>
+                                      <option>3. niveau</option>
                                     </select>
                                   </div>
                                 </div>
@@ -265,7 +258,7 @@
                                     <input
                                       type="text"
                                       class="form-control"
-                                      value="2149xiu12oi3u"
+                                      value="1353:E087"
                                     />
                                   </div>
                                 </div>
@@ -1116,7 +1109,7 @@ of Lorem Ipsum.
                               d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"
                             />
                           </svg>
-                          <span class="ml-3">Afleverings status</span>
+                          <span class="ml-3">Afleveringsstatus</span>
                         </div>
                       </h4>
                       <div class="row mt-3 mb-3">
@@ -1307,7 +1300,7 @@ of Lorem Ipsum.
                             <li class="list-group-item">
                               <div class="row d-flex align-items-center">
                                 <div class="col-sm-6 font-weight-semibold">
-                                  Total Kasseret
+                                  Totalt kasseret
                                 </div>
                                 <div class="col-sm-6 readonly">
                                   Nej
@@ -1630,52 +1623,182 @@ of Lorem Ipsum.
                         data-parent="#accordionEks"
                       >
                         <div class="card m-lg-5">
-                          <div class="card-body">
-                            <h3 class="font-weight-bold mb-3">
-                              # 802367816
-                            </h3>
-                            <div class="row mb-5 ml-2">
-                              <div
-                                class="d-flex align-items-center justify-content-flexstart"
-                              >
-                                <div class="form-group form-inline mb-0 mr-3">
-                                  <label
-                                    class="form-check-label font-weight-bold"
-                                    for="arkiveringsversion-navn-1"
-                                    >#</label
-                                  >
+                          <div class="card-header bg-light">
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <div class="d-flex align-items-center">
+                                <h5 class="font-weight-bold mb-0 readonly">
+                                  # 802367816
+                                </h5>
+                                <div class="write">
                                   <input
-                                    id="arkiveringsversion-navn-1"
+                                    id="arkiveringsversion-fra-1"
                                     type="text"
                                     class="form-control ml-2"
                                     value="802367816"
                                   />
                                 </div>
-                                <div class="form-group form-inline mb-0 mr-3">
-                                  <label
-                                    class="form-check-label font-weight-bold"
-                                    for="arkiveringsversion-fra-1"
-                                    >Fra</label
-                                  >
-                                  <input
-                                    id="arkiveringsversion-fra-1"
-                                    type="text"
-                                    class="form-control ml-2"
-                                    value="2010"
-                                  />
+                              </div>
+                              <div class="buttons">
+                                <button
+                                  class="btn btn-primary float-right readonly edit ml-2"
+                                >
+                                  Rediger
+                                </button>
+                                <div class="float-right write">
+                                  <button class="btn write save">
+                                    Annuller
+                                  </button>
+                                  <button class="btn btn-primary write save">
+                                    Gem
+                                  </button>
                                 </div>
-                                <div class="form-group form-inline mb-0">
-                                  <label
-                                    class="form-check-label font-weight-bold"
-                                    for="arkiveringsversion-til-1"
-                                    >Til</label
-                                  >
-                                  <input
-                                    id="arkiveringsversion-til-1"
-                                    type="text"
-                                    class="form-control ml-2"
-                                    value="2014"
-                                  />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <div class="row mb-5">
+                              <div class="col-sm-4">
+                                <ul class="list-group mb-3">
+                                  <li class="list-group-item">
+                                    <div class="row d-flex align-items-center">
+                                      <div
+                                        class="col-sm-6 font-weight-semibold"
+                                      >
+                                        Kladde
+                                      </div>
+                                      <div class="col-sm-6 readonly">
+                                        Ja
+                                      </div>
+                                      <div class="col-sm-6 write">
+                                        <div
+                                          class="form-check form-check-inline mr-3"
+                                        >
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="arkkladderadio"
+                                            id="arkkladderadio1"
+                                            value="arkkladderadio1"
+                                            checked
+                                          />
+                                          <label
+                                            class="form-check-label ml-2"
+                                            for="arkkladderadio1"
+                                          >
+                                            Ja
+                                          </label>
+                                        </div>
+                                        <div
+                                          class="form-check form-check-inline"
+                                        >
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="arkkladderadio"
+                                            id="arkkladderadio2"
+                                            value="arkkladderadio2"
+                                          />
+                                          <label
+                                            class="form-check-label ml-2"
+                                            for="arkkladderadio2"
+                                          >
+                                            Nej
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row d-flex align-items-center">
+                                      <div
+                                        class="col-sm-6 font-weight-semibold"
+                                      >
+                                        Fra
+                                      </div>
+                                      <div class="col-sm-6 readonly">
+                                        2010
+                                      </div>
+                                      <div class="col-sm-6 write">
+                                        <input
+                                          id="arkiveringsversion-fra-1"
+                                          type="text"
+                                          class="form-control ml-2"
+                                          value="2010"
+                                        />
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row d-flex align-items-center">
+                                      <div
+                                        class="col-sm-6 font-weight-semibold"
+                                      >
+                                        Til
+                                      </div>
+                                      <div class="col-sm-6 readonly">
+                                        2014
+                                      </div>
+                                      <div class="col-sm-6 write">
+                                        <input
+                                          id="arkiveringsversion-fra-1"
+                                          type="text"
+                                          class="form-control ml-2"
+                                          value="2014"
+                                        />
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-8">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <p class="font-weight-semibold">
+                                      Intern note
+                                    </p>
+
+                                    <p class="readonly">
+                                      Lorem Ipsum is simply dummy text of the
+                                      printing and typesetting industry. Lorem
+                                      Ipsum has been the industry's standard
+                                      dummy text ever since the 1500s, when an
+                                      unknown printer took a galley of type and
+                                      scrambled it to make a type specimen book.
+                                      It has survived not only five centuries,
+                                      but also the leap into electronic
+                                      typesetting, remaining essentially
+                                      unchanged. It was popularised in the 1960s
+                                      with the release of Letraset sheets
+                                      containing Lorem Ipsum passages, and more
+                                      recently with desktop publishing software
+                                      like Aldus PageMaker including versions of
+                                      Lorem Ipsum.
+                                    </p>
+                                    <textarea
+                                      rows="10"
+                                      class="form-control write"
+                                    >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+text ever since the 1500s, when
+an unknown printer took a galley
+of type and scrambled it to make
+a type specimen book. It has
+survived not only five
+centuries, but also the leap
+into electronic typesetting,
+remaining essentially unchanged.
+It was popularised in the 1960s
+with the release of Letraset
+sheets containing Lorem Ipsum
+passages, and more recently with
+desktop publishing software like
+Aldus PageMaker including
+versions of Lorem Ipsum.            
+                                              </textarea
+                                    >
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1861,10 +1984,185 @@ of Lorem Ipsum.
                         data-parent="#accordionEks"
                       >
                         <div class="card m-lg-5">
+                          <div class="card-header bg-light">
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <div class="d-flex align-items-center">
+                                <h5 class="font-weight-bold mb-0 readonly">
+                                  # 802367817
+                                </h5>
+                                <div class="write">
+                                  <input
+                                    id="arkiveringsversion-fra-1"
+                                    type="text"
+                                    class="form-control ml-2"
+                                    value="802367817"
+                                  />
+                                </div>
+                              </div>
+                              <div class="buttons">
+                                <button
+                                  class="btn btn-primary float-right readonly edit ml-2"
+                                >
+                                  Rediger
+                                </button>
+                                <div class="float-right write">
+                                  <button class="btn write save">
+                                    Annuller
+                                  </button>
+                                  <button class="btn btn-primary write save">
+                                    Gem
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                           <div class="card-body">
-                            <h3 class="mb-5 font-weight-bold">
-                              # 802367817
-                            </h3>
+                            <div class="row mb-5">
+                              <div class="col-sm-4">
+                                <ul class="list-group mb-3">
+                                  <li class="list-group-item">
+                                    <div class="row d-flex align-items-center">
+                                      <div
+                                        class="col-sm-6 font-weight-semibold"
+                                      >
+                                        Kladde
+                                      </div>
+                                      <div class="col-sm-6 readonly">
+                                        Ja
+                                      </div>
+                                      <div class="col-sm-6 write">
+                                        <div
+                                          class="form-check form-check-inline mr-3"
+                                        >
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="arkkladderadio"
+                                            id="arkkladderadio1"
+                                            value="arkkladderadio1"
+                                            checked
+                                          />
+                                          <label
+                                            class="form-check-label ml-2"
+                                            for="arkkladderadio1"
+                                          >
+                                            Ja
+                                          </label>
+                                        </div>
+                                        <div
+                                          class="form-check form-check-inline"
+                                        >
+                                          <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="arkkladderadio"
+                                            id="arkkladderadio2"
+                                            value="arkkladderadio2"
+                                          />
+                                          <label
+                                            class="form-check-label ml-2"
+                                            for="arkkladderadio2"
+                                          >
+                                            Nej
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row d-flex align-items-center">
+                                      <div
+                                        class="col-sm-6 font-weight-semibold"
+                                      >
+                                        Fra
+                                      </div>
+                                      <div class="col-sm-6 readonly">
+                                        2015
+                                      </div>
+                                      <div class="col-sm-6 write">
+                                        <input
+                                          id="arkiveringsversion-fra-1"
+                                          type="text"
+                                          class="form-control ml-2"
+                                          value="2015"
+                                        />
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row d-flex align-items-center">
+                                      <div
+                                        class="col-sm-6 font-weight-semibold"
+                                      >
+                                        Til
+                                      </div>
+                                      <div class="col-sm-6 readonly">
+                                        2019
+                                      </div>
+                                      <div class="col-sm-6 write">
+                                        <input
+                                          id="arkiveringsversion-fra-1"
+                                          type="text"
+                                          class="form-control ml-2"
+                                          value="2019"
+                                        />
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-8">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <p class="font-weight-semibold">
+                                      Intern note
+                                    </p>
+
+                                    <p class="readonly">
+                                      Lorem Ipsum is simply dummy text of the
+                                      printing and typesetting industry. Lorem
+                                      Ipsum has been the industry's standard
+                                      dummy text ever since the 1500s, when an
+                                      unknown printer took a galley of type and
+                                      scrambled it to make a type specimen book.
+                                      It has survived not only five centuries,
+                                      but also the leap into electronic
+                                      typesetting, remaining essentially
+                                      unchanged. It was popularised in the 1960s
+                                      with the release of Letraset sheets
+                                      containing Lorem Ipsum passages, and more
+                                      recently with desktop publishing software
+                                      like Aldus PageMaker including versions of
+                                      Lorem Ipsum.
+                                    </p>
+                                    <textarea
+                                      rows="10"
+                                      class="form-control write"
+                                    >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+text ever since the 1500s, when
+an unknown printer took a galley
+of type and scrambled it to make
+a type specimen book. It has
+survived not only five
+centuries, but also the leap
+into electronic typesetting,
+remaining essentially unchanged.
+It was popularised in the 1960s
+with the release of Letraset
+sheets containing Lorem Ipsum
+passages, and more recently with
+desktop publishing software like
+Aldus PageMaker including
+versions of Lorem Ipsum.            
+                                              </textarea
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                             <div class="d-flex align-items-center mt-3 mb-3">
                               <svg
                                 class="mr-3"
@@ -2350,7 +2648,7 @@ of Lorem Ipsum.
             <div class="card mt-3">
               <div class="card-body p-0">
                 <h4 class="mb-3 ml-3 mt-3">
-                  <span class="font-weight-bold">33</span> resultater
+                  <span class="font-weight-bold">4</span> resultater
                 </h4>
               </div>
             </div>
