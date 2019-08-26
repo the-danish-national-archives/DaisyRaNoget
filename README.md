@@ -4,9 +4,9 @@
 
 This project is running on node **v9.4.0** and using npm package manager.
 
-The entire project is built on Bootstrap 4.0: https://getbootstrap.com/docs/4.0/getting-started/introduction/
+The entire project is built on **Bootstrap 4.3**: https://getbootstrap.com/docs/4.3/getting-started/introduction/
 
-For all tables in the project it's using DataTables: https://datatables.net/ - they have a great API to help building custom tables.
+For all tables in the project it's using DataTables: https://datatables.net/
 
 ## Installation and running this Project
 
