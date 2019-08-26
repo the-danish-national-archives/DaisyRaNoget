@@ -2,10 +2,9 @@
 
 ## Basic
 
-This project is running on node **v9.4.0** and using npm package manager.
-
+This project is running on node **v9.4.0**: https://nodejs.org/en/download/releases/
+It's also using npm package manager **v5.6.0**: https://www.npmjs.com/package/npm/v/5.6.0
 The entire project is built on **Bootstrap 4.3**: https://getbootstrap.com/docs/4.3/getting-started/introduction/
-
 For all tables in the project it's using DataTables: https://datatables.net/
 
 ## Installation and running this Project
