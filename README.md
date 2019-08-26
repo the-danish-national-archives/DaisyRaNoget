@@ -2,11 +2,17 @@
 
 ## Basic
 
-This project is running on node v.9.4.0 and using npm package manager.
+This project is running on node **v9.4.0** and using npm package manager.
 
-The entire project is built on (Bootstrap 4.0)[https://getbootstrap.com/docs/4.0/getting-started/introduction/]
+The entire project is built on Bootstrap 4.0: https://getbootstrap.com/docs/4.0/getting-started/introduction/
+
+For all tables in the project it's using DataTables: https://datatables.net/ - they have a great API to help building custom tables.
 
 ## Installation and running this Project
+
+To get started - install all dependencies:
+
+`npm install`
 
 To start it use a local web server. You can install this package through npm that does the job: https://www.npmjs.com/package/http-server. To install open your terminal and type the following:
 
