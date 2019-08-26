@@ -4340,5 +4340,13 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
       href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css"
     />
     <script src="src/js/script.js"></script>
+    <!-- nasty script injection for protottype to make sections collapse -->
+    <script>
+      $(".collapse").on("show.bs.collapse", function() {
+        $(".collapse.show").each(function() {
+          $(this).collapse("hide");
+        });
+      });
+    </script>
   </body>
 </html>

@@ -356,3 +356,7 @@ table.dataTable thead .sorting span {
 .close-icon {
   display: none;
 }
+
+.accordion button.collapsed .icon {
+  transform: rotate(-90deg);
+}

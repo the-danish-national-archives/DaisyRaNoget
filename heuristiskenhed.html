@@ -3018,5 +3018,13 @@ versions of Lorem Ipsum.
     />
     <script src="src/js/dataTables.rowReorder.min.js"></script>
     <script src="src/js/script.js"></script>
+    <!-- nasty script injection for protottype to make sections collapse -->
+    <script>
+      $(".collapse").on("show.bs.collapse", function() {
+        $(".collapse.show").each(function() {
+          $(this).collapse("hide");
+        });
+      });
+    </script>
   </body>
 </html>
