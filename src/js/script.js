@@ -206,6 +206,15 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  $("#tilfoejarkivskaber-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
   $("#heeksemplar-tabel").DataTable({
     paging: false,
     info: false,

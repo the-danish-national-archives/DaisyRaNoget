@@ -364,3 +364,7 @@ table.dataTable thead .sorting span {
 .accordion button.collapsed .icon {
   transform: rotate(-90deg);
 }
+
+.list-group-item {
+    line-height: .5em /* set to text height */
+}
