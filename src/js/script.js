@@ -7,6 +7,12 @@ $(document).ready(function() {
     }
   });
 
+  $(".scrollto a[href^='#']").on("click", function () {
+    var id = $($(this).attr("href"));
+    id.addClass("show");
+    id.find("table").DataTable().columns.adjust().draw();
+  });
+
   $(".clickable-row").on("click", function() {
     window.location = $(this).data("href");
   });
