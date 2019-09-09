@@ -7,6 +7,39 @@ $(document).ready(function() {
     }
   });
 
+  $(".breadcrumb").hide();
+
+  $("#carousel").on("slide.bs.carousel", function () {
+    var currentIndex = $(".carousel-item.active").index() + 1;
+
+    var $one = $(
+      "<li class='breadcrumb-item' data-slide-to='0' data-target='#carousel'><a href='#'>&laquo; Kredsaflytningssystem</a></li>"
+    );
+    var $two = $(
+      "<li class='breadcrumb-item' data-slide-to='1' data-target='#carousel'><a href='#'>HIF (Journalnr)</a></li>"
+    );
+
+    if (currentIndex === 1) {
+      $(".breadcrumb").show();
+      $(".breadcrumb").append($one);
+    }
+
+    if (currentIndex === 2) {
+      $(".breadcrumb").append($two);
+    }
+
+    if (currentIndex === 3) {
+      $(".breadcrumb").html("");
+      $(".breadcrumb").hide();
+    }
+  });
+});
+
+  $("#carousel").on("slid.bs.carousel", function () {
+    $(this).find("table").DataTable().columns.adjust().draw();
+  });
+	
+
   $(".scrollto a[href^='#']").on("click", function () {
     var id = $($(this).attr("href"));
     id.addClass("show");
@@ -412,6 +445,33 @@ $(document).ready(function() {
     scrollX: true
   });
 
+  $("#tilknytdif-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+ 
+  $("#hebetegnelse-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
+  $("#tilknytdif-2-tabel").DataTable({
+    paging: false,
+    info: false,
+    searching: false,
+    lengthChange: false,
+    responsive: true,
+    scrollX: true
+  });
+
   $("#tilknyteks-tabel").DataTable({
     paging: false,
     info: false,
@@ -707,34 +767,6 @@ $(document).ready(function() {
       }
     });
   });
-
-  $(".breadcrumb").hide();
-
-  $("#carousel").on("slide.bs.carousel", function() {
-    var currentIndex = $(".carousel-item.active").index() + 1;
-
-    var $one = $(
-      "<li class='breadcrumb-item' data-slide-to='0' data-target='#carousel'><a href='#'>&laquo; Kredsaflytningssystem</a></li>"
-    );
-    var $two = $(
-      "<li class='breadcrumb-item' data-slide-to='1' data-target='#carousel'><a href='#'>HIF (Journalnr)</a></li>"
-    );
-
-    if (currentIndex === 1) {
-      $(".breadcrumb").show();
-      $(".breadcrumb").append($one);
-    }
-
-    if (currentIndex === 2) {
-      $(".breadcrumb").append($two);
-    }
-
-    if (currentIndex === 3) {
-      $(".breadcrumb").html("");
-      $(".breadcrumb").hide();
-    }
-  });
-});
 
 $("#tilknytDIF").on("hidden.bs.modal", function(e) {
   $(".breadcrumb").html("");
