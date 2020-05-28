@@ -36,3 +36,6 @@ npm-debug.log
 #Website
 sportmonda.dk/dist
 **/public/version.txt
+.vs/slnx.sqlite
+.vs/DaisyRaNoget/config/applicationhost.config
+.vs/DaisyRaNoget/v16/.suo
